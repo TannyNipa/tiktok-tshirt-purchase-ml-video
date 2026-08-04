@@ -59,10 +59,6 @@ tiktok-tshirt-purchase-ml-video/
 │   ├── age-comparison/
 │   └── occupation-comparison/
 │
-├── results/
-│   ├── tables/
-│   └── figures/
-│
 ├── video/
 │   └── final-promotional-video/
 │
