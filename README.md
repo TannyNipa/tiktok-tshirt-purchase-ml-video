@@ -51,8 +51,7 @@ tiktok-tshirt-purchase-ml-video/
 │
 ├── machine-learning/
 │   ├── model-comparison/
-│   ├── hyperparameter-optimisation/
-│   └── predictor-selection/
+│   ├── hyperparameter-optimisation + predictor-selection/
 │
 ├── statistical-analysis/
 │   ├── descriptive-analysis/
