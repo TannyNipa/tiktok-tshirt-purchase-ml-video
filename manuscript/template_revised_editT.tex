@@ -1,0 +1,2004 @@
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+%=================================================================
+\documentclass[jtaer,article,submit,moreauthors]{Definitions/mdpi} 
+%\documentclass[preprints,article,submit,moreauthors]{Definitions/mdpi} 
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% accountaudit, acn, acoustics, actuators, addictions, addictprev, adhesives, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, aichem, aieng, aimater, aimed, aipa, air, aisens, aisoc, algorithms, allergies, alloys, amh, analog, analytica, analytics, anatomia, anesthres, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, appliedphys, applmech, applmicrobiol, applnano, applsci, aps, aquacj, archaeolstud, architecture, arm, arthropoda, asc, asi, astronautics, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, bioresourbioprod, biosensors, biosphere, biotech, birds, blockchains, bloods, blsf, brainsci, breath, buildings, cancers, carbon, cardio, cardiogenetics, cardiovascmed, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinbioenerg, clinpract, clockssleep, cmd, cmtr, coasts, coatings, colloids, colorants, commodities, complexities, complications, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryo, cryptography, crystals, csmf, ctn, culture, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, dhi, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, drugreact, drylands, dynamics, earth, ebj, ecm, ecologies, edm, eesp, electricity, electrochem, electronicmat, electronics, embodiedintell, encyclopedia, endocrines, energies, eng, engproc, entomology, entropy, environments, environremediat, epidemiologia, epigenomes, esa, est, fermentation, fibers, fintech, fire, fishes, fluids, foodeng, foods, forecasting, forensicsci, forests, fossstud, foundations, fractalfract, freshwater, fuels, future, futureinternet, futurepharmacol, futurephys, futuretransp, galaxies, gases, gastroent, gastrointestdisord, gastronomy, gels, genes, geochem, geographies, geohazards, geomatics, geometry, geosciences, geotechnics, geriatrics, germs, glacies, grainsci, grasses, green, greenhealth, gucdd, gynecolcancer, hardware, hazardousmatters, healthcare, healthcmater, hearts, hemato, hematolrep, hep, heritage, higheredu, highthroughput, horticulturae, hospitals, hydrobiology, hydrogen, hydrology, hydrometeorology, hydropower, hygiene, idr, iic, ijem, ijerph, ijgi, ijmd, ijms, ijns, ijom, ijp, ijpb, ijt, ijtm, ijtpp, ijtst, ime, immuno, industries, inflammj, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jaestheticmed, jal, japma, jcdd, jcm, jcp, jcrm, jcs, jcto, jdad, jdb, jdream, jemr, jeta, jfb, jfmk, jfth, jgbg, jgg, jimaging, jlpea, jmahp, jmmp, jmms, jmp, jmse, jne, jnt, jof, joi, joitmc, joma, jop, joptm, jor, jox, jpbi, jphytomed, jpm, jsan, jtaer, jvd, jzbg, kidneydial, kinasesphosphatases, knowledge, labmed, laboratories, lam, land, lasers, legumes, life, lights, limnolrev, lipidology, liquids, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, maritime, materials, materproc, mathematics, mca, mcb, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrics, metrology, micro, microarrays, microbiolres, microelectronics, micromachines, microorganisms, microplastics, microwave, minerals, mining, mmphys, modelling, molbank, molecules, mollusca, mps, msf, mti, multimedia, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neuroimaging, neurolint, neurosci, nitrogen, notspecified, nursrep, nutraceuticals, nutrients, obesities, occuphealth, oceans, ohbm, onco, optics, oral, organics, organoids, osteology, oxygen, pandemics, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pets, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, phc, philosophies, photochem, photonics, photovoltaics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, populations, poultry, powders, precision, precisoncol, preprints, proceedings, processes, prosthesis, proteomes, psf, psychiatryint, psychoactives, purification, quantumrep, quaternary, qubs, radiation, rareearths, rdt, reactions, realestate, receptors, recycling, regeneration, remotesensing, reports, reprodmed, resources, rheumato, rjpm, robotics, rsee, ruminants, safety, sanpp, sca, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, shi, signals, sinusitis, siuj, skins, smartcities, smartfish, sna, societies, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stratsediment, stresses, strokerep, superintelligence, surfaces, surgeries, suschem, sustainability, sustainfoods, sustainpackag, symmetry, synbio, systems, tae, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, therapeutics, thermo, timespace, tomography, toxics, toxins, tph, transplantology, transportation, traumacare, traumas, tri, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, welding, wem, wevj, wild, wind, women, world, zoonoticdis
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, benchmark, book, bookreview, briefcommunication, briefreport, casereport, changes, clinicopathologicalchallenge, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, creative, datadescriptor, discussion, entry, expressionofconcern, extendedabstract, editorial, essay, erratum, fieldguide, hypothesis, interestingimages, letter, meetingreport, monograph, newbookreceived, obituary, opinion, proceedingpaper, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, supfile, systematicreview, technicalnote, viewpoint, guidelines, registeredreport, tutorial,  giantsinurology, urologyaroundtheworld
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%=================================================================
+% MDPI internal commands - do not modify
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+%\externaleditor{Firstname Lastname} % More than 1 editor, please add `` and '' before the last editor name
+\datereceived{ } 
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ } 
+\datepublished{ } 
+%\datecorrected{} % For corrected papers: "Corrected: XXX" date in the original paper.
+%\dateretracted{} % For retracted papers: "Retracted: XXX" date in the original paper.
+%\doinum{} % Used for some special journals, like molbank
+%\pdfoutput=1 % Uncommented for upload to arXiv.org
+%\CorrStatement{yes}  % For updates
+%\longauthorlist{yes} % For many authors that exceed the left citation part
+%\IsAssociation{yes} % For association journals
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, float, amsmath, amssymb, lineno, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, colortbl, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, array, tabularx, pbox, ragged2e, tocloft, marginnote, marginfix, enotez, amsthm, natbib, hyperref, cleveref, scrextend, url, geometry, newfloat, caption, draftwatermark, seqsplit
+% cleveref: load \crefname definitions after \begin{document}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\setlength{\headheight}{20pt}
+\newcommand{\todoresult}[1]{\textbf{\textcolor{black}{[#1]}}}
+%=================================================================
+% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Machine Learning-Based Predictive Modelling of T-Shirt Purchase Behaviour on TikTok: From Predictors to Short-Form Video Development}
+
+% Author Orchid ID: enter ID or remove command
+\newcommand{\orcidauthorA}{0000-0003-3068-5066} % Add \orcidA{} behind the author's name
+%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+
+% Authors, for the paper (add full first names)
+\Author{Nipaporn Thipmanee $^{1}$\orcidA{}, Suraphat Tumtamai $^{2}$ and Supannika Yongsue $^{1,}$*}
+
+%\longauthorlist{yes}
+
+% MDPI internal command: Authors, for metadata in PDF
+\AuthorNames{Nipaporn Thipmanee, Suraphat Tumtamai and Supannika Yongsue}
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address{%
+$^{1}$ \quad Creative Media Technology, Faculty of Mass Communication Technology, Rajamangala University of Technology Thanyaburi, Pathum Thani 12110, Thailand\\
+$^{2}$ \quad Digital Media Technology, Faculty of Mass Communication Technology, Rajamangala University of Technology Thanyaburi, Pathum Thani 12110, Thailand}
+
+% Contact information of the corresponding author
+\corres{Correspondence: supannika@rmutt.ac.th}
+
+% Current address and/or shared authorship
+%\firstnote{Current address: Affiliation.}  
+% Current address should not be the same as any items in the Affiliation section.
+
+%\secondnote{These authors contributed equally to this work.}
+% The commands \thirdnote{} till \eighthnote{} are available for further notes.
+
+%\simplesumm{} % Simple summary
+
+%\conference{} % An extended version of a conference paper
+
+% Abstract (Do not insert blank lines, i.e. \\) 
+
+\abstract{The increasing convergence of short-form video platforms and social commerce has intensified the need for data-driven approaches to understanding consumer behaviour; however, limited research has integrated behavioural and video-content predictors within a unified predictive framework or translated such evidence into media development. This two-phase study investigated self-reported T-shirt purchase behaviour among TikTok users using machine learning and applied retained video-content predictors to promotional video development. In Phase 1, questionnaire data from 408 participants were analysed using 12 Theory of Planned Behavior (TPB)-derived items and 20 video-content predictors. Eight classifiers were evaluated across seven predictor configurations and four class-distribution conditions using repeated stratified five-fold cross-validation with five repetitions. Logistic regression achieved the highest mean cross-validated macro-F1 of 0.8563 and was selected for the final pipeline. Cross-validated predictor-subset evaluation retained 20 of the 32 candidate predictors, comprising all 12 TPB-derived items and eight video-content predictors. When evaluated on the held-out test set, the selected pipeline achieved an accuracy of 0.8415 and a macro-F1 of 0.8222. In Phase 2, the retained video-content predictors informed development of an approximately 27-second T-shirt promotional video evaluated by an independent sample of 401 participants. Mean scores were 4.48 for video quality and viewer satisfaction and 4.34 for purchase-related perceptions and decision-making. Overall, the findings illustrate how theory-informed predictive consumer analytics can support evidence-informed short-form content development and evaluation in social commerce, while the retained predictors should be interpreted as model- and sample-specific predictive contributions rather than causal determinants.
+}
+% Keywords
+\keyword{machine learning; predictive modelling; Theory of Planned Behavior; TikTok; social commerce; purchase behaviour; short-form video; predictor selection; viewer evaluation} 
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data
+%\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this paper, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
+%\datasetlicense{License under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal BioTech, Fishes, Neuroimaging and Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{For entry manuscripts only: please provide a brief overview of the entry title instead of an abstract.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Different journals have different requirements. Please check the specific journal guidelines in the "Instructions for Authors" on the journal's official website.
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+%
+%\noindent This is an optional section, the goal of which is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple overview allowing the reader to quickly and simply find out what the article is about and what can be cited from it. Each of these parts should be up to 2 bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What are the implications of the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Journal of Theoretical and Applied Electronic Commerce Research
+% (jtaer) is used here because the manuscript concerns social commerce.
+% Change this option if the authors select a different MDPI journal.
+
+\section{Introduction}
+
+Social media platforms increasingly combine content creation, interpersonal
+interaction, and commercial activity. These social-commerce environments
+allow consumers to discover products, obtain information, evaluate
+alternatives, and respond to promotional messages within the same platform.
+TikTok is particularly relevant because its short-form format integrates
+visual, auditory, textual, and social cues within a brief presentation.
+TikTok also has substantial advertising reach in Thailand, although
+advertising-reach estimates should not be interpreted as equivalent to
+active-user counts \cite{Kemp2024}. Previous studies have linked short-form
+video characteristics such as informational value, entertainment,
+credibility, attractiveness, trustworthiness, and sales presentation with
+consumer engagement and purchase-related responses
+\cite{Xiao2023,Meng2024,Shen2024,Luo2025}. These findings suggest that both
+the information conveyed and its audiovisual presentation may contain useful
+predictive information.
+
+This issue is especially relevant to visually evaluated products such as
+T-shirts. Consumers purchasing apparel online cannot directly inspect fabric
+texture, fit, movement, colour, or compatibility with their preferred style,
+which may increase product uncertainty. Product-presentation videos can
+facilitate mental representation of a product and influence product attitudes
+and purchase intention \cite{Orus2017}. Demonstrations in fashion-oriented
+live-stream commerce may also reduce uncertainty by providing information that
+supports purchase decisions \cite{Hwang2023}. Short-form video can communicate
+these attributes through close-up shots, multiple viewing angles,
+demonstrations of movement, styling, on-screen information, and contextual
+presentation. However, much of the existing literature examines individual
+content attributes, engagement, or purchase intention, rather than
+self-reported purchase behaviour predicted jointly from behavioural and
+content-related information.
+%
+The Theory of Planned Behavior (TPB) offers a theoretically grounded
+framework for modeling consumer behavior. It posits that behavioral
+intention is shaped by attitude (ATTD), subjective norm (SN), and perceived
+behavioral control (PBC), while intention and PBC contribute to subsequent
+behavior \cite{Ajzen1991}. In social-commerce settings, ATTD captures an
+individual's favorable or unfavorable evaluation of purchases promoted
+through social media, SN reflects perceived expectations or influence from
+peers and family, and PBC denotes perceived ability, resources, and
+opportunities to obtain product information and complete a purchase. These
+constructs have been applied to online and social-media purchasing contexts
+and provide a theoretically meaningful basis for predictive analysis
+\cite{Azad2023}.
+TPB-based consumer studies have traditionally used regression analysis,
+hypothesis testing, and structural equation modeling to examine theoretically
+specified relationships. These explanatory approaches are valuable for
+testing theoretical pathways, but explanatory and predictive objectives are
+not equivalent: a model that represents associations well does not necessarily
+provide the strongest prediction for new observations
+\cite{Shmueli2010}. Parametric models can represent nonlinear effects and
+interactions when these structures are prespecified, whereas machine-learning
+(ML) methods enable systematic comparison of algorithms, predictor
+configurations, and class-distribution strategies. Previous research combined
+TPB constructs with eight ML classifiers and compared seven predictor
+configurations for social-media purchase-behavior prediction
+\cite{Azad2023}.
+
+In the present study, the questionnaire variables were adapted to the TikTok
+T-shirt context and used as TPB-derived candidate predictors. They were not
+used to test the complete causal structure of TPB or to establish a validated
+measurement model. Their contributions are therefore interpreted as
+model- and sample-specific predictive associations with self-reported
+purchase behavior, rather than as causal effects. This distinction is retained to
+avoid interpreting the predictor rankings as evidence of causal determinants.
+Three specific gaps motivate the present study. First, it remains unclear
+whether video-content attributes provide incremental predictive information
+beyond TPB-derived behavioural items when predicting self-reported T-shirt
+purchase behaviour among TikTok users. Second, the performance consequences
+of alternative classifiers, TPB-derived predictor configurations, and
+class-imbalance procedures have not been examined together in this
+application. Binary classification with an imbalanced outcome can
+disadvantage the minority class; random undersampling, random oversampling,
+and SMOTE are possible remedies, but their performance should be evaluated
+within the same modelling framework \cite{Chawla2002}. Third, predictive
+rankings alone do not specify how retained content-related predictors can be
+translated into production decisions. A predictor-informed video can be
+developed and evaluated descriptively, but a single post-viewing evaluation
+cannot establish that the video caused purchase behaviour or was superior to
+an alternative design.
+
+To address these gaps, this study used a two-phase, theory-informed, and
+data-driven framework. In Phase 1, eight ML classifiers were compared across
+seven TPB-derived predictor configurations and four class-distribution
+conditions using repeated stratified cross-validation. Predictor-subset
+evaluation and cross-validated permutation importance were then used to
+identify predictors with predictive utility within the selected pipeline. In
+Phase 2, the retained video-content predictors were used, where applicable,
+to inform production decisions for an approximately 27-second T-shirt
+promotional video. The completed video was subsequently evaluated by a
+separately recruited sample of TikTok users. The contribution of the study
+is therefore a context-specific workflow linking predictive modelling to
+evidence-informed media development; it is not a causal estimate of the
+effect of any individual video feature.
+
+The study addressed the following research questions:
+\begin{enumerate}
+\item Does combining video-content predictors with TPB-derived candidate predictors improve prediction of self-reported T-shirt purchase behaviour?
+\item Which candidate predictors show the most consistent predictive contribution within the selected modelling pipeline?
+\item How can retained video-content predictors be translated into short-form T-shirt video production decisions?
+\item How do viewers evaluate the developed video in terms of perceived quality, satisfaction, and purchase-related perceptions across demographic groups?
+\end{enumerate}
+
+Accordingly, the objectives were: (1) to develop and compare ML models
+across alternative predictor configurations and class-distribution
+conditions; (2) to identify and characterise model-specific predictive
+contributions and translate retained video-content predictors into short-form
+promotional-video development; and (3) to evaluate viewers' post-viewing
+perceptions of the developed video using a separately recruited sample and
+compare these evaluation scores across demographic groups.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Materials and Methods}
+This section describes the two-phase research design, participant recruitment, measurement instruments, machine-learning procedures, short-form video development, and statistical analyses used in the study.
+
+\subsection{Research Design}
+
+This study employed a quantitative, sequential two-phase design with two separately recruited participant samples. Online questionnaires were administered in both phases. Phase 1 formulated self-reported T-shirt purchase behaviour as a supervised binary-classification task and evaluated the predictive contribution of TPB-derived and video-content predictors across alternative machine-learning classifiers. In Phase 2, the retained video-content predictors informed the development of a short-form promotional video, which was evaluated by an independent sample. Phase 2 was evaluative rather than experimental; it assessed post-viewing perceptions and purchase-related responses but did not estimate the video’s causal effect on actual purchasing.
+Phase 1 was informed by the theory-informed machine-learning framework proposed by Azad \textit{et al}. \cite{Azad2023} This study extended the framework by integrating TPB constructs with video-content attributes, systematically comparing alternative class-imbalance handling methods, and using the retained video-content predictors to inform subsequent media-development decisions.
+Before analysis, the questionnaires were screened for completeness. Incomplete questionnaires were excluded, and no missing-data imputation was performed. All non-demographic items were measured using a five-point Likert scale ranging from 1 (strongly disagree) to 5 (strongly agree).
+Following data cleaning and coding, the dataset was divided using a stratified 80:20 training--test split. A fixed random seed was applied to the data split and, where applicable, to stochastic procedures such as resampling and model training to support reproducibility. To prevent data leakage, all resampling, preprocessing, hyperparameter optimisation, model selection, and predictor-selection procedures, including scaling or standardisation where required, were performed exclusively within the training data and the corresponding training folds during cross-validation. The held-out test set was not used during model development and was reserved exclusively for the final evaluation of the selected ML pipeline.
+Eight classification algorithms were initially evaluated across seven
+predictor configurations and four class-distribution conditions: the
+original imbalanced distribution, RUS, ROS, and SMOTE. Resampling was
+performed only within the training folds after fold assignment and
+was not applied to validation or test observations. Model performance
+was estimated using repeated stratified five-fold cross-validation with
+five repetitions, with macro-F1 specified as the primary evaluation
+metric. The predictor configuration and class-imbalance handling method were
+selected according to mean cross-validated macro-F1. Hyperparameters
+were then optimised for all eight classifiers under the selected
+configuration and handling method. The classifier with the highest
+mean cross-validated macro-F1 was selected for subsequent predictor
+analysis. Cross-validated ranked predictor-subset evaluation was
+used to determine the number of predictors to retain. Cross-validated
+permutation importance was subsequently used to rank the candidate TPB
+and video-content predictors, and the highest-ranked predictors
+corresponding to the selected subset size were retained. Their
+relative predictive contributions were then characterised. The final
+pipeline was fitted using the complete training set and evaluated once
+on the previously unseen test set.
+In Phase 2, the retained video-content predictors were used, where
+applicable, to inform content and audiovisual production decisions for an approximately 27-second vertical T-shirt promotional video \cite{TikTokBusiness2022}. The
+relationship between the retained predictors and the corresponding
+production decisions was documented before video production, including
+predictors that were not directly operationalised. Detailed production
+procedures and the rationale for the video duration are described in
+Section~\ref{sec:phase2}.
+
+The developed video was evaluated by a separately recruited participant
+sample using a separate online questionnaire covering two dimensions:
+(1) video quality and viewer satisfaction and (2) purchase-related
+perceptions and decision-making. Descriptive statistics,
+independent-samples (t)-tests, Welch's one-way analysis of variance,
+and Games--Howell post hoc comparisons were used to analyse the
+evaluation scores. Phase 2 was evaluative rather than experimental. It
+examined participants' perceptions and post-viewing responses and did
+not test a causal effect of the video on actual purchase behaviour.
+Figure~\ref{fig:research_framework} presents the two-phase study
+workflow.
+
+\begin{figure}[H]
+	\centering
+\includegraphics[width=1\textwidth]{Figure1.png}
+\caption{Two-phase study workflow for machine-learning model development,
+		predictor-guided short-form video production, and independent audience
+		evaluation.}
+	\label{fig:research_framework}
+\end{figure}
+
+\subsection{Participants and Sampling}
+
+The target population comprised TikTok users aged 18 years or older who had experience viewing product-related content on the platform. Independent participant samples were recruited for the two sequential phases using voluntary convenience sampling through online channels in Thailand. Each phase employed a separate online questionnaire appropriate to its respective study objective.
+Eligibility criteria required participants to be at least 18 years old, use TikTok, have prior experience viewing product-related content on the platform, and provide electronic informed consent before participation. Recruitment was conducted between February and May 2026.
+Because the size of the target population was unknown, Cochran's formula was used for sample-size planning. Assuming a 95\% confidence level, a 5\% margin of error, and a population proportion of \textit{p}=0.50 to represent maximum variability, the minimum required sample size was 385 participants. The recruitment target was therefore increased to at least 400 participants per phase to allow for potentially incomplete or ineligible responses. Because voluntary convenience sampling was used, the specified confidence level and margin of error were treated as sample-planning parameters rather than as guarantees of population representativeness.
+The final Phase 1 sample comprised 408 eligible participants. Participants completed a questionnaire covering demographic characteristics, Theory of Planned Behavior (TPB) constructs, video-content attributes, and self-reported purchase-behaviour items. Demographic variables were used only to describe the sample and were not included as predictors in the machine-learning analyses. The ML dataset comprised TPB and video-content items as predictors, while the binary classification target was derived from the four purchase-behaviour items.
+Phase 2 involved an independently recruited sample of 401 eligible TikTok users who self-reported that they had not participated in Phase 1. After viewing the developed short-form promotional video, participants completed a separate online questionnaire assessing video quality and viewer satisfaction, as well as purchase-related perceptions and decision-making. Phase 1 and Phase 2 data were analyzed separately in accordance with the distinct objectives and analytical procedures of each phase.
+The study included only participants aged 18 years or older, and electronic informed consent was obtained before participation. Details regarding ethical approval, informed consent, and data confidentiality are provided in the Institutional Review Board Statement and Informed Consent Statement.
+
+\subsection{Questionnaire Development and Measurement}
+
+Two online questionnaires were used for data collection, one for each phase of the study. All non-demographic items were measured using a five-point Likert-type scale ranging from 1 (strongly disagree) to 5 (strongly agree).
+The Phase 1 questionnaire comprised four sections: demographic characteristics, four self-reported purchase-behaviour items, 12 items representing the three Theory of Planned Behavior (TPB) constructs, and 20 video-content items. The TPB component included four items for each construct: attitude (ATTD1--ATTD4), subjective norm (SN1--SN4), and perceived behavioural control (PBC1--PBC4). The TPB and purchase-behaviour items were adapted from the questionnaire reported by Zhou \textit{et al}. \cite{Zhou2022}, which was subsequently applied within the ML framework of Azad \textit{et al}. \cite{Azad2023}. The original English-language items were translated into Thai and adapted to the context of T-shirt purchasing through TikTok. The adapted items were reviewed collectively by the research team for linguistic clarity, consistency with the intended constructs, and contextual relevance, with minor wording adjustments made where necessary. Because these items were adapted specifically for the present study, they were treated as TPB-derived candidate predictors in the machine-learning analyses rather than as indicators of a formally validated TPB measurement model. The Phase 1 questionnaire, including the TPB-derived items and researcher-developed video-content items, is provided in Table~S1.
+The 20 video-content items were developed by the research team through a review of empirical studies on TikTok short-form video advertising, consumer engagement, and purchase-related responses, together with platform-specific creative guidance. The items covered seven dimensions: visual presentation (three items: V1--V3), editing and pace (three items: E1--E3), opening hook (two items: H1--H2), audio and music (three items: A1--A3), on-screen text (three items: T1--T3), product presentation (three items: P1--P3), and emotional appeal (three items: EM1--EM3).
+The selection of these dimensions was informed by TikTok-based studies examining entertainment, sales approach, product-related content, visual composition, number of shots, pacing, speech and auditory features, music, textual content, colourfulness, and visual prominence \cite{Xiao2023,Meng2024,Zhang2025}. The opening-hook and platform-oriented production elements were additionally informed by TikTok's official creative guidance concerning hook--body--close structure, dynamic editing, text overlays, trends, and sound \cite{TikTokCreativeGuidance2025}. The research team reviewed the items for conceptual coverage, wording clarity, redundancy, and relevance to T-shirt promotion on TikTok. The resulting video-content items were treated as literature- and platform-informed, researcher-developed candidate predictors in the machine-learning analyses rather than as an established psychometric scale. Accordingly, interpretation focused on individual predictors rather than on formally validated latent constructs.
+Internal consistency in Phase 1 was assessed separately for the purchase-behaviour items, each TPB construct, and each video-content dimension using Cronbach's alpha. Based on responses from the 408 Phase 1 participants, the coefficients were 0.867 for purchase behaviour (PB), 0.840 for ATTD, 0.687 for SN, and 0.888 for PBC. For the video-content dimensions, the coefficients were 0.847 for visual presentation, 0.801 for editing and pace, 0.687 for opening hook, 0.709 for audio and music, 0.817 for on-screen text, 0.795 for product presentation, and 0.823 for emotional appeal. These construct- and dimension-specific coefficients were used as descriptive indicators of internal consistency because the questionnaire comprised conceptually distinct groups of items. All items were retained for the subsequent predictive analyses.
+Demographic variables collected in Phase 1 were used only to describe the participant sample and were not included as predictors in the ML analyses. The predictive dataset therefore comprised the 12 TPB items and 20 video-content items as candidate predictors, together with the binary classification target derived from the four purchase-behaviour items. No names or other direct personal identifiers were included in the analytical dataset.
+The Phase 2 questionnaire was developed to evaluate participants' responses to the short-form promotional video. An initial 15-item instrument underwent content-validity assessment by three experts using the Index of Item-Objective Congruence (IOC). Four items with IOC values below the predefined acceptance threshold of 0.50 were excluded, resulting in an 11-item questionnaire. All retained items met the predefined IOC criterion. The final instrument comprised two domains: video quality and viewer satisfaction (six items) and purchase-related perceptions and decision-making (five items).
+The 11-item Phase 2 questionnaire was subsequently pilot-tested with 30 participants who were not included in the main Phase 2 sample. The pilot instrument demonstrated an overall Cronbach's alpha of 0.887, with domain-specific coefficients of 0.743 for video quality and viewer satisfaction and 0.855 for purchase-related perceptions and decision-making. The final 11-item Phase 2 evaluation questionnaire is provided in Table~S2.
+For Phase 2, the evaluation score for each domain was calculated as the mean of its constituent items, with higher scores indicating more favourable evaluations of the corresponding domain. Because the questionnaire was administered following a single exposure to the developed video, these scores were interpreted as participants' perceived evaluations and purchase-related perceptions rather than as observed purchasing behaviour. 
+
+\subsection{Phase 1: Machine Learning-Based Predictive Modelling}
+Phase 1 focused on developing and evaluating machine learning models for classifying self-reported T-shirt purchase behaviour using TPB and video-content predictors. The analysis comprised classification-target construction, comparison of class-imbalance handling methods and predictor configurations, hyperparameter optimisation, predictor-subset evaluation, and final model assessment. The following subsections describe these procedures in detail.
+
+\subsubsection{Classification Target and Predictor Construction}
+Following data collection, responses to the four self-reported
+purchase-behaviour items (PB1--PB4) were summed to produce a composite
+score ranging from 4 to 20. All four items were scored in the same
+direction, with higher values indicating stronger self-reported
+purchase behaviour.
+Consistent with the classification criterion used by Azad
+\textit{et al}. \cite{Azad2023}, composite scores from 4 to 12 were
+assigned to the lower purchase-behaviour class, whereas scores from
+13 to 20 were assigned to the higher purchase-behaviour class. These
+ranges corresponded to item-level mean scores of 3 or lower and greater
+than 3, respectively, thereby distinguishing neutral or lower
+responses from responses indicating agreement on the five-point
+scale. The resulting binary variable served as the classification
+target and represented relative levels of self-reported purchase
+behaviour rather than objectively verified purchase transactions.
+The predictor pool comprised 12 TPB items measuring ATTD, SN, and PBC,
+together with all 20 video-content items measuring the seven
+predefined video-content dimensions. PB1--PB4 were excluded from the predictor pool because they were used
+to construct the classification target. Demographic variables collected
+in Phase 1 were not included in the ML analyses.
+Seven TPB predictor configurations were evaluated. These
+included three single-construct configurations (ATTD, SN, and PBC),
+three two-construct configurations (ATTD and SN, ATTD and PBC, and SN
+and PBC), and one configuration containing all three TPB constructs.
+Each TPB configuration was combined with the complete set of 20
+video-content predictors. Consequently, the single-construct,
+two-construct, and three-construct configurations contained 24, 28,
+and 32 predictors, respectively.
+The video-content predictor set was held constant across all
+configurations to allow predictive performance to be compared across
+alternative TPB construct combinations while controlling for the
+video-content predictor set.
+
+\subsubsection{Class-Imbalance Handling}
+
+The binary classification target was imbalanced, comprising 110
+observations in the lower purchase-behaviour class (26.96\%) and 298
+in the higher purchase-behaviour class (73.04\%). This corresponded to
+a majority-to-minority ratio of 2.71:1. Because class imbalance can
+lead classifiers to favour the majority class and reduce predictive
+performance for the minority class, four class-distribution conditions
+were compared: the original imbalanced distribution, RUS, ROS, and SMOTE \cite{Chawla2002}. The
+original distribution served as the reference condition.
+RUS balanced the training data by randomly removing observations from
+the majority class. Although this reduced majority-class dominance and
+the amount of training data, it could discard informative observations.
+ROS balanced the classes by randomly replicating minority-class
+observations. This preserved all original observations but could
+increase the risk of overfitting because duplicated observations were
+used repeatedly during model training. SMOTE generated synthetic
+minority-class observations by interpolating between neighbouring
+minority-class instances. These methods were compared to determine
+whether class-imbalance handling improved predictive performance
+relative to the original class distribution.
+To prevent information leakage, the dataset was divided using a
+stratified 80:20 training--test split. All preprocessing parameters
+were estimated from the training data, and resampling was restricted
+to the training data.
+During cross-validation, RUS, ROS, or SMOTE,
+depending on the class-distribution condition, was applied only within
+each training fold after fold assignment. No resampling was applied under the
+original-distribution condition. The corresponding validation
+fold retained its original class distribution. The held-out test set
+retained its original class distribution and was not used for
+resampling, hyperparameter optimisation, predictor selection, or model
+fitting. It was evaluated only once after the selected ML pipeline had
+been fitted using the complete training set.
+
+
+\subsubsection{Machine Learning Model Construction}
+
+Eight supervised classification algorithms were evaluated:
+\(k\)-nearest neighbours (KNN), decision tree (DT), logistic regression
+(LR), Gaussian naive Bayes (NB), support vector machine (SVM), random
+forest (RF), AdaBoost, and gradient boosting (GB). These algorithms
+represented instance-based, probabilistic, linear, kernel-based,
+tree-based, and ensemble learning approaches. The modelling framework
+was informed by Azad \textit{et al}. \cite{Azad2023} and extended by
+incorporating video-content predictors and systematically comparing
+alternative class-imbalance handling methods.
+An initial model comparison was conducted across eight classifiers,
+seven TPB predictor configurations, and four class-distribution
+conditions: the original imbalanced distribution, RUS, ROS, and SMOTE. This resulted in 224
+classifier--predictor-configuration--class-distribution combinations.
+Model performance was estimated using repeated stratified five-fold
+cross-validation with five repetitions, with mean macro-F1 specified
+as the primary selection criterion.
+
+The TPB predictor configuration and class-imbalance handling method
+associated with the highest mean cross-validated macro-F1 in the
+initial comparison were retained for subsequent model optimisation.
+These settings were held constant while hyperparameters were optimised
+separately for all eight classifiers. Exhaustive grid search was
+conducted using repeated stratified five-fold cross-validation with
+five repetitions. For each classifier, the hyperparameter combination
+yielding the highest mean cross-validated macro-F1 was retained. The
+classifier achieving the highest mean cross-validated macro-F1 after
+hyperparameter optimisation was selected for subsequent predictor
+analysis. The complete hyperparameter search spaces and model-specific settings
+for all eight classifiers are provided in Table~S3.
+
+\subsubsection{Predictor-Subset Evaluation and Permutation Importance}
+
+Predictor selection was conducted exclusively within the training set
+using a two-stage cross-validated procedure. The hyperparameters of the
+selected classifier were determined in the preceding analysis and held
+constant throughout this stage.
+First, repeated stratified five-fold cross-validation with five
+repetitions was used to determine the number of predictors to retain.
+For each outer training partition, permutation importance was estimated
+using an inner stratified five-fold cross-validation procedure.
+Predictor importance was quantified as the decrease in validation
+macro-F1 following random permutation of an individual predictor while
+the observed values of all remaining predictors were preserved. Each
+predictor was permuted five times, and the mean importance estimate was
+used to establish the predictor ranking.
+Candidate subsets containing progressively larger numbers of the
+highest-ranked predictors were then evaluated, ranging from the single
+highest-ranked predictor to all \(p\) predictors in the selected
+configuration. Each candidate subset was assessed using outer
+validation observations that had not been used to establish the
+corresponding predictor ranking. The number of predictors yielding the
+highest mean validation macro-F1 across the repeated validation folds
+was retained.
+After the predictor count had been determined, all candidate predictors
+in the selected configuration were ranked again using repeated
+stratified five-fold cross-validation on the complete training set.
+Permutation importance was calculated on each validation partition
+using 10 repetitions per predictor. The mean and standard deviation of
+the importance values were then calculated across the 25 validation
+folds. A positive-fold rate was additionally calculated as the
+proportion of validation folds in which permutation of a predictor
+reduced macro-F1 and was used as a descriptive indicator of the
+consistency of its predictive contribution.
+The highest-ranked predictors corresponding to the selected predictor
+count were retained in the final subset. The complete pipeline,
+including preprocessing, the selected class-imbalance handling method,
+the tuned classifier, and the retained predictor subset, was then
+refitted using the full training set and evaluated once on the held-out
+test set. Test-set performance was used as the final internal estimate
+of predictive performance. The test-set confusion matrix and
+class-specific performance metrics are reported in
+Table~\ref{tab:heldout_test}; none of the held-out test results were
+used to make model-selection, hyperparameter-selection, or
+predictor-selection decisions.
+Permutation-importance values were interpreted as model- and
+sample-specific indicators of predictive contribution rather than as
+evidence of causal relationships with self-reported purchase behaviour.
+The retained video-content predictors were subsequently used to inform
+the development of the short-form promotional video evaluated in
+Phase 2.
+The ML analyses were implemented in Python 3.13. The source code is
+available through the GitHub repository specified in the Code and
+Materials Availability section.
+
+\subsubsection{Model Performance Evaluation}
+Model performance was assessed using accuracy, macro-precision,
+macro-recall, and macro-F1. Given the imbalanced class distribution,
+macro-F1 was specified as the primary performance metric because it
+assigns equal importance to the lower and higher purchase-behaviour
+classes, regardless of their sample sizes. Accuracy, macro-precision,
+and macro-recall were reported as complementary measures.
+Precision, recall, and F1-score were calculated separately for each
+class using their conventional definitions. Macro-precision and
+macro-recall were calculated as the unweighted arithmetic means of the
+corresponding class-specific values. Accuracy and macro-F1 were
+calculated as follows:
+
+\begin{equation}
+	\mathrm{Accuracy}
+	=
+	\frac{TP+TN}{TP+TN+FP+FN},
+\end{equation}
+
+\begin{equation}
+	\mathrm{Macro\mbox{-}F1}
+	=
+	\frac{\mathrm{F1}_{L}+\mathrm{F1}_{H}}{2},
+\end{equation}
+
+where TP, TN, FP, and FN denote true positives, true
+negatives, false positives, and false negatives, respectively.
+\(\mathrm{F1}_{L}\) and \(\mathrm{F1}_{H}\) denote the class-specific
+F1-scores for the lower and higher purchase-behaviour classes,
+respectively.
+
+\subsection{Phase 2: Short-Form Video Development and Evaluation}
+
+Phase 2 involved the development and evaluation of a short-form T-shirt presentation video for TikTok. The retained video-content predictors from Phase 1 informed video development where applicable, and the completed video was subsequently evaluated by the separately recruited Phase 2 participant sample. The following subsections describe these procedures in detail.
+
+\subsubsection{Video Design, Production, and Expert Review}
+
+The retained TPB and video-content predictors were used to inform the development of the short-form promotional video according to their relevance to communication and production decisions. Where directly applicable, TPB predictors related to attitude, subjective norm, and perceived behavioural control informed the persuasive emphasis of the promotional message, including product appeal, social relevance, and perceived ease of purchase. Predictors representing more abstract behavioural tendencies were not directly translated into observable video elements.
+The retained video-content predictors more directly guided structural and audiovisual decisions, including the opening hook, visual presentation, product-focused imagery, on-screen text, audio and music, and emotional presentation. A production plan was prepared to define the message sequence, visual treatment, and audiovisual elements before production and editing. Production quality was addressed through clear product visibility, visual clarity, continuity between scenes, readable on-screen text, and appropriate audio. The completed video had a duration of approximately 27 seconds and was produced in a vertical format suitable for short-form TikTok content.
+Following production, the completed video was evaluated by three experts in media production and presentation. The evaluation addressed content relevance and clarity, accuracy of the information presented, suitability of the audiovisual elements, and overall appropriateness for the short-form video format. Comments and recommendations from the expert evaluation were incorporated into the revision of the video before the final version was presented to the Phase 2 participants.
+
+
+\subsubsection{Statistical Analysis of Viewer Evaluation}
+
+Data from the Phase 2 questionnaire were analysed using descriptive and
+inferential statistics. Participant characteristics were summarised
+using frequencies and percentages. For each participant, responses to
+the items within each evaluation dimension were averaged. The resulting
+scores for the two evaluation dimensions---video quality and viewer
+satisfaction, and purchase-related perceptions and decision-making---
+were summarised using means and standard deviations.
+Gender was classified into two categories, and age was classified into
+two groups (18--22 and 23--28 years). Differences according to gender
+and age group were examined using independent-samples \(t\)-tests.
+Welch's \(t\)-test was used when the assumption of equal variances was
+not met.
+Occupation was classified into four groups: student, employee,
+unemployed/job-seeking, and self-employed/freelance. Differences among
+occupational groups were assessed using Welch's one-way analysis of
+variance (ANOVA). When a statistically significant overall difference
+was identified, Games--Howell post hoc comparisons were performed to
+determine which occupational groups differed. Statistical significance
+was set at \textit{p}~<~0.05. All analyses were conducted using jamovi
+(version 2.6).
+
+\section{Results}
+
+The results are organised into two main parts. First, the Phase 1
+findings present the machine-learning analyses conducted to identify
+predictors of self-reported purchase behaviour. Second, the Phase 2
+findings describe how the retained video-content predictors informed
+the development of the short-form promotional video and report
+participants' evaluations of the developed video.
+
+\subsection{Phase 1: Machine Learning-Based Predictive Modelling}
+\subsubsection{Model-performance comparison}
+Model performance was compared across eight classifiers, seven TPB-derived
+predictor configurations, and four class-distribution conditions. Each
+configuration included the complete set of 20 video-content predictors,
+yielding 224 prespecified combinations. Table~\ref{tab:model_comparison_results}
+presents the mean macro-F1 scores obtained from repeated stratified
+five-fold cross-validation. These values represent model-development
+estimates and not final predictive performance on the held-out test set.
+Under the original imbalanced distribution, mean cross-validated
+macro-F1 scores ranged from 0.7011 to 0.8461, with an overall mean of
+0.7974 across the 56 classifier--configuration combinations. 
+NB achieved the highest score (0.8461) with the combined ATTD--PBC--SN configuration.
+Under RUS, scores ranged from 0.7206 to 0.8432, with an overall mean of
+0.7951; U-KNN achieved the highest score (0.8432) using the combined
+ATTD--PBC--SN configuration. Under ROS, scores ranged from 0.7144 to
+0.8506, with an overall mean of 0.7997; O-NB achieved the highest score
+(0.8506), again using the combined ATTD--PBC--SN configuration. Under
+SMOTE, scores ranged from 0.7176 to 0.8511, with an overall mean of
+0.7994. S-NB achieved the highest score under SMOTE and the highest
+unoptimised score across all 224 combinations (macro-F1 = 0.8511),
+using the combined ATTD--PBC--SN configuration.
+Detailed cross-validation results for all 56
+classifier--predictor-configuration combinations under each
+class-distribution condition, including macro-precision, macro-recall,
+and macro-F1, are provided in Tables~S4--S7, corresponding to the
+original distribution, RUS, ROS, and SMOTE, respectively.
+The relative performance of the class-imbalance handling methods varied
+slightly across classifiers and predictor configurations. Based on the
+mean performance across the 56 combinations within each condition, ROS
+yielded the highest condition-level mean macro-F1 (0.7997), followed by
+SMOTE (0.7994), the original distribution (0.7974), and RUS (0.7951).
+These descriptive differences were not subjected to statistical
+significance testing.
+Because the prespecified selection criterion was the highest individual
+combination-level mean cross-validated macro-F1, the combined
+ATTD--PBC--SN predictor configuration with SMOTE was retained for
+subsequent hyperparameter optimisation. All eight classifiers were then
+optimised and compared under this fixed predictor configuration and
+class-imbalance handling method.
+
+\renewcommand{\arraystretch}{1.25}
+
+\begin{table}[!t]
+	\caption{Mean cross-validated macro-F1 scores across four class-distribution conditions}
+	\label{tab:model_comparison_results}
+	
+	\centering
+	\footnotesize
+	
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{lccccccc}
+			\toprule
+			
+			\textbf{Model} &
+			\shortstack{\textbf{ATTD \& PBC}\\\textbf{\& SN}} &
+			\shortstack{\textbf{ATTD}\\\textbf{\& PBC}} &
+			\shortstack{\textbf{ATTD}\\\textbf{\& SN}} &
+			\shortstack{\textbf{PBC}\\\textbf{\& SN}} &
+			\textbf{ATTD} &
+			\textbf{PBC} &
+			\textbf{SN} \\
+			
+			\midrule
+			
+			\multicolumn{8}{l}{\textbf{Original imbalanced class distribution}} \\
+			
+			AdaBoost & 0.8112 & 0.8011 & 0.8052 & 0.8206 & 0.7987 & 0.8053 & 0.7619 \\
+			DT       & 0.7727 & 0.7773 & 0.7580 & 0.7476 & 0.7166 & 0.7735 & 0.7011 \\
+			GB       & 0.8027 & 0.8080 & 0.7907 & 0.8049 & 0.7697 & 0.7950 & 0.7893 \\
+			KNN      & 0.8199 & 0.8170 & 0.7742 & 0.7977 & 0.7624 & 0.7926 & 0.7337 \\
+			LR       & 0.8052 & 0.7975 & 0.7925 & 0.8087 & 0.7768 & 0.7773 & 0.7692 \\
+			NB       & 0.8461 & 0.8390 & 0.8282 & 0.8383 & 0.8204 & 0.8257 & 0.7961 \\
+			RF       & 0.8432 & 0.8228 & 0.8218 & 0.8234 & 0.7952 & 0.8115 & 0.7932 \\
+			SVM      & 0.8414 & 0.8312 & 0.8313 & 0.8221 & 0.8040 & 0.7981 & 0.7868 \\
+			
+			\midrule
+			
+			\multicolumn{8}{l}{\textbf{Random undersampling (RUS)}} \\
+			
+			U-AdaBoost & 0.8157 & 0.8121 & 0.7843 & 0.8082 & 0.7728 & 0.8036 & 0.7594 \\
+			U-DT       & 0.7591 & 0.7619 & 0.7397 & 0.7562 & 0.7401 & 0.7683 & 0.7206 \\
+			U-GB       & 0.7902 & 0.7748 & 0.7741 & 0.7908 & 0.7464 & 0.7781 & 0.7648 \\
+			U-KNN      & 0.8432 & 0.8378 & 0.8099 & 0.8235 & 0.7818 & 0.8148 & 0.7498 \\
+			U-LR       & 0.8091 & 0.7948 & 0.7988 & 0.8181 & 0.7548 & 0.7899 & 0.7781 \\
+			U-NB       & 0.8410 & 0.8250 & 0.8159 & 0.8207 & 0.7975 & 0.8176 & 0.7813 \\
+			U-RF       & 0.8407 & 0.8292 & 0.8181 & 0.8350 & 0.7794 & 0.8116 & 0.7729 \\
+			U-SVM      & 0.8388 & 0.8246 & 0.8226 & 0.8384 & 0.8082 & 0.8082 & 0.7717 \\
+			
+			\midrule
+			
+			\multicolumn{8}{l}{\textbf{Random oversampling (ROS)}} \\
+			
+			O-AdaBoost & 0.8332 & 0.8150 & 0.8009 & 0.8285 & 0.7935 & 0.8049 & 0.7688 \\
+			O-DT       & 0.7696 & 0.7719 & 0.7251 & 0.7820 & 0.7452 & 0.7915 & 0.7178 \\
+			O-GB       & 0.8106 & 0.7995 & 0.7932 & 0.8113 & 0.7777 & 0.8000 & 0.7820 \\
+			O-KNN      & 0.8232 & 0.8209 & 0.7859 & 0.8051 & 0.7714 & 0.7766 & 0.7144 \\
+			O-LR       & 0.8164 & 0.8013 & 0.8081 & 0.8230 & 0.7775 & 0.8018 & 0.7842 \\
+			O-NB       & 0.8506 & 0.8313 & 0.8266 & 0.8308 & 0.8060 & 0.8158 & 0.7971 \\
+			O-RF       & 0.8453 & 0.8362 & 0.8123 & 0.8249 & 0.7856 & 0.8107 & 0.7758 \\
+			O-SVM      & 0.8487 & 0.8193 & 0.8249 & 0.8365 & 0.7952 & 0.7948 & 0.7853 \\
+			
+			\midrule
+			
+			\multicolumn{8}{l}
+			{\textbf{Synthetic Minority Over-sampling Technique (SMOTE)}} \\
+			
+			S-AdaBoost & 0.8235 & 0.8174 & 0.8114 & 0.8254 & 0.7841 & 0.8229 & 0.7910 \\
+			S-DT       & 0.7626 & 0.7769 & 0.7555 & 0.7652 & 0.7555 & 0.7959 & 0.7184 \\
+			S-GB       & 0.8100 & 0.8111 & 0.7987 & 0.8186 & 0.7697 & 0.8072 & 0.7990 \\
+			S-KNN      & 0.8123 & 0.8072 & 0.7902 & 0.7905 & 0.7341 & 0.7847 & 0.7176 \\
+			S-LR       & 0.8103 & 0.8059 & 0.8029 & 0.8188 & 0.7717 & 0.7971 & 0.7883 \\
+			S-NB       & \textbf{0.8511} & 0.8389 & 0.8213 & 0.8415 & 0.8102 & 0.8339 & 0.7893 \\
+			S-RF       & 0.8477 & 0.8265 & 0.8164 & 0.8247 & 0.7864 & 0.8091 & 0.7831 \\
+			S-SVM      & 0.8447 & 0.8133 & 0.8180 & 0.8264 & 0.7761 & 0.7940 & 0.7613 \\
+			
+			\bottomrule
+		\end{tabular}%
+	}
+	
+	\vspace{1mm}
+	
+	\begin{minipage}{\textwidth}
+		\footnotesize
+		\textit{Note:} Each TPB predictor configuration was combined with the
+		complete set of 20 video-content predictors. ATTD = attitude;
+		PBC = perceived behavioural control; SN = subjective norm;
+		DT = decision tree; GB = gradient boosting;
+		KNN = \(k\)-nearest neighbours; LR = logistic regression;
+		NB = Gaussian naive Bayes; RF = random forest;
+		SVM = support vector machine. Prefixes U, O, and S denote models
+		evaluated using RUS, ROS, and SMOTE, respectively. Models without a
+		prefix were evaluated using the original imbalanced class distribution.
+		The highest overall mean macro-F1 is shown in bold.
+	\end{minipage}
+	
+\end{table}
+
+\renewcommand{\arraystretch}{1}
+
+\subsubsection{Hyperparameter Optimisation}
+Table~\ref{tab:hyperparameter_results} presents the selected
+hyperparameters and mean cross-validated macro-F1 scores of the eight
+classifiers evaluated using the complete set of 32 candidate predictors
+under the SMOTE condition.
+LR achieved the highest numerical mean cross-validated macro-F1
+(0.8563) using \textit{C} = 0.01 and the liblinear solver. NB and RF
+ranked second and third, with mean cross-validated macro-F1 scores of
+0.8511 and 0.8502, respectively. These scores were 0.0052 and 0.0061
+lower than that of LR. SVM and GB achieved mean cross-validated
+macro-F1 scores of 0.8454 and 0.8420, respectively, followed by
+AdaBoost at 0.8355 and KNN at 0.8270. DT yielded the lowest mean
+cross-validated macro-F1 of 0.7925. Overall, mean cross-validated
+macro-F1 scores ranged from 0.7925 to 0.8563 across the predefined
+hyperparameter search spaces.
+Although the leading classifiers achieved similar numerical scores,
+no formal statistical test was conducted to compare their performance.
+LR was selected according to the prespecified criterion of the highest
+mean cross-validated macro-F1; accordingly, its numerical advantage
+should not be interpreted as evidence of statistically significant
+superiority. The selected LR pipeline was subsequently used for
+cross-validated permutation-importance analysis and evaluation of ranked
+predictor subsets.
+
+\begin{table}[!ht]
+	\caption{Selected hyperparameters and cross-validated macro-F1 scores
+		for the eight classifiers}
+	\label{tab:hyperparameter_results}
+	
+	\centering
+	\small
+	\renewcommand{\arraystretch}{1.15}
+	
+	\begin{tabular}{
+			@{}
+			p{0.20\textwidth}
+			p{0.49\textwidth}
+			>{\centering\arraybackslash}p{0.24\textwidth}
+			@{}
+		}
+		\toprule
+		
+		\textbf{Classifier} &
+		\textbf{Selected hyperparameters} &
+		\textbf{Macro-F1 (mean $\pm$ SD)} \\
+%		\shortstack{\textbf{Macro-F1}\\
+%			\textbf{mean $\pm$ SD}} \\
+		
+		\midrule
+		
+		LR &
+		\(C=0.01\);
+		solver = liblinear &
+		\textbf{0.8563} $\pm$ \textbf{0.0346} \\
+		
+		NB &
+		variance smoothing = \(10^{-12}\) &
+		0.8511 $\pm$ 0.0362 \\
+		
+		RF &
+		criterion = entropy;
+		maximum depth = 6;
+		number of estimators = 100 &
+		0.8502 $\pm$ 0.0390 \\
+		
+		SVM &
+		\(C=1.0\);
+		gamma = auto;
+		kernel = RBF &
+		0.8454 $\pm$ 0.0295 \\
+		
+		GB &
+		learning rate = 0.1;
+		maximum depth = 2;
+		number of estimators = 100 &
+		0.8420 $\pm$ 0.0355 \\
+		
+		AdaBoost &
+		learning rate = 0.1;
+		number of estimators = 200 &
+		0.8355 $\pm$ 0.0380 \\
+		
+		KNN &
+		number of neighbours = 8 &
+		0.8270 $\pm$ 0.0341 \\
+		
+		DT &
+		criterion = Gini;
+		maximum depth = 5 &
+		0.7925 $\pm$ 0.0399 \\
+		
+		\bottomrule
+	\end{tabular}
+	
+	\vspace{1mm}
+	
+	\begin{minipage}{\textwidth}
+		\footnotesize
+		\textit{Note:} Values are presented as mean $\pm$ SD across
+		25 validation scores obtained from repeated stratified five-fold
+		cross-validation with five repetitions. Classifiers are ordered
+		by decreasing mean macro-F1. Bold values indicate the highest
+		mean macro-F1.
+	\end{minipage}
+	
+\end{table}
+
+\subsubsection{Predictor-Subset Evaluation and Permutation Importance}
+
+Predictor-subset evaluation was conducted using all 32 candidate
+predictors, comprising 12 TPB-derived items and 20 video-content
+predictors. The hyperparameters of the selected LR pipeline were fixed
+at the values obtained during the preceding optimisation stage.
+Cross-validated subset evaluation selected a subset size of 20
+predictors.
+Permutation importance was then re-estimated for all 32 candidate
+predictors using repeated stratified five-fold cross-validation on the
+complete training set. Complete cross-validated permutation-importance
+results for all 32 candidate predictors, including mean importance,
+standard deviation, and positive-fold rate, are provided in Table~S8.
+The 20 highest-ranked predictors were retained in the final subset.
+These comprised all 12 TPB-derived items and eight video-content
+predictors: A2, A3, T3, V1, V3, EM1, EM3, and H1.
+Table~\ref{tab:selected_predictors} presents the retained predictors
+and their corresponding constructs, whereas
+Figure~\ref{fig:Fig2} presents their final cross-validated
+permutation-importance ranking. Because correlated questionnaire items
+can share or redistribute permutation importance, the ranking is
+interpreted as conditional, model-specific evidence rather than as an
+independent effect of each item.
+
+\renewcommand{\arraystretch}{1.15}
+
+\begin{longtable}{
+	@{}
+	>{\centering\arraybackslash}p{0.06\textwidth}
+	>{\centering\arraybackslash}p{0.10\textwidth}
+	>{\raggedright\arraybackslash}p{0.25\textwidth}
+	>{\raggedright\arraybackslash}p{0.46\textwidth}
+	@{}
+	}
+	
+	\caption{Predictors retained in the selected logistic-regression pipeline}
+	\label{tab:selected_predictors}\\
+	
+	\toprule
+	\textbf{Rank} &
+	\textbf{Predictor} &
+	\textbf{Construct} &
+	\textbf{Questionnaire item} \\
+	\midrule
+	\endfirsthead
+	
+	\multicolumn{4}{c}{
+		\textit{Table \thetable{} continued}
+	}\\
+	\toprule
+	\textbf{Rank} &
+	\textbf{Predictor} &
+	\textbf{Construct} &
+	\textbf{Questionnaire item} \\
+	\midrule
+	\endhead
+	
+	\midrule
+	\multicolumn{4}{r}{\textit{Continued on next page}}\\
+	\endfoot
+	
+	\bottomrule
+	\endlastfoot
+	
+	1 &
+	SN4 &
+	Subjective norm &
+	My friends often encourage or recommend that I purchase products
+	through TikTok. \\
+	
+	2 &
+	PBC3 &
+	Perceived behavioural control &
+	I am likely to recommend that my friends use TikTok as an
+	information source before purchasing products. \\
+	
+	3 &
+	PBC4 &
+	Perceived behavioural control &
+	I am likely to recommend that my family members use TikTok as an
+	information source before purchasing products. \\
+	
+	4 &
+	ATTD4 &
+	Attitude &
+	I have purchased T-shirts or other products that I first discovered
+	through TikTok videos. \\
+	
+	5 &
+	PBC1 &
+	Perceived behavioural control &
+	Frequent exposure to T-shirt advertisements on TikTok contributes
+	to my purchase decision. \\
+	
+	6 &
+	PBC2 &
+	Perceived behavioural control &
+	In the future, I intend to use TikTok as one of the information
+	sources I consult before purchasing a T-shirt. \\
+	
+	7 &
+	A2 &
+	Audio and music &
+	The spoken narration or voice-over, where present, is clear and easy
+	to understand. \\
+	
+	8 &
+	ATTD3 &
+	Attitude &
+	Promotional or discount-related messages in TikTok videos encourage
+	me to seek additional information about the T-shirt. \\
+	
+	9 &
+	SN1 &
+	Subjective norm &
+	My family members influence my decisions to purchase products
+	presented in TikTok videos. \\
+	
+	10 &
+	A3 &
+	Audio and music &
+	The selected music or audio is appropriate for the style of the
+	T-shirt presented in the video. \\
+	
+	11 &
+	ATTD1 &
+	Attitude &
+	TikTok advertisements or videos help me discover new T-shirts or
+	other products. \\
+	
+	12 &
+	SN2 &
+	Subjective norm &
+	People around me regard purchasing products through TikTok as normal
+	and acceptable. \\
+	
+	13 &
+	SN3 &
+	Subjective norm &
+	I respond positively when I observe many people purchasing products
+	through TikTok. \\
+	
+	14 &
+	ATTD2 &
+	Attitude &
+	TikTok advertisements attract my attention more readily than
+	advertisements delivered through other media channels. \\
+	
+	15 &
+	T3 &
+	On-screen text &
+	On-screen information concerning prices or promotional offers
+	attracts my attention. \\
+	
+	16 &
+	V1 &
+	Visual presentation &
+	The visual clarity of the video enables the details of the T-shirt
+	to be seen clearly. \\
+	
+	17 &
+	V3 &
+	Visual presentation &
+	Presenting the T-shirt from multiple perspectives, including
+	close-up, distant, front, and back views, improves my understanding
+	of its characteristics. \\
+	
+	18 &
+	EM1 &
+	Emotional appeal &
+	The video increases my interest in trying the same style of T-shirt
+	presented in the clip. \\
+	
+	19 &
+	EM3 &
+	Emotional appeal &
+	Overall, the video increases my confidence in the quality of the
+	T-shirt. \\
+	
+	20 &
+	H1 &
+	Opening hook &
+	The opening segment of the video, particularly the first 3 seconds,
+	encourages me to stop scrolling and continue watching. \\
+	
+\end{longtable}
+
+\renewcommand{\arraystretch}{1}
+
+\begin{figure}[!h]
+	\centering
+\includegraphics[width=1\textwidth]{Figure2.png}
+\caption{Cross-validated permutation-importance ranking of the candidate
+		predictors retained in the selected logistic-regression pipeline.}
+	\label{fig:Fig2}
+\end{figure}
+
+
+\subsubsection{Held-Out Test-Set Evaluation}
+
+The selected LR pipeline was refitted using the full training set and
+evaluated once on the held-out stratified test set, which was not used
+during model selection, hyperparameter optimisation, resampling, or
+predictor selection. The held-out test set comprised 82 observations,
+including 22 LOW and 60 HIGH observations. As reported in
+Table~\ref{tab:heldout_test}, the selected pipeline achieved an overall
+accuracy of 0.8415 and a macro-F1 score of 0.8222. The corresponding
+confusion matrix is shown in Figure~\ref{fig:confusion_matrix}, which
+illustrates the distribution of correct and incorrect classifications
+across the two outcome classes.
+
+\begin{table}[!ht]
+	\centering
+	\caption{Held-out test-set performance of the selected LR pipeline.}
+	\label{tab:heldout_test}
+	\small
+	\renewcommand{\arraystretch}{1.15}
+	\setlength{\tabcolsep}{18pt}
+	
+	\begin{tabular}{lccc}
+		\toprule
+		\textbf{Performance Metric} & \textbf{LOW} & \textbf{HIGH} & \textbf{Macro} \\
+		\midrule
+		Precision & 0.6364 & 0.9796 & 0.8080 \\
+		Recall    & 0.9545 & 0.8000 & 0.8773 \\
+		F1-score  & 0.7636 & 0.8807 & 0.8222 \\
+		\midrule
+		\multicolumn{3}{l}{\textbf{Overall accuracy}} & \textbf{0.8415} \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.48\textwidth]{confusion_matrix.png}
+	\caption{Confusion matrix for the held-out test set.}
+	\label{fig:confusion_matrix}
+\end{figure}
+
+
+\subsection{Phase 2: Short-Form Video Development and Evaluation}
+\label{sec:phase2}
+\subsubsection{Predictor-Informed Video Development}
+
+Eight video-content predictors retained in the selected LR pipeline
+were considered in the development of the short-form T-shirt
+promotional video. These predictors represented audio and music
+(A2 and A3), on-screen text (T3), visual presentation (V1 and V3),
+emotional appeal (EM1 and EM3), and the opening hook (H1).
+Their application was adapted to the intended visual-showcase format
+of the video.
+A2 concerned narration clarity but was not directly operationalised
+because the final video used music without voice-over. The auditory
+component was therefore informed primarily by A3, with music selected
+to complement the T-shirt style, editing pace, and overall mood.
+The remaining retained predictors were operationalised through concise
+on-screen text, T-shirt-focused visual presentation, emotional appeal,
+and an attention-grabbing opening sequence.
+The opening segment was designed to attract attention within the first
+few seconds. Close-up, medium, and full-body shots presented the
+T-shirt design, styling, and fit from multiple perspectives, while
+variations in pose and movement provided visual variation. Concise
+on-screen text communicated product descriptions and key information.
+Lighting, transitions, and editing effects were additionally used to
+enhance product visibility and support a contemporary fashion-oriented
+presentation. The completed video was approximately 27 seconds in
+duration and was produced in a vertical format suitable for TikTok.
+Table~\ref{tab:video_production_specifications} summarises the
+application of the retained video-content predictors to the
+communication and audiovisual elements of the developed video.
+Representative frames from the completed video are shown in
+Figure~\ref{fig:fig3}.
+
+\begin{table}[htbp]
+	\caption{Application of the retained video-content predictors in
+		short-form video development}
+	\label{tab:video_production_specifications}
+	
+	\centering
+	\small
+	\renewcommand{\arraystretch}{1.15}
+	
+	\begin{tabular}{
+			@{}
+			p{0.12\textwidth}
+			p{0.21\textwidth}
+			p{0.58\textwidth}
+			@{}
+		}
+		\toprule
+		
+		\textbf{Retained code(s)} &
+		\textbf{Production dimension} &
+		\textbf{Application in the developed video} \\
+		
+		\midrule
+		
+		A2 &
+		Audio and music &
+		A2 concerned spoken narration or voice-over. Because the developed video adopted a music-led visual presentation without spoken narration, this predictor was retained as a Phase 1
+		finding but was not directly operationalised in the final video. \\
+		
+		A3 &
+		Audio and music &
+		Music was used as the principal auditory component to support the
+		pacing of the presentation and establish a contemporary mood
+		consistent with the style of the T-shirts. \\
+		
+		V1, V3 &
+		Visual presentation &
+		The T-shirts were presented through clear close-up, medium, and
+		full-body shots. Different viewpoints were used to display the design,
+		styling, and overall appearance of the products. \\
+		
+		EM1, EM3 &
+		Emotional appeal &
+		Fashion-oriented styling, high-contrast lighting, and colour
+		treatments were used to create an engaging emotional atmosphere and
+		enhance the visual appeal of the T-shirts. \\
+		
+		T3 &
+		On-screen text &
+		Concise descriptive phrases and promotional information were displayed
+		on screen to communicate product information, price, and promotional
+		offers. \\
+		
+		H1 &
+		Opening hook &
+		Rapid visual transitions, close-up product imagery, and high-contrast
+		effects were incorporated at the beginning of the video to attract
+		attention and encourage continued viewing. \\
+		
+		\bottomrule
+	\end{tabular}
+	
+	\vspace{1mm}
+	
+	\begin{minipage}{0.91\textwidth}
+		\footnotesize
+		\textit{Note:} The production specifications represent
+		context-appropriate applications of the retained video-content
+		predictors rather than direct item-by-item replication of the
+		questionnaire statements.
+	\end{minipage}
+	
+\end{table}
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figure3.png}
+	\caption{Representative frames from the developed T-shirt short-form video.}
+	\label{fig:fig3}
+\end{figure}
+
+
+\subsubsection{Participant Evaluation and Demographic Comparisons}
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figure4.png}
+	\caption{Demographic characteristics of the Phase 2 participants:
+		(a) gender, (b) age group, and (c) occupation.}
+	\label{fig:fig4}
+\end{figure}
+
+The developed short-form video was evaluated by 401 separately
+recruited participants who were not included in the Phase 1
+model-development dataset. The demographic characteristics of the
+participants are shown in Figure~\ref{fig:fig4}. Most participants
+were male (59.4\%), aged 18--22 years (62.3\%), and students (67.1\%).
+Salaried employees accounted for 20.7\% of the participants, followed
+by those who were unemployed or seeking employment (7.5\%) and those
+who were self-employed or freelancers (4.7\%).
+The evaluation comprised two predefined dimensions: video quality and
+viewer satisfaction, and purchase-related perceptions and
+decision-making. Overall, the mean score was 4.48 for video quality and
+viewer satisfaction and 4.34 for purchase-related perceptions and
+decision-making. Scores for both dimensions were subsequently compared
+according to gender, age group, and occupation.
+
+Table~\ref{tab:video_satisfaction_gender} presents the evaluation scores
+by gender. Female participants reported a slightly higher mean
+score for video quality and viewer satisfaction than male participants
+(4.53 versus 4.44), whereas both groups reported the same mean score
+for purchase-related perceptions and decision-making (4.34).
+Independent-samples \(t\)-tests revealed no statistically significant
+gender difference in video quality and viewer satisfaction,
+\(t(399)=-1.70\), \(p=0.090\), or in purchase-related perceptions and
+decision-making, \(t(399)=0.03\), \(p=0.980\).
+Evaluation scores by age group are presented in
+Table~\ref{tab:video_satisfaction_age}. Participants aged 23--28 years
+reported slightly higher mean scores than those aged 18--22 years for
+both video quality and viewer satisfaction (4.53 versus 4.44) and
+purchase-related perceptions and decision-making (4.41 versus 4.30).
+No statistically significant age-group difference was observed in
+video quality and viewer satisfaction,
+\(t(399)=-1.74\), \(p=0.083\). Similarly, Welch's \(t\)-test showed no
+statistically significant age-group difference in purchase-related
+perceptions and decision-making,
+\(t(365)=-1.63\), \(p=0.104\).
+Table~\ref{tab:video_satisfaction_occupation} presents the evaluation
+scores across occupational groups. Self-employed participants or
+freelancers reported the highest mean score for video quality and viewer
+satisfaction (4.69), followed by participants who were unemployed or
+seeking employment (4.59), salaried employees (4.53), and students
+(4.43). For purchase-related perceptions and decision-making,
+participants who were unemployed or seeking employment reported the
+highest mean score (4.51), followed by self-employed participants or
+freelancers (4.45), salaried employees (4.40), and students (4.29).
+Welch's one-way ANOVA indicated a statistically significant difference
+among occupational groups in video quality and viewer satisfaction,
+\(F(3,67.3)=5.93\), \(p=0.001\). Games--Howell post hoc comparisons
+showed that self-employed participants or freelancers reported a
+significantly higher mean score than students, with a mean difference
+of 0.258 and an adjusted \(p\)-value of 0.001. No other pairwise
+comparisons were statistically significant. For purchase-related
+perceptions and decision-making, no statistically significant
+difference was observed among occupational groups,
+\(F(3,61.6)=1.89\), \(p=0.140\).
+
+\begin{table}[htbp]
+	\centering
+	\caption{Comparison of video-evaluation scores by gender}
+	\label{tab:video_satisfaction_gender}
+	\small
+	\renewcommand{\arraystretch}{1.2}
+	
+	\begin{tabularx}{\textwidth}{
+			@{}
+			>{\raggedright\arraybackslash}p{0.37\textwidth}
+			>{\centering\arraybackslash}p{0.14\textwidth}
+			>{\centering\arraybackslash}p{0.14\textwidth}
+			>{\centering\arraybackslash}p{0.11\textwidth}
+			>{\centering\arraybackslash}p{0.07\textwidth}
+			@{}
+		}
+		\toprule
+		
+		\textbf{Evaluation dimension} &
+		\textbf{Male} &
+		\textbf{Female} &
+		\textbf{\(t(df)\)} &
+		\textbf{\(p\)} \\
+		
+		\midrule
+		
+		Video quality and viewer satisfaction &
+		4.44 $\pm$ 0.51 &
+		4.53 $\pm$ 0.66 &
+		-1.70 (399) &
+		0.090 \\
+		
+		Purchase-related perceptions and decision-making &
+		4.34 $\pm$ 0.46 &
+		4.34 $\pm$ 0.72 &
+		0.03 (399) &
+		0.980 \\
+		
+		\bottomrule
+	\end{tabularx}
+	
+	\vspace{1mm}
+	\begin{minipage}{0.98\textwidth}
+		\footnotesize
+		\textit{Note:} Values are presented as mean \(\pm\) SD.
+		Gender differences were assessed using independent-samples
+		\(t\)-tests.
+	\end{minipage}
+\end{table}
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{Comparison of video-evaluation scores by age group}
+	\label{tab:video_satisfaction_age}
+	\small
+	\renewcommand{\arraystretch}{1.2}
+	
+	\begin{tabularx}{\textwidth}{
+			@{}
+			>{\raggedright\arraybackslash}p{0.37\textwidth}
+			>{\centering\arraybackslash}p{0.14\textwidth}
+			>{\centering\arraybackslash}p{0.14\textwidth}
+			>{\centering\arraybackslash}p{0.12\textwidth}
+			>{\centering\arraybackslash}p{0.07\textwidth}
+			@{}
+		}
+		\toprule
+		
+		\textbf{Evaluation dimension} &
+		\textbf{18--22 years} &
+		\textbf{23--28 years} &
+		\textbf{\(t(df)\)} &
+		\textbf{\(p\)} \\
+		
+		\midrule
+		
+		Video quality and viewer satisfaction &
+		4.44 $\pm$ 0.53 &
+		4.53 $\pm$ 0.42 &
+		-1.74 (399) &
+		0.083 \\
+		
+		Purchase-related perceptions and decision-making &
+		4.30 $\pm$ 0.73 &
+		4.41 $\pm$ 0.59 &
+		-1.63 (365)\textsuperscript{a} &
+		0.104 \\
+		
+		\bottomrule
+	\end{tabularx}
+	
+	\vspace{1mm}
+	\begin{minipage}{0.98\textwidth}
+		\footnotesize
+		\textit{Note:} Values are presented as mean \(\pm\) SD.
+		Age-group differences were assessed using independent-samples
+		\(t\)-tests. \textsuperscript{a}Welch's \(t\)-test was used because
+		Levene's test indicated unequal variances.
+	\end{minipage}
+\end{table}
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{Video-evaluation scores by occupation}
+	\label{tab:video_satisfaction_occupation}
+	\small
+	\renewcommand{\arraystretch}{1.18}
+	
+	\begin{tabularx}{\textwidth}{
+			@{}
+			>{\raggedright\arraybackslash}p{0.36\textwidth}
+			>{\centering\arraybackslash}p{0.25\textwidth}
+			>{\centering\arraybackslash}p{0.25\textwidth}
+			@{}
+		}
+		\toprule
+		
+		\textbf{Occupation} &
+		\textbf{Video quality and viewer satisfaction} &
+		\textbf{Purchase-related perceptions and decision-making} \\
+		
+		\midrule
+		
+		Students &
+		4.43 $\pm$ 0.52 &
+		4.29 $\pm$ 0.73 \\
+		
+		Salaried employees &
+		4.53 $\pm$ 0.45 &
+		4.40 $\pm$ 0.60 \\
+		
+		Unemployed or seeking employment &
+		4.59 $\pm$ 0.41 &
+		4.51 $\pm$ 0.50 \\
+		
+		Self-employed or freelancers &
+		4.69 $\pm$ 0.24 &
+		4.45 $\pm$ 0.52 \\
+		
+		\midrule
+		
+		Welch's \(F(df_1,df_2)\) &
+		5.93 (3, 67.3) &
+		1.89 (3, 61.6) \\
+		
+		\(p\) &
+		\textbf{0.001} &
+		0.140 \\
+		
+		\bottomrule
+	\end{tabularx}
+	
+	\vspace{1mm}
+	\begin{minipage}{0.98\textwidth}
+		\footnotesize
+		\textit{Note:} Values are presented as mean \(\pm\) SD.
+		Bold values indicate statistical significance at \(p<0.05\).
+		Games--Howell post hoc analysis identified a significant
+		difference only between students and self-employed or freelance
+		participants (mean difference \(=-0.258\), adjusted \(p=0.001\)).
+	\end{minipage}
+\end{table}
+
+\section{Discussion}
+This study examined whether TPB-derived questionnaire items and
+video-content items could be combined within a machine-learning
+workflow to classify self-reported T-shirt purchase behaviour and
+subsequently inform short-form video development. The findings provide
+evidence regarding model performance under class imbalance, the
+predictive relevance of behavioural and video-content information, the
+translation of retained predictors into media-development decisions,
+and participant evaluations of the developed video. These findings
+should be interpreted within the context of the present samples and
+modelling pipeline.
+
+\subsection{Machine Learning Performance and Class-Imbalance Handling}
+
+The present study extends the approach of Azad \textit{et al}.
+\cite{Azad2023}, who integrated TPB constructs with eight ML classifiers
+for social-media purchase-behaviour prediction. In the present dataset,
+LR achieved the highest numerical mean cross-validated macro-F1 after
+hyperparameter optimisation (0.8563). This finding differs from that of
+Azad \textit{et al}., who identified gradient boosting as the
+best-performing classifier, suggesting that classifier performance may
+vary according to dataset characteristics, predictor representation,
+class distribution, and validation design. The contrasting findings
+therefore reinforce the importance of empirical model comparison rather
+than assuming that a particular algorithm will perform consistently
+across consumer-behaviour datasets.
+The class-imbalance analysis further highlights the distinction between
+condition-level performance and the performance of individual modelling
+configurations. ROS produced the highest condition-level mean macro-F1
+(0.7997), whereas the highest individual combination before
+hyperparameter optimisation was obtained with SMOTE (0.8511). The
+combined ATTD--PBC--SN configuration with SMOTE was retained because
+the prespecified selection criterion was based on the highest
+combination-level mean cross-validated macro-F1. These results do not
+indicate that SMOTE is generally superior to ROS; rather, they show
+that the relative performance of imbalance-handling methods depended on
+the modelling configuration in which they were applied.
+Following hyperparameter optimisation, LR was selected according to the
+predefined numerical cross-validation criterion. Its comparatively
+simple structure also facilitated the subsequent predictor-subset and
+permutation-importance analyses. However, because no formal statistical
+comparison among classifiers was conducted, LR should be interpreted as
+the model selected under the prespecified evaluation procedure rather
+than as statistically superior to the alternative classifiers.
+The final held-out evaluation provided a separate estimate of predictive
+performance on observations not used during model development. The
+selected LR pipeline achieved an accuracy of 0.8415 and a macro-F1 of
+0.8222 on the held-out test set. The held-out macro-F1 was lower than
+the optimised cross-validation estimate of 0.8563, underscoring the
+importance of distinguishing model-development estimates from
+performance on previously unseen observations. The held-out result
+therefore provides an important internal estimate of the selected
+pipeline's predictive performance, while external validation remains
+necessary to establish generalisability beyond the present sample.
+
+\subsection{Predictive Relevance of TPB and Video-Content Predictors}
+
+The predictor-selection procedure retained 20 of the 32 candidate
+predictors, comprising all 12 TPB-derived items and eight video-content
+predictors. Retention across ATTD, SN, and PBC items indicates that
+predictive information was distributed across all three TPB domains in
+the present dataset rather than being concentrated within a single
+domain. Together with the retained video-content predictors, this
+pattern suggests that combining TPB-derived and content-related
+information provided useful predictive information within the selected
+pipeline.
+The relatively high permutation importance of SN4 was broadly
+consistent with previous TikTok-related research on social influence.
+Lim \textit{et al}. \cite{Lim2025} reported that peer influence was
+significantly associated with purchase intention among Generation Z
+TikTok users. Similarly, Indrawati \textit{et al}.
+\cite{Indrawati2023} found that the adoption of electronic word-of-mouth
+(eWOM) information shared on TikTok was positively associated with
+purchase intention. Although the latter study did not examine
+subjective norm directly, these findings collectively highlight the
+potential relevance of interpersonal influence and socially
+communicated information in purchase-related decision-making. In the
+present study, SN4 should nevertheless be interpreted as a
+model-specific predictor of self-reported purchase behaviour.
+The retention of emotional, visual, auditory, and text-related
+video-content predictors is conceptually consistent with evidence that
+consumer responses to video commerce may involve both affective and
+rational processes. Deng \textit{et al}. \cite{Deng2024} found that
+emotion and social presence contributed to purchase intention through
+an affective pathway, whereas information quality and quantity operated
+through a rational pathway. Relatedly, Jiang and Chen
+\cite{Jiang2025} reported that perceived value and attitude towards
+short-form video content were positively associated with digital
+dependency, which subsequently enhanced purchase intention. Together,
+these studies provide conceptual support for considering multiple
+content characteristics, including emotional appeal, visual
+presentation, auditory elements, and on-screen text, rather than
+relying on a single content attribute.
+The retention of visual-presentation predictors V1 and V3 further
+indicates that items concerning product clarity and multiple viewpoints
+contributed useful predictive information within the fitted model.
+This interpretation is conceptually consistent with Pan
+\textit{et al}. \cite{Pan2026}, who reported that product-focused
+functional framing was associated with consumer engagement and sales in
+short-form video commerce. The present result, however, remains
+model- and sample-specific because the individual visual elements were
+not experimentally manipulated.
+More broadly, permutation-importance values should be interpreted as
+indicators of predictive contribution within the fitted model and
+sample. Their magnitude may be influenced by relationships among
+questionnaire items and does not establish that modifying an individual
+predictor or video element would necessarily change purchase-related
+responses.
+
+\subsection{Translation of Predictive Findings into Video Development}
+
+The Phase 1 findings were translated into short-form video development
+as an evidence-informed design process. The retained video-content
+predictors represented visual presentation, emotional appeal,
+on-screen text, audio and music, and the opening hook. These predictors
+were used as context-dependent design inputs rather than as fixed
+production requirements. This approach illustrates how predictive
+analytics can extend beyond predictor identification to support
+practical media-development decisions.
+The auditory-content findings provide a useful example of this
+translation process. A2 concerned the clarity and comprehensibility of
+narration or voice-over and was retained during predictor selection.
+However, because the developed video adopted a music-led visual format
+without spoken narration, A2 was not directly operationalised in
+Phase 2. Its retention therefore reflected predictive relevance within
+the Phase 1 model rather than a requirement that narration be included
+in the final production. A3 was more directly applicable, with music
+used to support the presentation style, editing pace, and overall mood.
+This distinction is consistent with the broader view that content
+elements should be considered within their communication context.
+Snyder \textit{et al}. \cite{Snyder2026} experimentally compared music
+overlays with verbal product reviews and found that their effects varied
+according to account identity and verification-related source cues, with
+parasocial interaction contributing to purchase intention. Their
+findings suggest that the effectiveness of an auditory format may
+depend not only on the presence of music or spoken content but also on
+how the auditory element functions within the broader presentation.
+Because the present study did not experimentally compare alternative
+production formats, it cannot determine whether narration, music, or
+other individual content elements independently influenced participant
+responses. The translation from predictive modelling to video
+development should therefore be understood as evidence-informed rather
+than causal or prescriptive. Future research could experimentally
+compare alternative implementations of retained predictors, including
+music-only, narration-only, and combined-audio formats, using
+randomised exposure and behavioural outcomes.
+
+
+\subsection{Participant Evaluation and Demographic Differences}
+
+Phase 2 provided evidence regarding how a separately recruited sample
+evaluated the developed video. Mean scores of 4.48 for video quality
+and viewer satisfaction and 4.34 for purchase-related perceptions and
+decision-making indicate generally favourable post-viewing evaluations
+in the present sample. These findings indicate generally favourable
+evaluations of the developed video among the Phase 2 participants,
+although the study design does not establish that the
+predictor-informed video caused these responses or outperformed an
+alternative video. The distributions of item responses across the two
+evaluation dimensions are presented in Figure~\ref{fig:fig5}.
+No statistically significant differences were observed by gender or
+age group in either evaluation dimension. These findings indicate
+insufficient evidence of differences between the examined groups in the
+present sample. They should not be interpreted as evidence of
+equivalence because equivalence testing was not conducted.
+Occupation showed a different pattern. A statistically significant
+difference was observed for video quality and viewer satisfaction, with
+self-employed participants or freelancers reporting higher scores than
+students. Games--Howell analysis identified this as the only
+statistically significant pairwise difference (adjusted \(p=0.001\)).
+No statistically significant occupational-group difference was
+observed for purchase-related perceptions and decision-making. This
+pattern suggests that occupational variation was evident in evaluations
+of video quality and viewer satisfaction but not in purchase-related
+perceptions and decision-making. Given the unequal group sizes and the
+relatively small numbers of participants in some occupational
+categories, this finding should be interpreted cautiously and warrants
+further examination in larger and more balanced samples.
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Figure5.png}
+	\caption{Distributions of item responses across the two video-evaluation
+		dimensions: (a) video quality and viewer satisfaction and
+		(b) purchase-related perceptions and decision-making.}
+	\label{fig:fig5}
+\end{figure}
+
+
+\subsection{Study Limitations and Implications}
+
+Several limitations define the scope of the present findings. First,
+both phases used voluntary convenience samples from the Thai TikTok-user
+context, and the Phase 2 sample contained unequal demographic groups.
+The findings should therefore not be generalised to the broader TikTok
+user population without further validation in more diverse samples.
+Second, the Phase 1 TPB-derived and video-content measures included
+adapted or researcher-developed items without a fully validated
+measurement model. The resulting predictor rankings should therefore be
+interpreted as model- and sample-dependent rather than as confirmation
+of formally validated latent constructs.
+Third, the ML evaluation represents internal validation. Although the
+use of repeated cross-validation and an untouched held-out test set
+provided separate model-development and final internal performance
+estimates, validation using an independent external dataset is required
+to establish the robustness and generalisability of the predictive
+pipeline.
+Finally, Phase 2 evaluated a single developed video using a
+post-viewing questionnaire without a control condition, randomised
+comparison, pre-test, or verified purchase outcome. The favourable
+evaluation scores therefore demonstrate positive participant
+evaluations of the developed media rather than its comparative
+effectiveness in changing purchasing behaviour.
+Future research should address these limitations by using validated
+measurement instruments, larger and more diverse participant samples,
+external model validation, and randomised comparisons of alternative
+video implementations. Incorporating behavioural outcomes such as
+video completion, interaction, click-through, and verified purchasing
+behaviour would further strengthen the assessment of the practical
+relevance of predictor-informed media development.
+Overall, the findings illustrate how TPB-derived behavioural
+information and video-content predictors can be integrated within an ML
+framework to inform short-form video development. The main contribution
+is an applied workflow connecting theory-informed predictive modelling,
+predictor selection, media production, and participant evaluation within
+a social-commerce context. The retained predictors represent
+model- and sample-specific predictive contributions to self-reported
+purchase behaviour and are best understood as inputs for
+evidence-informed media development rather than as prescriptive
+determinants of consumer behaviour.
+
+\section{Conclusions}
+
+This study integrated Theory of Planned Behavior (TPB)-derived
+information, machine-learning modelling, and short-form video
+development to examine self-reported T-shirt purchase behaviour among
+TikTok users. In Phase 1, data from 408 participants were used to
+develop and evaluate the predictive models. Among the eight evaluated
+classifiers, LR achieved the highest mean cross-validated macro-F1
+(0.8563) and was selected for the final pipeline. When evaluated on the
+held-out test set, the selected pipeline achieved an accuracy of 0.8415
+and a macro-F1 of 0.8222. Predictor selection retained 20 of the 32
+candidate predictors, comprising all 12 TPB-derived items and eight
+video-content predictors, indicating that both behavioural and
+content-related information contributed useful predictive information
+within the selected modelling pipeline.
+
+The retained video-content predictors subsequently informed the
+development of a short-form T-shirt promotional video, with their
+implementation adapted to the intended visual-presentation format. In
+Phase 2, evaluation by a separately recruited sample of 401 participants
+yielded favourable mean scores for video quality and viewer satisfaction
+(4.48) and purchase-related perceptions and decision-making (4.34). No
+statistically significant differences were observed by gender or age
+group, while an occupational-group difference was identified only for
+video quality and viewer satisfaction.
+
+Overall, the study presents an applied workflow linking theory-informed
+predictive modelling, predictor selection, short-form video development,
+and participant evaluation within a social-commerce context. The
+retained predictors should be interpreted as model- and sample-specific
+indicators of predictive contribution to self-reported purchase
+behaviour rather than as causal determinants. Future research should
+externally validate the predictive pipeline, experimentally compare
+alternative implementations of retained video-content predictors, and
+incorporate behavioural outcomes such as video completion, interaction,
+click-through, and verified purchasing behaviour.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Patents}
+%
+%This section is not mandatory but may be added if there are patents resulting from the work reported in this manuscript.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{6pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Supplementary Materials
+\supplementary{
+	The supporting information for this study is listed as follows:
+	Table S1: Phase 1 questionnaire items;
+	Table S2: Phase 2 evaluation questionnaire items;
+	Table S3: Hyperparameter search spaces and model settings;
+	Table S4: Classifier performance under the original class distribution;
+	Table S5: Classifier performance under random undersampling (RUS);
+	Table S6: Classifier performance under random oversampling (ROS);
+	Table S7: Classifier performance under the Synthetic Minority Over-sampling Technique (SMOTE);
+	Table S8: Permutation-importance results for all 32 candidate predictors.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\authorcontributions{
+Conceptualization, N.T. and S.Y.; methodology, N.T. and S.Y.; software, N.T.; validation, S.Y.; formal analysis, N.T.;
+investigation, N.T. and S.T.; data curation, N.T. and S.T.;
+visualization, N.T. and S.T.; writing---original draft preparation,
+N.T.; writing---review and editing, S.Y.; supervision, S.Y.;
+video production, S.T. All authors have read and agreed to the published version of the manuscript.
+}
+
+\funding{
+	This research received no external funding.
+}
+
+\institutionalreview{
+The study was conducted in accordance with the applicable ethical
+guidelines and approved under expedited review procedures by the Research Ethics Committee of Rajamangala University of Technology Thanyaburi, Thailand (RMUTT\_REC No. Exp 57/69; COA No. 57).}
+
+\informedconsent{
+Electronic informed consent was obtained from all participants prior
+to participation. Participation was voluntary, participant information
+was kept confidential, and findings were reported in aggregate form.
+}
+
+\dataavailability{
+	The source code used for the machine-learning modelling and statistical
+	analyses, together with the final short-form T-shirt promotional video
+	evaluated in Phase 2, is publicly available at
+	\url{https://github.com/TannyNipa/tiktok-tshirt-purchase-ml-video}.
+	Participant-level response datasets are not publicly available because
+	they contain confidential survey data and are associated with ongoing,
+	unpublished research. Requests for access to these datasets may be
+	directed to the corresponding author and will be considered on a
+	reasonable basis after completion and publication of the related
+	studies, subject to applicable ethical and confidentiality
+	requirements.}
+
+
+\acknowledgments{
+The authors gratefully acknowledge the Department of Mass Communication
+Technology, Faculty of Mass Communication Technology, Rajamangala University of Technology Thanyaburi, for its support and for providing the facilities required for this research and short-form video production.
+During the preparation of this manuscript, the authors used OpenAI ChatGPT
+(version 5) for the purposes of improving the language, readability, and
+clarity of the manuscript. The authors have reviewed and edited the
+output and take full responsibility for the content of this publication.
+Generative AI tools were not used to generate or manipulate images in
+this study.
+}
+
+\conflictsofinterest{
+	The authors declare no conflicts of interest.
+}
+
+\abbreviations{Abbreviations}{%
+	The following abbreviations are used in this manuscript:\\
+	
+	\noindent
+	\begin{tabular}{@{}ll}
+		ATTD  & Attitude\\
+		COA   & Certificate of Approval\\
+		CV    & Cross-validation\\
+		eWOM  & Electronic word-of-mouth\\
+		GB    & Gradient Boosting\\
+		KNN   & k-Nearest Neighbours\\
+		LR    & Logistic Regression\\
+		ML    & Machine Learning\\
+		NB    & Naive Bayes\\
+		PBC   & Perceived Behavioural Control\\
+		RF    & Random Forest\\
+		ROS   & Random Oversampling\\
+		RUS   & Random Undersampling\\
+		SD    & Standard Deviation\\
+		SMOTE & Synthetic Minority Oversampling Technique\\
+		SN    & Subjective Norm\\
+		SVM   & Support Vector Machine\\
+		TPB   & Theory of Planned Behavior\\
+	\end{tabular}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\isPreprints{}{% This command is only used for ``preprints''.
+\begin{adjustwidth}{-\extralength}{0cm}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+%\printendnotes[custom] % Un-comment to print a list of endnotes
+
+\reftitle{References}
+
+% References must be numbered in order of appearance in the text (including citations in tables and legends) and listed individually at the end of the manuscript. We recommend preparing the references with a bibliography software package, such as EndNote, ReferenceManager or Zotero, to avoid typing mistakes and duplicated references. Include the digital object identifier (DOI) for all references where available.
+% Please provide either the correct journal abbreviation (e.g. according to the “The list of Title Word Abbreviations” https://portal.issn.org/ltwa) or the full name of the journal. 
+% Citations and references in the Supplementary Materials are permitted provided that they also appear in the reference list here. 
+% In the text, reference numbers should be placed in square brackets [ ] and placed before the punctuation; for example, [1], [1–3] or [1,3]. For embedded citations in the text with pagination, use both parentheses and brackets to indicate the reference number and page numbers; for example, [5] (p. 10), or [6] (pp. 101–105).
+
+%=====================================
+% References, variant A: external bibliography
+%=====================================
+% \bibliography{your_external_BibTeX_file}
+
+%=====================================
+% References, variant B: internal bibliography
+%=====================================
+
+% ACS format
+%\begin{thebibliography}{999}
+%%%%%%%% REFERENCES PART %%%%%%%%%%%%%%%%%%%%
+%%%%%%%% REFERENCES PART %%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{999}
+	
+	\bibitem{Kemp2024}
+	Kemp, S.
+	Digital 2024: Thailand.
+	Available online:
+	\url{https://datareportal.com/reports/digital-2024-thailand}
+	(accessed on 27 August 2026).
+	
+	\bibitem{Xiao2023}
+	Xiao, L.; Li, X.; Zhang, Y.
+	Exploring the factors influencing consumer engagement behavior
+	regarding short-form video advertising: A big data perspective.
+	{\em J. Retail. Consum. Serv.} {\bf 2023}, {\em 70}, 103170.
+	\url{https://doi.org/10.1016/j.jretconser.2022.103170}.
+	
+	\bibitem{Meng2024}
+	Meng, L.; Kou, S.; Duan, S.; Bie, Y.
+	The impact of content characteristics of short-form video ads on
+	consumer purchase behavior: Evidence from TikTok.
+	{\em J. Bus. Res.} {\bf 2024}, {\em 183}, 114874.
+	\url{https://doi.org/10.1016/j.jbusres.2024.114874}.
+	
+	\bibitem{Shen2024}
+	Shen, X.; Wang, J.
+	How short video marketing influences purchase intention in social
+	commerce: The role of users' persona perception, shared values, and
+	individual-level factors.
+	{\em Humanit. Soc. Sci. Commun.} {\bf 2024}, {\em 11}, 290.
+	\url{https://doi.org/10.1057/s41599-024-02808-w}.
+	
+	\bibitem{Luo2025}
+	Luo, C.; Hasan, N.A.M.; Zamri bin Ahmad, A.M.; Lei, G.
+	Influence of short video content on consumers purchase intentions on
+	social media platforms with trust as a mediator.
+	{\em Sci. Rep.} {\bf 2025}, {\em 15}, 16605.
+	\url{https://doi.org/10.1038/s41598-025-94994-z}.
+	
+	\bibitem{Orus2017}
+	Orús, C.; Gurrea, R.; Flavián, C.
+	Facilitating imaginations through online product presentation videos:
+	Effects on imagery fluency, product attitude and purchase intention.
+	{\em Electron. Commer. Res.} {\bf 2017}, {\em 17}, 661--700.
+	\url{https://doi.org/10.1007/s10660-016-9250-7}.
+	
+	\bibitem{Hwang2023}
+	Hwang, J.; Youn, S.Y.
+	From brick-and-mortar to livestream shopping: Product information
+	acquisition from the uncertainty reduction perspective.
+	{\em Fashion Text.} {\bf 2023}, {\em 10}, 7.
+	\url{https://doi.org/10.1186/s40691-022-00327-3}.
+	
+	\bibitem{Ajzen1991}
+	Ajzen, I.
+	The theory of planned behavior.
+	{\em Organ. Behav. Hum. Decis. Process.} {\bf 1991}, {\em 50},
+	179--211.
+	\url{https://doi.org/10.1016/0749-5978(91)90020-T}.
+	
+	\bibitem{Azad2023}
+	Azad, M.S.; Khan, S.S.; Hossain, R.; Rahman, R.; Momen, S.
+	Predictive modeling of consumer purchase behavior on social media:
+	Integrating theory of planned behavior and machine learning for
+	actionable insights.
+	{\em PLoS One} {\bf 2023}, {\em 18}, e0296336.
+	\url{https://doi.org/10.1371/journal.pone.0296336}.
+	
+	\bibitem{Shmueli2010}
+	Shmueli, G.
+	To explain or to predict?
+	{\em Stat. Sci.} {\bf 2010}, {\em 25}, 289--310.
+	\url{https://doi.org/10.1214/10-STS330}.
+	
+	\bibitem{Chawla2002}
+	Chawla, N.V.; Bowyer, K.W.; Hall, L.O.; Kegelmeyer, W.P.
+	SMOTE: Synthetic minority over-sampling technique.
+	{\em J. Artif. Intell. Res.} {\bf 2002}, {\em 16}, 321--357.
+	\url{https://doi.org/10.1613/jair.953}.
+	
+	\bibitem{TikTokBusiness2022}
+	TikTok for Business.
+	7 ways to make your videos TikTok-friendly.
+	Available online:
+	\url{https://ads.tiktok.com/business/en-US/blog/7-ways-to-make-your-videos-tiktok-friendly}
+	(accessed on 27 August 2026).
+	
+	\bibitem{Zhou2022}
+	Zhou, Y.; Loi, A.M.-W.; Tan, G.W.-H.; Lo, P.-S.; Lim, W.
+	The survey dataset of the influence of theory of planned behaviour on
+	purchase behaviour on social media.
+	{\em Data Brief} {\bf 2022}, {\em 42}, 108239.
+	\url{https://doi.org/10.1016/j.dib.2022.108239}.
+	
+	\bibitem{Xiao2026}
+	Xiao, L.; Li, X.; Mou, J.
+	Exploring user engagement behavior with short-form video advertising
+	on short-form video platforms: A visual-audio perspective.
+	{\em Internet Res.} {\bf 2026}, {\em 36}, 154--188.
+	\url{https://doi.org/10.1108/INTR-07-2023-0521}.
+	
+	\bibitem{Zhang2025}
+	Zhang, Z.; Qiu, K.; Ye, Y.
+	Influence of audiovisual features of short video advertising on
+	consumer engagement behaviors: Evidence from TikTok.
+	{\em J. Bus. Res.} {\bf 2025}, {\em 201}, 115662.
+	\url{https://doi.org/10.1016/j.jbusres.2025.115662}.
+	
+	\bibitem{TikTokCreativeGuidance2025}
+	TikTok for Business.
+	Creative best practices for performance ads.
+	Available online:
+	\url{https://ads.tiktok.com/help/article/creative-best-practices?lang=en}
+	(accessed on 27 August 2026).
+	
+	\bibitem{Lim2025}
+	Lim, J.Y.; Lee, T.C.; Rashid, U.K.; Abu Seman, N.A.
+	Social media marketing in Industry 4.0: The role of TikTok in shaping
+	Generation Z's purchase intentions.
+	{\em Procedia Comput. Sci.} {\bf 2025}, {\em 253}, 2176--2185.
+	\url{https://doi.org/10.1016/j.procs.2025.01.278}.
+	
+	\bibitem{Indrawati2023}
+	Indrawati; Yones, P.C.P.; Muthaiyah, S.
+	eWOM via the TikTok application and its influence on the purchase
+	intention of Somethinc products.
+	{\em Asia Pac. Manag. Rev.} {\bf 2023}, {\em 28}, 174--184.
+	\url{https://doi.org/10.1016/j.apmrv.2022.07.007}.
+	
+	\bibitem{Deng2024}
+	Deng, M.; Yang, Y.; Sun, B.
+	Research on the purchase intention of social commerce consumers in
+	video streams: Dual pathways of affection and rationality.
+	{\em Behav. Sci.} {\bf 2024}, {\em 14}, 738.
+	\url{https://doi.org/10.3390/bs14090738}.
+	
+	\bibitem{Jiang2025}
+	Jiang, W.; Chen, H.-L.
+	Can short videos work? The effects of use and gratification and social
+	presence on purchase intention: Examining the mediating role of digital
+	dependency.
+	{\em J. Theor. Appl. Electron. Commer. Res.} {\bf 2025}, {\em 20}, 5.
+	\url{https://doi.org/10.3390/jtaer20010005}.
+	
+	\bibitem{Pan2026}
+	Pan, X.; Xia, X.; Hou, L.
+	How visual framing strategies shape consumer engagement and sales in
+	short-video commerce.
+	{\em J. Theor. Appl. Electron. Commer. Res.} {\bf 2026}, {\em 21}, 200.
+	\url{https://doi.org/10.3390/jtaer21070200}.
+	
+	\bibitem{Snyder2026}
+	Snyder, E.C.; Alves, A.; Abraham, M.; Vargas, W.; Sullivan, D.
+	Let TikTokers talk about products: The effects of account identity,
+	verification status, and TikTok sounds in short-form video influencer
+	marketing.
+	{\em J. Interact. Advert.} {\bf 2026}, {\em 26}, 191--209.
+	\url{https://doi.org/10.1080/15252019.2026.2642022}.
+	
+\end{thebibliography}
+
+% If authors have biography, please use the format below
+%\section*{Short Biography of Authors}
+%\bio
+%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author1.pdf}}}
+%{\textbf{Firstname Lastname} Biography of first author}
+%
+%\bio
+%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author2.jpg}}}
+%{\textbf{Firstname Lastname} Biography of second author}
+
+% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
+% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
+% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors’ response\\
+%Reviewer 2 comments and authors’ response\\
+%Reviewer 3 comments and authors’ response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\PublishersNote{}
+%\isPreprints{}{% This command is only used for ``preprints''.
+\end{adjustwidth}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+\end{document}

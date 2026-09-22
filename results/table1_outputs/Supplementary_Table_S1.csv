@@ -1,0 +1,225 @@
+Condition,Model_Label,Configuration,Number_of_Predictors,Accuracy_Mean_SD,Macro_Precision_Mean_SD,Macro_Recall_Mean_SD,Macro_F1_Mean_SD,Number_of_Validation_Scores
+Original imbalanced class distribution,AdaBoost,ATTD & PBC & SN,32,0.8559 ± 0.0242,0.8242 ± 0.0306,0.8063 ± 0.0469,0.8112 ± 0.0373,25
+Original imbalanced class distribution,AdaBoost,ATTD & PBC,28,0.8485 ± 0.0350,0.8158 ± 0.0462,0.7957 ± 0.0556,0.8011 ± 0.0490,25
+Original imbalanced class distribution,AdaBoost,ATTD & SN,28,0.8559 ± 0.0280,0.8336 ± 0.0413,0.7907 ± 0.0437,0.8052 ± 0.0389,25
+Original imbalanced class distribution,AdaBoost,PBC & SN,28,0.8614 ± 0.0305,0.8336 ± 0.0433,0.8157 ± 0.0408,0.8206 ± 0.0371,25
+Original imbalanced class distribution,AdaBoost,ATTD,24,0.8497 ± 0.0318,0.8229 ± 0.0501,0.7852 ± 0.0416,0.7987 ± 0.0426,25
+Original imbalanced class distribution,AdaBoost,PBC,24,0.8497 ± 0.0358,0.8160 ± 0.0473,0.8010 ± 0.0477,0.8053 ± 0.0461,25
+Original imbalanced class distribution,AdaBoost,SN,24,0.8295 ± 0.0298,0.8022 ± 0.0459,0.7448 ± 0.0480,0.7619 ± 0.0471,25
+Original imbalanced class distribution,DT,ATTD & PBC & SN,32,0.8259 ± 0.0416,0.7858 ± 0.0542,0.7663 ± 0.0514,0.7727 ± 0.0516,25
+Original imbalanced class distribution,DT,ATTD & PBC,28,0.8296 ± 0.0419,0.7908 ± 0.0538,0.7709 ± 0.0528,0.7773 ± 0.0525,25
+Original imbalanced class distribution,DT,ATTD & SN,28,0.8203 ± 0.0346,0.7803 ± 0.0499,0.7486 ± 0.0558,0.7580 ± 0.0520,25
+Original imbalanced class distribution,DT,PBC & SN,28,0.8075 ± 0.0419,0.7670 ± 0.0537,0.7489 ± 0.0681,0.7476 ± 0.0615,25
+Original imbalanced class distribution,DT,ATTD,24,0.8056 ± 0.0357,0.7715 ± 0.0614,0.7050 ± 0.0718,0.7166 ± 0.0744,25
+Original imbalanced class distribution,DT,PBC,24,0.8234 ± 0.0403,0.7817 ± 0.0502,0.7752 ± 0.0595,0.7735 ± 0.0541,25
+Original imbalanced class distribution,DT,SN,24,0.7981 ± 0.0289,0.7791 ± 0.0572,0.6893 ± 0.0615,0.7011 ± 0.0567,25
+Original imbalanced class distribution,GB,ATTD & PBC & SN,32,0.8492 ± 0.0294,0.8187 ± 0.0427,0.7974 ± 0.0453,0.8027 ± 0.0404,25
+Original imbalanced class distribution,GB,ATTD & PBC,28,0.8504 ± 0.0310,0.8138 ± 0.0390,0.8060 ± 0.0425,0.8080 ± 0.0395,25
+Original imbalanced class distribution,GB,ATTD & SN,28,0.8418 ± 0.0358,0.8092 ± 0.0492,0.7836 ± 0.0546,0.7907 ± 0.0502,25
+Original imbalanced class distribution,GB,PBC & SN,28,0.8492 ± 0.0371,0.8159 ± 0.0510,0.8010 ± 0.0497,0.8049 ± 0.0469,25
+Original imbalanced class distribution,GB,ATTD,24,0.8258 ± 0.0334,0.7855 ± 0.0453,0.7609 ± 0.0451,0.7697 ± 0.0440,25
+Original imbalanced class distribution,GB,PBC,24,0.8406 ± 0.0322,0.8029 ± 0.0435,0.7926 ± 0.0425,0.7950 ± 0.0412,25
+Original imbalanced class distribution,GB,SN,24,0.8412 ± 0.0402,0.8092 ± 0.0574,0.7797 ± 0.0557,0.7893 ± 0.0526,25
+Original imbalanced class distribution,KNN,ATTD & PBC & SN,32,0.8669 ± 0.0295,0.8481 ± 0.0440,0.8060 ± 0.0503,0.8199 ± 0.0452,25
+Original imbalanced class distribution,KNN,ATTD & PBC,28,0.8658 ± 0.0406,0.8484 ± 0.0596,0.8013 ± 0.0617,0.8170 ± 0.0589,25
+Original imbalanced class distribution,KNN,ATTD & SN,28,0.8454 ± 0.0348,0.8378 ± 0.0524,0.7501 ± 0.0614,0.7742 ± 0.0608,25
+Original imbalanced class distribution,KNN,PBC & SN,28,0.8497 ± 0.0320,0.8244 ± 0.0529,0.7842 ± 0.0474,0.7977 ± 0.0443,25
+Original imbalanced class distribution,KNN,ATTD,24,0.8417 ± 0.0357,0.8426 ± 0.0481,0.7364 ± 0.0635,0.7624 ± 0.0652,25
+Original imbalanced class distribution,KNN,PBC,24,0.8497 ± 0.0350,0.8304 ± 0.0542,0.7766 ± 0.0572,0.7926 ± 0.0548,25
+Original imbalanced class distribution,KNN,SN,24,0.8233 ± 0.0306,0.8179 ± 0.0574,0.7079 ± 0.0465,0.7337 ± 0.0510,25
+Original imbalanced class distribution,LR,ATTD & PBC & SN,32,0.8492 ± 0.0324,0.8183 ± 0.0486,0.8018 ± 0.0429,0.8052 ± 0.0393,25
+Original imbalanced class distribution,LR,ATTD & PBC,28,0.8480 ± 0.0355,0.8202 ± 0.0519,0.7870 ± 0.0513,0.7975 ± 0.0475,25
+Original imbalanced class distribution,LR,ATTD & SN,28,0.8431 ± 0.0368,0.8117 ± 0.0533,0.7848 ± 0.0535,0.7925 ± 0.0510,25
+Original imbalanced class distribution,LR,PBC & SN,28,0.8541 ± 0.0300,0.8295 ± 0.0473,0.8022 ± 0.0439,0.8087 ± 0.0377,25
+Original imbalanced class distribution,LR,ATTD,24,0.8369 ± 0.0338,0.8132 ± 0.0545,0.7615 ± 0.0474,0.7768 ± 0.0462,25
+Original imbalanced class distribution,LR,PBC,24,0.8320 ± 0.0363,0.7966 ± 0.0488,0.7701 ± 0.0547,0.7773 ± 0.0496,25
+Original imbalanced class distribution,LR,SN,24,0.8289 ± 0.0349,0.7930 ± 0.0517,0.7582 ± 0.0540,0.7692 ± 0.0522,25
+Original imbalanced class distribution,NB,ATTD & PBC & SN,32,0.8816 ± 0.0276,0.8574 ± 0.0363,0.8409 ± 0.0429,0.8461 ± 0.0377,25
+Original imbalanced class distribution,NB,ATTD & PBC,28,0.8761 ± 0.0282,0.8504 ± 0.0384,0.8330 ± 0.0410,0.8390 ± 0.0378,25
+Original imbalanced class distribution,NB,ATTD & SN,28,0.8706 ± 0.0298,0.8466 ± 0.0393,0.8177 ± 0.0475,0.8282 ± 0.0430,25
+Original imbalanced class distribution,NB,PBC & SN,28,0.8761 ± 0.0289,0.8513 ± 0.0403,0.8321 ± 0.0448,0.8383 ± 0.0403,25
+Original imbalanced class distribution,NB,ATTD,24,0.8638 ± 0.0343,0.8354 ± 0.0439,0.8118 ± 0.0514,0.8204 ± 0.0480,25
+Original imbalanced class distribution,NB,PBC,24,0.8663 ± 0.0296,0.8365 ± 0.0399,0.8196 ± 0.0443,0.8257 ± 0.0413,25
+Original imbalanced class distribution,NB,SN,24,0.8466 ± 0.0451,0.8152 ± 0.0646,0.7853 ± 0.0612,0.7961 ± 0.0610,25
+Original imbalanced class distribution,RF,ATTD & PBC & SN,32,0.8816 ± 0.0305,0.8662 ± 0.0443,0.8314 ± 0.0427,0.8432 ± 0.0390,25
+Original imbalanced class distribution,RF,ATTD & PBC,28,0.8663 ± 0.0365,0.8445 ± 0.0519,0.8118 ± 0.0506,0.8228 ± 0.0474,25
+Original imbalanced class distribution,RF,ATTD & SN,28,0.8681 ± 0.0237,0.8520 ± 0.0384,0.8077 ± 0.0432,0.8218 ± 0.0355,25
+Original imbalanced class distribution,RF,PBC & SN,28,0.8682 ± 0.0282,0.8500 ± 0.0436,0.8093 ± 0.0406,0.8234 ± 0.0376,25
+Original imbalanced class distribution,RF,ATTD,24,0.8497 ± 0.0358,0.8237 ± 0.0475,0.7812 ± 0.0577,0.7952 ± 0.0538,25
+Original imbalanced class distribution,RF,PBC,24,0.8584 ± 0.0394,0.8334 ± 0.0542,0.8021 ± 0.0581,0.8115 ± 0.0553,25
+Original imbalanced class distribution,RF,SN,24,0.8497 ± 0.0391,0.8309 ± 0.0584,0.7750 ± 0.0534,0.7932 ± 0.0540,25
+Original imbalanced class distribution,SVM,ATTD & PBC & SN,32,0.8810 ± 0.0277,0.8641 ± 0.0396,0.8310 ± 0.0497,0.8414 ± 0.0415,25
+Original imbalanced class distribution,SVM,ATTD & PBC,28,0.8749 ± 0.0342,0.8586 ± 0.0458,0.8171 ± 0.0543,0.8312 ± 0.0490,25
+Original imbalanced class distribution,SVM,ATTD & SN,28,0.8767 ± 0.0289,0.8653 ± 0.0403,0.8143 ± 0.0513,0.8313 ± 0.0447,25
+Original imbalanced class distribution,SVM,PBC & SN,28,0.8681 ± 0.0290,0.8487 ± 0.0404,0.8086 ± 0.0498,0.8221 ± 0.0439,25
+Original imbalanced class distribution,SVM,ATTD,24,0.8601 ± 0.0384,0.8482 ± 0.0532,0.7838 ± 0.0618,0.8040 ± 0.0590,25
+Original imbalanced class distribution,SVM,PBC,24,0.8498 ± 0.0373,0.8225 ± 0.0512,0.7869 ± 0.0569,0.7981 ± 0.0538,25
+Original imbalanced class distribution,SVM,SN,24,0.8503 ± 0.0348,0.8384 ± 0.0523,0.7648 ± 0.0575,0.7868 ± 0.0571,25
+Random undersampling (RUS),U-AdaBoost,ATTD & PBC & SN,32,0.8454 ± 0.0352,0.8043 ± 0.0394,0.8383 ± 0.0432,0.8157 ± 0.0405,25
+Random undersampling (RUS),U-AdaBoost,ATTD & PBC,28,0.8418 ± 0.0403,0.8019 ± 0.0428,0.8352 ± 0.0432,0.8121 ± 0.0440,25
+Random undersampling (RUS),U-AdaBoost,ATTD & SN,28,0.8208 ± 0.0402,0.7772 ± 0.0419,0.8022 ± 0.0485,0.7843 ± 0.0445,25
+Random undersampling (RUS),U-AdaBoost,PBC & SN,28,0.8375 ± 0.0414,0.7969 ± 0.0421,0.8343 ± 0.0486,0.8082 ± 0.0453,25
+Random undersampling (RUS),U-AdaBoost,ATTD,24,0.8092 ± 0.0347,0.7645 ± 0.0381,0.7941 ± 0.0430,0.7728 ± 0.0397,25
+Random undersampling (RUS),U-AdaBoost,PBC,24,0.8337 ± 0.0454,0.7933 ± 0.0489,0.8287 ± 0.0515,0.8036 ± 0.0508,25
+Random undersampling (RUS),U-AdaBoost,SN,24,0.7950 ± 0.0453,0.7514 ± 0.0482,0.7852 ± 0.0526,0.7594 ± 0.0512,25
+Random undersampling (RUS),U-DT,ATTD & PBC & SN,32,0.7871 ± 0.0407,0.7531 ± 0.0417,0.8023 ± 0.0524,0.7591 ± 0.0448,25
+Random undersampling (RUS),U-DT,ATTD & PBC,28,0.7884 ± 0.0462,0.7551 ± 0.0440,0.8054 ± 0.0476,0.7619 ± 0.0478,25
+Random undersampling (RUS),U-DT,ATTD & SN,28,0.7755 ± 0.0524,0.7375 ± 0.0535,0.7685 ± 0.0546,0.7397 ± 0.0527,25
+Random undersampling (RUS),U-DT,PBC & SN,28,0.7853 ± 0.0496,0.7497 ± 0.0493,0.7954 ± 0.0565,0.7562 ± 0.0527,25
+Random undersampling (RUS),U-DT,ATTD,24,0.7743 ± 0.0577,0.7351 ± 0.0564,0.7700 ± 0.0588,0.7401 ± 0.0588,25
+Random undersampling (RUS),U-DT,PBC,24,0.7946 ± 0.0560,0.7619 ± 0.0515,0.8100 ± 0.0544,0.7683 ± 0.0570,25
+Random undersampling (RUS),U-DT,SN,24,0.7521 ± 0.0470,0.7220 ± 0.0386,0.7637 ± 0.0512,0.7206 ± 0.0475,25
+Random undersampling (RUS),U-GB,ATTD & PBC & SN,32,0.8221 ± 0.0410,0.7797 ± 0.0446,0.8161 ± 0.0507,0.7902 ± 0.0466,25
+Random undersampling (RUS),U-GB,ATTD & PBC,28,0.8105 ± 0.0441,0.7669 ± 0.0489,0.7972 ± 0.0539,0.7748 ± 0.0505,25
+Random undersampling (RUS),U-GB,ATTD & SN,28,0.8086 ± 0.0355,0.7653 ± 0.0383,0.8002 ± 0.0477,0.7741 ± 0.0410,25
+Random undersampling (RUS),U-GB,PBC & SN,28,0.8215 ± 0.0514,0.7803 ± 0.0539,0.8183 ± 0.0594,0.7908 ± 0.0572,25
+Random undersampling (RUS),U-GB,ATTD,24,0.7810 ± 0.0351,0.7382 ± 0.0342,0.7764 ± 0.0404,0.7464 ± 0.0375,25
+Random undersampling (RUS),U-GB,PBC,24,0.8117 ± 0.0463,0.7682 ± 0.0495,0.8032 ± 0.0562,0.7781 ± 0.0523,25
+Random undersampling (RUS),U-GB,SN,24,0.7987 ± 0.0503,0.7563 ± 0.0520,0.7924 ± 0.0572,0.7648 ± 0.0561,25
+Random undersampling (RUS),U-KNN,ATTD & PBC & SN,32,0.8736 ± 0.0348,0.8413 ± 0.0497,0.8508 ± 0.0403,0.8432 ± 0.0415,25
+Random undersampling (RUS),U-KNN,ATTD & PBC,28,0.8706 ± 0.0354,0.8379 ± 0.0478,0.8426 ± 0.0454,0.8378 ± 0.0434,25
+Random undersampling (RUS),U-KNN,ATTD & SN,28,0.8516 ± 0.0250,0.8150 ± 0.0332,0.8099 ± 0.0416,0.8099 ± 0.0341,25
+Random undersampling (RUS),U-KNN,PBC & SN,28,0.8571 ± 0.0372,0.8204 ± 0.0487,0.8337 ± 0.0472,0.8235 ± 0.0451,25
+Random undersampling (RUS),U-KNN,ATTD,24,0.8332 ± 0.0356,0.7977 ± 0.0496,0.7751 ± 0.0451,0.7818 ± 0.0430,25
+Random undersampling (RUS),U-KNN,PBC,24,0.8503 ± 0.0403,0.8134 ± 0.0508,0.8238 ± 0.0502,0.8148 ± 0.0477,25
+Random undersampling (RUS),U-KNN,SN,24,0.8054 ± 0.0503,0.7552 ± 0.0706,0.7501 ± 0.0724,0.7498 ± 0.0695,25
+Random undersampling (RUS),U-LR,ATTD & PBC & SN,32,0.8387 ± 0.0356,0.7986 ± 0.0400,0.8356 ± 0.0464,0.8091 ± 0.0413,25
+Random undersampling (RUS),U-LR,ATTD & PBC,28,0.8251 ± 0.0422,0.7851 ± 0.0449,0.8223 ± 0.0474,0.7948 ± 0.0463,25
+Random undersampling (RUS),U-LR,ATTD & SN,28,0.8301 ± 0.0374,0.7896 ± 0.0420,0.8254 ± 0.0498,0.7988 ± 0.0452,25
+Random undersampling (RUS),U-LR,PBC & SN,28,0.8442 ± 0.0335,0.8060 ± 0.0334,0.8502 ± 0.0390,0.8181 ± 0.0362,25
+Random undersampling (RUS),U-LR,ATTD,24,0.7890 ± 0.0405,0.7463 ± 0.0407,0.7841 ± 0.0470,0.7548 ± 0.0440,25
+Random undersampling (RUS),U-LR,PBC,24,0.8203 ± 0.0401,0.7797 ± 0.0426,0.8184 ± 0.0447,0.7899 ± 0.0437,25
+Random undersampling (RUS),U-LR,SN,24,0.8110 ± 0.0455,0.7704 ± 0.0457,0.8065 ± 0.0542,0.7781 ± 0.0518,25
+Random undersampling (RUS),U-NB,ATTD & PBC & SN,32,0.8749 ± 0.0256,0.8446 ± 0.0332,0.8435 ± 0.0415,0.8410 ± 0.0345,25
+Random undersampling (RUS),U-NB,ATTD & PBC,28,0.8620 ± 0.0305,0.8276 ± 0.0396,0.8275 ± 0.0457,0.8250 ± 0.0407,25
+Random undersampling (RUS),U-NB,ATTD & SN,28,0.8570 ± 0.0343,0.8251 ± 0.0449,0.8142 ± 0.0491,0.8159 ± 0.0456,25
+Random undersampling (RUS),U-NB,PBC & SN,28,0.8589 ± 0.0290,0.8247 ± 0.0389,0.8232 ± 0.0454,0.8207 ± 0.0392,25
+Random undersampling (RUS),U-NB,ATTD,24,0.8411 ± 0.0372,0.8026 ± 0.0484,0.7983 ± 0.0503,0.7975 ± 0.0482,25
+Random undersampling (RUS),U-NB,PBC,24,0.8552 ± 0.0363,0.8186 ± 0.0482,0.8215 ± 0.0495,0.8176 ± 0.0466,25
+Random undersampling (RUS),U-NB,SN,24,0.8288 ± 0.0416,0.7889 ± 0.0546,0.7802 ± 0.0508,0.7813 ± 0.0502,25
+Random undersampling (RUS),U-RF,ATTD & PBC & SN,32,0.8663 ± 0.0215,0.8284 ± 0.0245,0.8654 ± 0.0247,0.8407 ± 0.0238,25
+Random undersampling (RUS),U-RF,ATTD & PBC,28,0.8564 ± 0.0237,0.8177 ± 0.0281,0.8536 ± 0.0276,0.8292 ± 0.0265,25
+Random undersampling (RUS),U-RF,ATTD & SN,28,0.8479 ± 0.0274,0.8093 ± 0.0318,0.8420 ± 0.0404,0.8181 ± 0.0325,25
+Random undersampling (RUS),U-RF,PBC & SN,28,0.8608 ± 0.0274,0.8228 ± 0.0294,0.8614 ± 0.0322,0.8350 ± 0.0299,25
+Random undersampling (RUS),U-RF,ATTD,24,0.8117 ± 0.0443,0.7702 ± 0.0470,0.8079 ± 0.0542,0.7794 ± 0.0499,25
+Random undersampling (RUS),U-RF,PBC,24,0.8411 ± 0.0273,0.8009 ± 0.0295,0.8366 ± 0.0330,0.8116 ± 0.0298,25
+Random undersampling (RUS),U-RF,SN,24,0.8024 ± 0.0411,0.7653 ± 0.0403,0.8079 ± 0.0407,0.7729 ± 0.0425,25
+Random undersampling (RUS),U-SVM,ATTD & PBC & SN,32,0.8651 ± 0.0239,0.8275 ± 0.0277,0.8617 ± 0.0265,0.8388 ± 0.0256,25
+Random undersampling (RUS),U-SVM,ATTD & PBC,28,0.8527 ± 0.0308,0.8139 ± 0.0354,0.8490 ± 0.0399,0.8246 ± 0.0353,25
+Random undersampling (RUS),U-SVM,ATTD & SN,28,0.8527 ± 0.0257,0.8140 ± 0.0285,0.8431 ± 0.0363,0.8226 ± 0.0300,25
+Random undersampling (RUS),U-SVM,PBC & SN,28,0.8632 ± 0.0228,0.8261 ± 0.0236,0.8660 ± 0.0221,0.8384 ± 0.0228,25
+Random undersampling (RUS),U-SVM,ATTD,24,0.8435 ± 0.0275,0.8042 ± 0.0307,0.8224 ± 0.0413,0.8082 ± 0.0332,25
+Random undersampling (RUS),U-SVM,PBC,24,0.8368 ± 0.0300,0.7980 ± 0.0314,0.8367 ± 0.0342,0.8082 ± 0.0311,25
+Random undersampling (RUS),U-SVM,SN,24,0.8079 ± 0.0264,0.7642 ± 0.0297,0.7952 ± 0.0378,0.7717 ± 0.0310,25
+Random oversampling (ROS),O-AdaBoost,ATTD & PBC & SN,32,0.8645 ± 0.0217,0.8283 ± 0.0286,0.8447 ± 0.0272,0.8332 ± 0.0246,25
+Random oversampling (ROS),O-AdaBoost,ATTD & PBC,28,0.8485 ± 0.0354,0.8094 ± 0.0442,0.8288 ± 0.0443,0.8150 ± 0.0417,25
+Random oversampling (ROS),O-AdaBoost,ATTD & SN,28,0.8423 ± 0.0333,0.8023 ± 0.0436,0.8042 ± 0.0462,0.8009 ± 0.0425,25
+Random oversampling (ROS),O-AdaBoost,PBC & SN,28,0.8602 ± 0.0255,0.8237 ± 0.0307,0.8425 ± 0.0368,0.8285 ± 0.0298,25
+Random oversampling (ROS),O-AdaBoost,ATTD,24,0.8319 ± 0.0331,0.7887 ± 0.0397,0.8046 ± 0.0411,0.7935 ± 0.0394,25
+Random oversampling (ROS),O-AdaBoost,PBC,24,0.8393 ± 0.0350,0.7973 ± 0.0395,0.8217 ± 0.0472,0.8049 ± 0.0422,25
+Random oversampling (ROS),O-AdaBoost,SN,24,0.8135 ± 0.0411,0.7670 ± 0.0504,0.7787 ± 0.0572,0.7688 ± 0.0524,25
+Random oversampling (ROS),O-DT,ATTD & PBC & SN,32,0.7982 ± 0.0309,0.7637 ± 0.0301,0.8116 ± 0.0457,0.7696 ± 0.0340,25
+Random oversampling (ROS),O-DT,ATTD & PBC,28,0.7988 ± 0.0301,0.7663 ± 0.0248,0.8161 ± 0.0374,0.7719 ± 0.0297,25
+Random oversampling (ROS),O-DT,ATTD & SN,28,0.7614 ± 0.0401,0.7216 ± 0.0392,0.7573 ± 0.0490,0.7251 ± 0.0422,25
+Random oversampling (ROS),O-DT,PBC & SN,28,0.8154 ± 0.0378,0.7759 ± 0.0383,0.8106 ± 0.0527,0.7820 ± 0.0437,25
+Random oversampling (ROS),O-DT,ATTD,24,0.7780 ± 0.0455,0.7403 ± 0.0404,0.7782 ± 0.0425,0.7452 ± 0.0439,25
+Random oversampling (ROS),O-DT,PBC,24,0.8209 ± 0.0347,0.7839 ± 0.0317,0.8238 ± 0.0365,0.7915 ± 0.0346,25
+Random oversampling (ROS),O-DT,SN,24,0.7435 ± 0.0511,0.7203 ± 0.0450,0.7696 ± 0.0550,0.7178 ± 0.0522,25
+Random oversampling (ROS),O-GB,ATTD & PBC & SN,32,0.8491 ± 0.0338,0.8145 ± 0.0456,0.8162 ± 0.0455,0.8106 ± 0.0409,25
+Random oversampling (ROS),O-GB,ATTD & PBC,28,0.8387 ± 0.0335,0.7978 ± 0.0435,0.8065 ± 0.0408,0.7995 ± 0.0404,25
+Random oversampling (ROS),O-GB,ATTD & SN,28,0.8381 ± 0.0374,0.7994 ± 0.0496,0.7936 ± 0.0501,0.7932 ± 0.0485,25
+Random oversampling (ROS),O-GB,PBC & SN,28,0.8479 ± 0.0330,0.8097 ± 0.0415,0.8197 ± 0.0421,0.8113 ± 0.0392,25
+Random oversampling (ROS),O-GB,ATTD,24,0.8208 ± 0.0388,0.7766 ± 0.0453,0.7852 ± 0.0463,0.7777 ± 0.0453,25
+Random oversampling (ROS),O-GB,PBC,24,0.8374 ± 0.0344,0.7960 ± 0.0404,0.8104 ± 0.0404,0.8000 ± 0.0397,25
+Random oversampling (ROS),O-GB,SN,24,0.8227 ± 0.0491,0.7817 ± 0.0591,0.7915 ± 0.0536,0.7820 ± 0.0559,25
+Random oversampling (ROS),O-KNN,ATTD & PBC & SN,32,0.8559 ± 0.0338,0.8213 ± 0.0432,0.8374 ± 0.0457,0.8232 ± 0.0393,25
+Random oversampling (ROS),O-KNN,ATTD & PBC,28,0.8522 ± 0.0348,0.8133 ± 0.0400,0.8386 ± 0.0454,0.8209 ± 0.0408,25
+Random oversampling (ROS),O-KNN,ATTD & SN,28,0.8281 ± 0.0399,0.7866 ± 0.0518,0.7970 ± 0.0638,0.7859 ± 0.0529,25
+Random oversampling (ROS),O-KNN,PBC & SN,28,0.8405 ± 0.0363,0.8017 ± 0.0471,0.8194 ± 0.0475,0.8051 ± 0.0429,25
+Random oversampling (ROS),O-KNN,ATTD,24,0.8166 ± 0.0369,0.7719 ± 0.0455,0.7802 ± 0.0533,0.7714 ± 0.0471,25
+Random oversampling (ROS),O-KNN,PBC,24,0.8154 ± 0.0435,0.7702 ± 0.0516,0.7932 ± 0.0571,0.7766 ± 0.0533,25
+Random oversampling (ROS),O-KNN,SN,24,0.7656 ± 0.0565,0.7113 ± 0.0701,0.7280 ± 0.0786,0.7144 ± 0.0720,25
+Random oversampling (ROS),O-LR,ATTD & PBC & SN,32,0.8486 ± 0.0349,0.8125 ± 0.0455,0.8323 ± 0.0384,0.8164 ± 0.0385,25
+Random oversampling (ROS),O-LR,ATTD & PBC,28,0.8345 ± 0.0363,0.7946 ± 0.0411,0.8202 ± 0.0388,0.8013 ± 0.0394,25
+Random oversampling (ROS),O-LR,ATTD & SN,28,0.8418 ± 0.0314,0.8014 ± 0.0369,0.8255 ± 0.0444,0.8081 ± 0.0378,25
+Random oversampling (ROS),O-LR,PBC & SN,28,0.8535 ± 0.0364,0.8173 ± 0.0402,0.8414 ± 0.0425,0.8230 ± 0.0401,25
+Random oversampling (ROS),O-LR,ATTD,24,0.8129 ± 0.0386,0.7698 ± 0.0412,0.8003 ± 0.0477,0.7775 ± 0.0439,25
+Random oversampling (ROS),O-LR,PBC,24,0.8345 ± 0.0386,0.7936 ± 0.0424,0.8215 ± 0.0424,0.8018 ± 0.0424,25
+Random oversampling (ROS),O-LR,SN,24,0.8215 ± 0.0430,0.7794 ± 0.0479,0.8021 ± 0.0553,0.7842 ± 0.0506,25
+Random oversampling (ROS),O-NB,ATTD & PBC & SN,32,0.8841 ± 0.0295,0.8585 ± 0.0382,0.8477 ± 0.0441,0.8506 ± 0.0394,25
+Random oversampling (ROS),O-NB,ATTD & PBC,28,0.8687 ± 0.0302,0.8390 ± 0.0402,0.8286 ± 0.0417,0.8313 ± 0.0390,25
+Random oversampling (ROS),O-NB,ATTD & SN,28,0.8675 ± 0.0297,0.8399 ± 0.0392,0.8200 ± 0.0465,0.8266 ± 0.0419,25
+Random oversampling (ROS),O-NB,PBC & SN,28,0.8681 ± 0.0272,0.8367 ± 0.0363,0.8301 ± 0.0437,0.8308 ± 0.0383,25
+Random oversampling (ROS),O-NB,ATTD,24,0.8497 ± 0.0375,0.8155 ± 0.0499,0.8028 ± 0.0499,0.8060 ± 0.0487,25
+Random oversampling (ROS),O-NB,PBC,24,0.8558 ± 0.0314,0.8213 ± 0.0428,0.8154 ± 0.0431,0.8158 ± 0.0411,25
+Random oversampling (ROS),O-NB,SN,24,0.8441 ± 0.0420,0.8099 ± 0.0593,0.7907 ± 0.0535,0.7971 ± 0.0536,25
+Random oversampling (ROS),O-RF,ATTD & PBC & SN,32,0.8798 ± 0.0298,0.8544 ± 0.0393,0.8438 ± 0.0478,0.8453 ± 0.0387,25
+Random oversampling (ROS),O-RF,ATTD & PBC,28,0.8719 ± 0.0295,0.8419 ± 0.0375,0.8364 ± 0.0450,0.8362 ± 0.0384,25
+Random oversampling (ROS),O-RF,ATTD & SN,28,0.8571 ± 0.0255,0.8298 ± 0.0429,0.8059 ± 0.0435,0.8123 ± 0.0354,25
+Random oversampling (ROS),O-RF,PBC & SN,28,0.8651 ± 0.0223,0.8353 ± 0.0265,0.8221 ± 0.0438,0.8249 ± 0.0323,25
+Random oversampling (ROS),O-RF,ATTD,24,0.8331 ± 0.0341,0.7927 ± 0.0432,0.7849 ± 0.0498,0.7856 ± 0.0449,25
+Random oversampling (ROS),O-RF,PBC,24,0.8516 ± 0.0322,0.8167 ± 0.0425,0.8110 ± 0.0450,0.8107 ± 0.0399,25
+Random oversampling (ROS),O-RF,SN,24,0.8294 ± 0.0334,0.7898 ± 0.0434,0.7700 ± 0.0509,0.7758 ± 0.0465,25
+Random oversampling (ROS),O-SVM,ATTD & PBC & SN,32,0.8786 ± 0.0257,0.8474 ± 0.0366,0.8573 ± 0.0394,0.8487 ± 0.0323,25
+Random oversampling (ROS),O-SVM,ATTD & PBC,28,0.8541 ± 0.0321,0.8160 ± 0.0391,0.8293 ± 0.0443,0.8193 ± 0.0385,25
+Random oversampling (ROS),O-SVM,ATTD & SN,28,0.8626 ± 0.0311,0.8291 ± 0.0382,0.8277 ± 0.0507,0.8249 ± 0.0434,25
+Random oversampling (ROS),O-SVM,PBC & SN,28,0.8663 ± 0.0317,0.8322 ± 0.0395,0.8496 ± 0.0344,0.8365 ± 0.0346,25
+Random oversampling (ROS),O-SVM,ATTD,24,0.8399 ± 0.0365,0.8007 ± 0.0483,0.7980 ± 0.0593,0.7952 ± 0.0512,25
+Random oversampling (ROS),O-SVM,PBC,24,0.8307 ± 0.0424,0.7898 ± 0.0472,0.8104 ± 0.0493,0.7948 ± 0.0471,25
+Random oversampling (ROS),O-SVM,SN,24,0.8319 ± 0.0300,0.7914 ± 0.0415,0.7865 ± 0.0456,0.7853 ± 0.0409,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-AdaBoost,ATTD & PBC & SN,32,0.8608 ± 0.0221,0.8275 ± 0.0296,0.8269 ± 0.0376,0.8235 ± 0.0291,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-AdaBoost,ATTD & PBC,28,0.8534 ± 0.0325,0.8162 ± 0.0421,0.8250 ± 0.0427,0.8174 ± 0.0398,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-AdaBoost,ATTD & SN,28,0.8534 ± 0.0329,0.8197 ± 0.0466,0.8091 ± 0.0457,0.8114 ± 0.0426,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-AdaBoost,PBC & SN,28,0.8602 ± 0.0301,0.8276 ± 0.0395,0.8338 ± 0.0446,0.8254 ± 0.0369,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-AdaBoost,ATTD,24,0.8283 ± 0.0328,0.7855 ± 0.0428,0.7877 ± 0.0405,0.7841 ± 0.0395,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-AdaBoost,PBC,24,0.8565 ± 0.0301,0.8190 ± 0.0379,0.8351 ± 0.0441,0.8229 ± 0.0376,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-AdaBoost,SN,24,0.8350 ± 0.0327,0.7952 ± 0.0423,0.7936 ± 0.0451,0.7910 ± 0.0410,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-DT,ATTD & PBC & SN,32,0.8105 ± 0.0492,0.7708 ± 0.0552,0.7700 ± 0.0600,0.7626 ± 0.0543,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-DT,ATTD & PBC,28,0.8204 ± 0.0508,0.7825 ± 0.0547,0.7868 ± 0.0612,0.7769 ± 0.0567,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-DT,ATTD & SN,28,0.8111 ± 0.0340,0.7767 ± 0.0525,0.7565 ± 0.0486,0.7555 ± 0.0406,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-DT,PBC & SN,28,0.8160 ± 0.0373,0.7705 ± 0.0475,0.7677 ± 0.0569,0.7652 ± 0.0491,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-DT,ATTD,24,0.7939 ± 0.0427,0.7552 ± 0.0426,0.7772 ± 0.0369,0.7555 ± 0.0400,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-DT,PBC,24,0.8387 ± 0.0304,0.7992 ± 0.0389,0.8015 ± 0.0530,0.7959 ± 0.0418,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-DT,SN,24,0.7558 ± 0.0451,0.7204 ± 0.0456,0.7522 ± 0.0546,0.7184 ± 0.0466,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-GB,ATTD & PBC & SN,32,0.8510 ± 0.0326,0.8173 ± 0.0431,0.8110 ± 0.0446,0.8100 ± 0.0419,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-GB,ATTD & PBC,28,0.8504 ± 0.0336,0.8127 ± 0.0458,0.8138 ± 0.0442,0.8111 ± 0.0420,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-GB,ATTD & SN,28,0.8449 ± 0.0356,0.8090 ± 0.0460,0.7946 ± 0.0504,0.7987 ± 0.0464,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-GB,PBC & SN,28,0.8565 ± 0.0350,0.8212 ± 0.0468,0.8212 ± 0.0471,0.8186 ± 0.0440,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-GB,ATTD,24,0.8172 ± 0.0324,0.7714 ± 0.0400,0.7745 ± 0.0477,0.7697 ± 0.0420,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-GB,PBC,24,0.8448 ± 0.0267,0.8045 ± 0.0333,0.8148 ± 0.0320,0.8072 ± 0.0316,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-GB,SN,24,0.8406 ± 0.0406,0.8033 ± 0.0513,0.8012 ± 0.0466,0.7990 ± 0.0471,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-KNN,ATTD & PBC & SN,32,0.8418 ± 0.0346,0.8033 ± 0.0373,0.8375 ± 0.0406,0.8123 ± 0.0378,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-KNN,ATTD & PBC,28,0.8344 ± 0.0390,0.7959 ± 0.0408,0.8386 ± 0.0417,0.8072 ± 0.0420,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-KNN,ATTD & SN,28,0.8214 ± 0.0418,0.7807 ± 0.0463,0.8191 ± 0.0539,0.7902 ± 0.0480,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-KNN,PBC & SN,28,0.8221 ± 0.0400,0.7797 ± 0.0440,0.8183 ± 0.0525,0.7905 ± 0.0474,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-KNN,ATTD,24,0.7706 ± 0.0423,0.7293 ± 0.0409,0.7630 ± 0.0443,0.7341 ± 0.0430,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-KNN,PBC,24,0.8154 ± 0.0442,0.7747 ± 0.0457,0.8130 ± 0.0448,0.7847 ± 0.0471,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-KNN,SN,24,0.7570 ± 0.0479,0.7100 ± 0.0545,0.7441 ± 0.0633,0.7176 ± 0.0575,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-LR,ATTD & PBC & SN,32,0.8437 ± 0.0383,0.8067 ± 0.0442,0.8260 ± 0.0431,0.8103 ± 0.0416,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-LR,ATTD & PBC,28,0.8393 ± 0.0348,0.7997 ± 0.0407,0.8234 ± 0.0417,0.8059 ± 0.0389,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-LR,ATTD & SN,28,0.8387 ± 0.0350,0.7988 ± 0.0406,0.8182 ± 0.0477,0.8029 ± 0.0427,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-LR,PBC & SN,28,0.8504 ± 0.0380,0.8139 ± 0.0409,0.8364 ± 0.0462,0.8188 ± 0.0422,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-LR,ATTD,24,0.8068 ± 0.0411,0.7640 ± 0.0430,0.7945 ± 0.0421,0.7717 ± 0.0433,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-LR,PBC,24,0.8302 ± 0.0395,0.7894 ± 0.0426,0.8171 ± 0.0415,0.7971 ± 0.0425,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-LR,SN,24,0.8258 ± 0.0394,0.7840 ± 0.0440,0.8037 ± 0.0485,0.7883 ± 0.0457,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-NB,ATTD & PBC & SN,32,0.8871 ± 0.0252,0.8679 ± 0.0327,0.8411 ± 0.0411,0.8511 ± 0.0362,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-NB,ATTD & PBC,28,0.8767 ± 0.0321,0.8531 ± 0.0438,0.8305 ± 0.0430,0.8389 ± 0.0417,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-NB,ATTD & SN,28,0.8650 ± 0.0307,0.8382 ± 0.0386,0.8124 ± 0.0504,0.8213 ± 0.0448,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-NB,PBC & SN,28,0.8798 ± 0.0286,0.8592 ± 0.0401,0.8317 ± 0.0433,0.8415 ± 0.0395,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-NB,ATTD,24,0.8552 ± 0.0349,0.8236 ± 0.0456,0.8029 ± 0.0506,0.8102 ± 0.0474,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-NB,PBC,24,0.8718 ± 0.0318,0.8445 ± 0.0429,0.8292 ± 0.0455,0.8339 ± 0.0425,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-NB,SN,24,0.8398 ± 0.0400,0.8052 ± 0.0569,0.7812 ± 0.0539,0.7893 ± 0.0528,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-RF,ATTD & PBC & SN,32,0.8822 ± 0.0307,0.8617 ± 0.0473,0.8433 ± 0.0421,0.8477 ± 0.0386,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-RF,ATTD & PBC,28,0.8645 ± 0.0287,0.8335 ± 0.0393,0.8265 ± 0.0450,0.8265 ± 0.0375,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-RF,ATTD & SN,28,0.8583 ± 0.0293,0.8284 ± 0.0426,0.8135 ± 0.0477,0.8164 ± 0.0385,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-RF,PBC & SN,28,0.8651 ± 0.0274,0.8339 ± 0.0334,0.8226 ± 0.0521,0.8247 ± 0.0412,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-RF,ATTD,24,0.8319 ± 0.0384,0.7897 ± 0.0494,0.7876 ± 0.0518,0.7864 ± 0.0487,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-RF,PBC,24,0.8497 ± 0.0271,0.8130 ± 0.0338,0.8112 ± 0.0410,0.8091 ± 0.0347,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-RF,SN,24,0.8325 ± 0.0313,0.7915 ± 0.0385,0.7817 ± 0.0512,0.7831 ± 0.0442,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-SVM,ATTD & PBC & SN,32,0.8731 ± 0.0265,0.8391 ± 0.0350,0.8586 ± 0.0327,0.8447 ± 0.0300,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-SVM,ATTD & PBC,28,0.8485 ± 0.0292,0.8100 ± 0.0356,0.8241 ± 0.0377,0.8133 ± 0.0332,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-SVM,ATTD & SN,28,0.8547 ± 0.0265,0.8165 ± 0.0339,0.8244 ± 0.0405,0.8180 ± 0.0345,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-SVM,PBC & SN,28,0.8590 ± 0.0284,0.8231 ± 0.0348,0.8389 ± 0.0392,0.8264 ± 0.0333,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-SVM,ATTD,24,0.8221 ± 0.0352,0.7786 ± 0.0473,0.7814 ± 0.0507,0.7761 ± 0.0454,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-SVM,PBC,24,0.8326 ± 0.0353,0.7918 ± 0.0435,0.8060 ± 0.0483,0.7940 ± 0.0423,25
+Synthetic Minority Over-sampling Technique (SMOTE),S-SVM,SN,24,0.8124 ± 0.0390,0.7665 ± 0.0469,0.7684 ± 0.0641,0.7613 ± 0.0576,25

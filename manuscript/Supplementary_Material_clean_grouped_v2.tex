@@ -1,0 +1,605 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{booktabs,longtable,array,pdflscape,ragged2e,microtype}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[font=small,labelfont=bf]{caption}
+\setlength{\LTpre}{7pt}
+\setlength{\LTpost}{9pt}
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{1.10}
+\renewcommand{\thetable}{S\arabic{table}}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\Centering\arraybackslash}p{#1}}
+\newcommand{\classifiersep}{\addlinespace[1pt]\midrule\addlinespace[1pt]}
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Supplementary Material}\\[5pt]
+{\large Machine Learning-Based Predictive Modelling of T-Shirt Purchase Behaviour on TikTok: From Predictors to Short-Form Video Development}
+\end{center}
+\vspace{4pt}
+
+\noindent
+This supplementary material provides the study instruments, hyperparameter
+search spaces, complete cross-validation results, and permutation-importance
+results supporting the analyses reported in the main manuscript. Questionnaire
+items are presented as English renderings of the Thai instruments administered
+to participants. Unless otherwise stated, questionnaire items used a five-point
+Likert-type scale from 1 (strongly disagree) to 5 (strongly agree).
+
+\vspace{6pt}
+
+\section*{Research Instruments}
+\small
+
+\begin{longtable}{@{}L{0.10\textwidth}L{0.24\textwidth}L{0.58\textwidth}@{}}
+\caption{Phase 1 questionnaire items used to construct the classification outcome and candidate predictors.}\label{tab:S1}\\
+\toprule
+\textbf{Code} & \textbf{Construct / dimension} & \textbf{Questionnaire item} \\
+\midrule
+\endfirsthead
+\multicolumn{3}{l}{\textbf{Table S1 -- continued}}\\
+\toprule
+\textbf{Code} & \textbf{Construct / dimension} & \textbf{Questionnaire item} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+PB1 & Purchase behaviour & I am willing to purchase T-shirts promoted through TikTok videos. \\
+PB2 & Purchase behaviour & I am highly likely to purchase a T-shirt because of the influence of a TikTok video. \\
+PB3 & Purchase behaviour & TikTok video advertising can readily persuade me to decide to purchase a T-shirt. \\
+PB4 & Purchase behaviour & I have previously purchased a T-shirt or another product because of the influence of a TikTok video. \\
+\addlinespace[2pt]
+ATTD1 & Attitude & TikTok advertisements or videos help me discover new T-shirts or other products. \\
+ATTD2 & Attitude & TikTok advertisements attract my attention more readily than advertisements delivered through other media channels. \\
+ATTD3 & Attitude & Promotional or discount-related messages in TikTok videos encourage me to seek additional information about the T-shirt. \\
+ATTD4 & Attitude & I have purchased T-shirts or other products that I first discovered through TikTok videos. \\
+\addlinespace[2pt]
+SN1 & Subjective norm & My family members influence my decisions to purchase products presented in TikTok videos. \\
+SN2 & Subjective norm & People around me regard purchasing products through TikTok as normal and acceptable. \\
+SN3 & Subjective norm & I respond positively when I observe many people purchasing products through TikTok. \\
+SN4 & Subjective norm & My friends often encourage or recommend that I purchase products through TikTok. \\
+\addlinespace[2pt]
+PBC1 & Perceived behavioural control & Frequent exposure to T-shirt advertisements on TikTok contributes to my purchase decision. \\
+PBC2 & Perceived behavioural control & In the future, I intend to use TikTok as one of the information sources I consult before purchasing a T-shirt. \\
+PBC3 & Perceived behavioural control & I am likely to recommend that my friends use TikTok as an information source before purchasing products. \\
+PBC4 & Perceived behavioural control & I am likely to recommend that my family members use TikTok as an information source before purchasing products. \\
+\addlinespace[2pt]
+V1 & Visual presentation & The visual clarity of the video enables the details of the T-shirt to be seen clearly. \\
+V2 & Visual presentation & The lighting in the video makes the colour of the T-shirt stand out. \\
+V3 & Visual presentation & Presenting the T-shirt from multiple perspectives, including close-up, distant, front, and back views, improves my understanding of its characteristics. \\
+\addlinespace[2pt]
+E1 & Editing and pace & The video editing is concise and smooth, without feeling prolonged. \\
+E2 & Editing and pace & The video is not too long, making it easy for me to watch until the end. \\
+E3 & Editing and pace & The sequence of video content is easy to understand (opening, product presentation, and call to purchase). \\
+\addlinespace[2pt]
+H1 & Opening hook & The opening segment of the video, particularly the first 3 seconds, encourages me to stop scrolling and continue watching. \\
+H2 & Opening hook & The opening image or text makes me want to know more details about the T-shirt. \\
+\addlinespace[2pt]
+A1 & Audio and music & Using trending TikTok music or audio makes the video more interesting. \\
+A2 & Audio and music & The spoken narration or voice-over, where present, is clear and easy to understand. \\
+A3 & Audio and music & The selected music or audio is appropriate for the style of the T-shirt presented in the video. \\
+\addlinespace[2pt]
+T1 & On-screen text & On-screen text helps me understand the features of the T-shirt quickly. \\
+T2 & On-screen text & The font size and colour are easy to read and see clearly. \\
+T3 & On-screen text & On-screen information concerning prices or promotional offers attracts my attention. \\
+\addlinespace[2pt]
+P1 & Product presentation & The video clearly shows the fabric of the T-shirt, for example through close-up views. \\
+P2 & Product presentation & Showing a person wearing and moving in the T-shirt helps me see its shape and fit. \\
+P3 & Product presentation & Styling the T-shirt with other items makes me more interested in it. \\
+\addlinespace[2pt]
+EM1 & Emotional appeal & The video increases my interest in trying the same style of T-shirt presented in the clip. \\
+EM2 & Emotional appeal & The colour tone and style of the video suit the lifestyle that I prefer. \\
+EM3 & Emotional appeal & Overall, the video increases my confidence in the quality of the T-shirt. \\
+\end{longtable}
+\noindent\textit{Note:} PB1--PB4 were used to construct the binary self-reported purchase-behaviour outcome. ATTD, SN, PBC, and video-content items were candidate predictors in Phase 1.\par
+
+\vspace{10pt} 
+
+\begin{longtable}{@{}L{0.09\textwidth}L{0.19\textwidth}L{0.64\textwidth}@{}}
+\caption{Final Phase 2 video-evaluation questionnaire (11 retained items).}\label{tab:S2}\\
+\toprule
+\textbf{Code} & \textbf{Evaluation domain} & \textbf{Questionnaire item} \\
+\midrule
+\endfirsthead
+\multicolumn{3}{l}{\textbf{Table S2 -- continued}}\\
+\toprule
+\textbf{Code} & \textbf{Evaluation domain} & \textbf{Questionnaire item} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+Q1 & VQVS & The video presents the product clearly and attractively. \\
+Q2 & VQVS & The overall image quality is clear. \\
+Q3 & VQVS & The music matches the images and atmosphere of the video. \\
+Q4 & VQVS & The scene transitions are continuous and smooth. \\
+Q5 & VQVS & The length of the video is appropriate. \\
+Q6 & VQVS & Overall, I am satisfied with this video. \\
+Q7 & PPDM & The video helps me understand the product's key features. \\
+Q8 & PPDM & The video makes me interested in the product. \\
+Q9 & PPDM & The video can hold my attention from beginning to end. \\
+Q10 & PPDM & The video makes me more likely to recommend this product to others. \\
+Q11 & PPDM & After watching the video, I am more likely to purchase the product. \\
+\end{longtable}
+\noindent\textit{Note:} VQVS = video quality and viewer satisfaction; PPDM = purchase-related perceptions and decision-making. Domain scores were calculated as the mean of Q1--Q6 for VQVS and Q7--Q11 for PPDM.\par
+
+\clearpage
+\normalsize
+\section*{Model Optimisation}
+
+\begin{longtable}{@{}L{0.18\textwidth}L{0.72\textwidth}@{}}
+\caption{Hyperparameter search spaces used in grid-search optimisation.}\label{tab:S3}\\
+\toprule
+\textbf{Classifier} & \textbf{Hyperparameter search space} \\
+\midrule
+\endfirsthead
+\multicolumn{2}{l}{\textbf{Table S3 -- continued}}\\
+\toprule
+\textbf{Classifier} & \textbf{Hyperparameter search space} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+KNN & $n_{\mathrm{neighbors}} = 1$--$10$ \\
+DT & $\mathrm{max\_depth} = 1$--$10$; criterion $\in \{$gini, entropy$\}$ \\
+RF & $n_{\mathrm{estimators}} \in \{10,50,100,200\}$; $\mathrm{max\_depth} = 1$--$10$; criterion $\in \{$gini, entropy$\}$ \\
+LR & $C = 10^{-4}$ to $10^{4}$ (9 log-spaced values); solver $\in \{$newton-cg, lbfgs, liblinear, sag, saga$\}$ \\
+NB & $\mathrm{var\_smoothing} = 10^{-12}$ to $10^{-6}$ (13 log-spaced values) \\
+SVM & $C = 10^{-3}$ to $10^{3}$ (7 log-spaced values); kernel $\in \{$linear, poly, rbf, sigmoid$\}$; gamma $\in \{$scale, auto$\}$ \\
+AdaBoost & $n_{\mathrm{estimators}} \in \{10,50,100,200\}$; $\mathrm{learning\_rate} \in \{0.001,0.01,0.1,1\}$ \\
+GB & $n_{\mathrm{estimators}} \in \{10,50,100,200\}$; $\mathrm{learning\_rate} \in \{0.001,0.01,0.1,1\}$; $\mathrm{max\_depth} = 1$--$10$ \\
+\end{longtable}
+\noindent\textit{Note:} Candidate combinations were evaluated using exhaustive grid search with repeated stratified five-fold cross-validation and five repetitions. Standardisation was performed within the cross-validation pipeline for KNN, LR, and SVM. Under the selected class-distribution condition, SMOTE was applied only to training folds. Selected hyperparameters and their corresponding cross-validated performance are reported in Table 2 of the main manuscript.\par
+
+\section*{Complete Cross-Validation Results}
+
+\noindent
+Tables S4--S7 present the complete repeated cross-validation results for all
+56 classifier--predictor-configuration combinations under the four
+class-distribution conditions. Each value is reported as mean $\pm$ SD across
+25 validation scores. The column $N_{\mathrm{pred}}$ denotes the total number of predictors in
+the corresponding configuration. Horizontal rules separate classifier blocks
+to facilitate comparison across TPB predictor configurations. ATTD = attitude;
+SN = subjective norm; PBC = perceived behavioural control.
+
+
+
+\clearpage
+\begin{landscape}
+\subsection*{Original Class Distribution}
+\small
+\renewcommand{\arraystretch}{1.02}
+\begin{longtable}{@{}L{0.14\linewidth}L{0.18\linewidth}C{0.06\linewidth}C{0.18\linewidth}C{0.18\linewidth}C{0.18\linewidth}@{}}
+\caption{Repeated cross-validation performance under the original class distribution.}\label{tab:S4}\\
+\toprule
+\textbf{Classifier} & \textbf{TPB configuration} & \textbf{$N_{\mathrm{pred}}$} & \textbf{Macro-precision} & \textbf{Macro-recall} & \textbf{Macro-F1} \\
+ &  &  & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{l}{\textbf{Table S4 -- continued}}\\
+\toprule
+\textbf{Classifier} & \textbf{TPB configuration} & \textbf{$N_{\mathrm{pred}}$} & \textbf{Macro-precision} & \textbf{Macro-recall} & \textbf{Macro-F1} \\
+ &  &  & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+AdaBoost & ATTD \& PBC \& SN & 32 & 0.8242 $\pm$ 0.0306 & 0.8063 $\pm$ 0.0469 & 0.8112 $\pm$ 0.0373 \\
+AdaBoost & ATTD \& PBC & 28 & 0.8158 $\pm$ 0.0462 & 0.7957 $\pm$ 0.0556 & 0.8011 $\pm$ 0.0490 \\
+AdaBoost & ATTD \& SN & 28 & 0.8336 $\pm$ 0.0413 & 0.7907 $\pm$ 0.0437 & 0.8052 $\pm$ 0.0389 \\
+AdaBoost & PBC \& SN & 28 & 0.8336 $\pm$ 0.0433 & 0.8157 $\pm$ 0.0408 & 0.8206 $\pm$ 0.0371 \\
+AdaBoost & ATTD & 24 & 0.8229 $\pm$ 0.0501 & 0.7852 $\pm$ 0.0416 & 0.7987 $\pm$ 0.0426 \\
+AdaBoost & PBC & 24 & 0.8160 $\pm$ 0.0473 & 0.8010 $\pm$ 0.0477 & 0.8053 $\pm$ 0.0461 \\
+AdaBoost & SN & 24 & 0.8022 $\pm$ 0.0459 & 0.7448 $\pm$ 0.0480 & 0.7619 $\pm$ 0.0471 \\
+\classifiersep
+DT & ATTD \& PBC \& SN & 32 & 0.7858 $\pm$ 0.0542 & 0.7663 $\pm$ 0.0514 & 0.7727 $\pm$ 0.0516 \\
+DT & ATTD \& PBC & 28 & 0.7908 $\pm$ 0.0538 & 0.7709 $\pm$ 0.0528 & 0.7773 $\pm$ 0.0525 \\
+DT & ATTD \& SN & 28 & 0.7803 $\pm$ 0.0499 & 0.7486 $\pm$ 0.0558 & 0.7580 $\pm$ 0.0520 \\
+DT & PBC \& SN & 28 & 0.7670 $\pm$ 0.0537 & 0.7489 $\pm$ 0.0681 & 0.7476 $\pm$ 0.0615 \\
+DT & ATTD & 24 & 0.7715 $\pm$ 0.0614 & 0.7050 $\pm$ 0.0718 & 0.7166 $\pm$ 0.0744 \\
+DT & PBC & 24 & 0.7817 $\pm$ 0.0502 & 0.7752 $\pm$ 0.0595 & 0.7735 $\pm$ 0.0541 \\
+DT & SN & 24 & 0.7791 $\pm$ 0.0572 & 0.6893 $\pm$ 0.0615 & 0.7011 $\pm$ 0.0567 \\
+\classifiersep
+GB & ATTD \& PBC \& SN & 32 & 0.8187 $\pm$ 0.0427 & 0.7974 $\pm$ 0.0453 & 0.8027 $\pm$ 0.0404 \\
+GB & ATTD \& PBC & 28 & 0.8138 $\pm$ 0.0390 & 0.8060 $\pm$ 0.0425 & 0.8080 $\pm$ 0.0395 \\
+GB & ATTD \& SN & 28 & 0.8092 $\pm$ 0.0492 & 0.7836 $\pm$ 0.0546 & 0.7907 $\pm$ 0.0502 \\
+GB & PBC \& SN & 28 & 0.8159 $\pm$ 0.0510 & 0.8010 $\pm$ 0.0497 & 0.8049 $\pm$ 0.0469 \\
+GB & ATTD & 24 & 0.7855 $\pm$ 0.0453 & 0.7609 $\pm$ 0.0451 & 0.7697 $\pm$ 0.0440 \\
+GB & PBC & 24 & 0.8029 $\pm$ 0.0435 & 0.7926 $\pm$ 0.0425 & 0.7950 $\pm$ 0.0412 \\
+GB & SN & 24 & 0.8092 $\pm$ 0.0574 & 0.7797 $\pm$ 0.0557 & 0.7893 $\pm$ 0.0526 \\
+\classifiersep
+KNN & ATTD \& PBC \& SN & 32 & 0.8481 $\pm$ 0.0440 & 0.8060 $\pm$ 0.0503 & 0.8199 $\pm$ 0.0452 \\
+KNN & ATTD \& PBC & 28 & 0.8484 $\pm$ 0.0596 & 0.8013 $\pm$ 0.0617 & 0.8170 $\pm$ 0.0589 \\
+KNN & ATTD \& SN & 28 & 0.8378 $\pm$ 0.0524 & 0.7501 $\pm$ 0.0614 & 0.7742 $\pm$ 0.0608 \\
+KNN & PBC \& SN & 28 & 0.8244 $\pm$ 0.0529 & 0.7842 $\pm$ 0.0474 & 0.7977 $\pm$ 0.0443 \\
+KNN & ATTD & 24 & 0.8426 $\pm$ 0.0481 & 0.7364 $\pm$ 0.0635 & 0.7624 $\pm$ 0.0652 \\
+KNN & PBC & 24 & 0.8304 $\pm$ 0.0542 & 0.7766 $\pm$ 0.0572 & 0.7926 $\pm$ 0.0548 \\
+KNN & SN & 24 & 0.8179 $\pm$ 0.0574 & 0.7079 $\pm$ 0.0465 & 0.7337 $\pm$ 0.0510 \\
+\classifiersep
+LR & ATTD \& PBC \& SN & 32 & 0.8183 $\pm$ 0.0486 & 0.8018 $\pm$ 0.0429 & 0.8052 $\pm$ 0.0393 \\
+LR & ATTD \& PBC & 28 & 0.8202 $\pm$ 0.0519 & 0.7870 $\pm$ 0.0513 & 0.7975 $\pm$ 0.0475 \\
+LR & ATTD \& SN & 28 & 0.8117 $\pm$ 0.0533 & 0.7848 $\pm$ 0.0535 & 0.7925 $\pm$ 0.0510 \\
+LR & PBC \& SN & 28 & 0.8295 $\pm$ 0.0473 & 0.8022 $\pm$ 0.0439 & 0.8087 $\pm$ 0.0377 \\
+LR & ATTD & 24 & 0.8132 $\pm$ 0.0545 & 0.7615 $\pm$ 0.0474 & 0.7768 $\pm$ 0.0462 \\
+LR & PBC & 24 & 0.7966 $\pm$ 0.0488 & 0.7701 $\pm$ 0.0547 & 0.7773 $\pm$ 0.0496 \\
+LR & SN & 24 & 0.7930 $\pm$ 0.0517 & 0.7582 $\pm$ 0.0540 & 0.7692 $\pm$ 0.0522 \\
+\classifiersep
+NB & ATTD \& PBC \& SN & 32 & 0.8574 $\pm$ 0.0363 & 0.8409 $\pm$ 0.0429 & 0.8461 $\pm$ 0.0377 \\
+NB & ATTD \& PBC & 28 & 0.8504 $\pm$ 0.0384 & 0.8330 $\pm$ 0.0410 & 0.8390 $\pm$ 0.0378 \\
+NB & ATTD \& SN & 28 & 0.8466 $\pm$ 0.0393 & 0.8177 $\pm$ 0.0475 & 0.8282 $\pm$ 0.0430 \\
+NB & PBC \& SN & 28 & 0.8513 $\pm$ 0.0403 & 0.8321 $\pm$ 0.0448 & 0.8383 $\pm$ 0.0403 \\
+NB & ATTD & 24 & 0.8354 $\pm$ 0.0439 & 0.8118 $\pm$ 0.0514 & 0.8204 $\pm$ 0.0480 \\
+NB & PBC & 24 & 0.8365 $\pm$ 0.0399 & 0.8196 $\pm$ 0.0443 & 0.8257 $\pm$ 0.0413 \\
+NB & SN & 24 & 0.8152 $\pm$ 0.0646 & 0.7853 $\pm$ 0.0612 & 0.7961 $\pm$ 0.0610 \\
+\classifiersep
+RF & ATTD \& PBC \& SN & 32 & 0.8662 $\pm$ 0.0443 & 0.8314 $\pm$ 0.0427 & 0.8432 $\pm$ 0.0390 \\
+RF & ATTD \& PBC & 28 & 0.8445 $\pm$ 0.0519 & 0.8118 $\pm$ 0.0506 & 0.8228 $\pm$ 0.0474 \\
+RF & ATTD \& SN & 28 & 0.8520 $\pm$ 0.0384 & 0.8077 $\pm$ 0.0432 & 0.8218 $\pm$ 0.0355 \\
+RF & PBC \& SN & 28 & 0.8500 $\pm$ 0.0436 & 0.8093 $\pm$ 0.0406 & 0.8234 $\pm$ 0.0376 \\
+RF & ATTD & 24 & 0.8237 $\pm$ 0.0475 & 0.7812 $\pm$ 0.0577 & 0.7952 $\pm$ 0.0538 \\
+RF & PBC & 24 & 0.8334 $\pm$ 0.0542 & 0.8021 $\pm$ 0.0581 & 0.8115 $\pm$ 0.0553 \\
+RF & SN & 24 & 0.8309 $\pm$ 0.0584 & 0.7750 $\pm$ 0.0534 & 0.7932 $\pm$ 0.0540 \\
+\classifiersep
+SVM & ATTD \& PBC \& SN & 32 & 0.8641 $\pm$ 0.0396 & 0.8310 $\pm$ 0.0497 & 0.8414 $\pm$ 0.0415 \\
+SVM & ATTD \& PBC & 28 & 0.8586 $\pm$ 0.0458 & 0.8171 $\pm$ 0.0543 & 0.8312 $\pm$ 0.0490 \\
+SVM & ATTD \& SN & 28 & 0.8653 $\pm$ 0.0403 & 0.8143 $\pm$ 0.0513 & 0.8313 $\pm$ 0.0447 \\
+SVM & PBC \& SN & 28 & 0.8487 $\pm$ 0.0404 & 0.8086 $\pm$ 0.0498 & 0.8221 $\pm$ 0.0439 \\
+SVM & ATTD & 24 & 0.8482 $\pm$ 0.0532 & 0.7838 $\pm$ 0.0618 & 0.8040 $\pm$ 0.0590 \\
+SVM & PBC & 24 & 0.8225 $\pm$ 0.0512 & 0.7869 $\pm$ 0.0569 & 0.7981 $\pm$ 0.0538 \\
+SVM & SN & 24 & 0.8384 $\pm$ 0.0523 & 0.7648 $\pm$ 0.0575 & 0.7868 $\pm$ 0.0571 \\
+\classifiersep
+\end{longtable}
+\end{landscape}
+\normalsize
+\renewcommand{\arraystretch}{1.10}
+
+\clearpage
+\begin{landscape}
+\subsection*{Random Undersampling (RUS)}
+\small
+\renewcommand{\arraystretch}{1.02}
+\begin{longtable}{@{}L{0.14\linewidth}L{0.18\linewidth}C{0.06\linewidth}C{0.18\linewidth}C{0.18\linewidth}C{0.18\linewidth}@{}}
+\caption{Repeated cross-validation performance under random undersampling (RUS).}\label{tab:S5}\\
+\toprule
+\textbf{Classifier} & \textbf{TPB configuration} & \textbf{$N_{\mathrm{pred}}$} & \textbf{Macro-precision} & \textbf{Macro-recall} & \textbf{Macro-F1} \\
+ &  &  & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{l}{\textbf{Table S5 -- continued}}\\
+\toprule
+\textbf{Classifier} & \textbf{TPB configuration} & \textbf{$N_{\mathrm{pred}}$} & \textbf{Macro-precision} & \textbf{Macro-recall} & \textbf{Macro-F1} \\
+ &  &  & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+AdaBoost & ATTD \& PBC \& SN & 32 & 0.8043 $\pm$ 0.0394 & 0.8383 $\pm$ 0.0432 & 0.8157 $\pm$ 0.0405 \\
+AdaBoost & ATTD \& PBC & 28 & 0.8019 $\pm$ 0.0428 & 0.8352 $\pm$ 0.0432 & 0.8121 $\pm$ 0.0440 \\
+AdaBoost & ATTD \& SN & 28 & 0.7772 $\pm$ 0.0419 & 0.8022 $\pm$ 0.0485 & 0.7843 $\pm$ 0.0445 \\
+AdaBoost & PBC \& SN & 28 & 0.7969 $\pm$ 0.0421 & 0.8343 $\pm$ 0.0486 & 0.8082 $\pm$ 0.0453 \\
+AdaBoost & ATTD & 24 & 0.7645 $\pm$ 0.0381 & 0.7941 $\pm$ 0.0430 & 0.7728 $\pm$ 0.0397 \\
+AdaBoost & PBC & 24 & 0.7933 $\pm$ 0.0489 & 0.8287 $\pm$ 0.0515 & 0.8036 $\pm$ 0.0508 \\
+AdaBoost & SN & 24 & 0.7514 $\pm$ 0.0482 & 0.7852 $\pm$ 0.0526 & 0.7594 $\pm$ 0.0512 \\
+\classifiersep
+DT & ATTD \& PBC \& SN & 32 & 0.7531 $\pm$ 0.0417 & 0.8023 $\pm$ 0.0524 & 0.7591 $\pm$ 0.0448 \\
+DT & ATTD \& PBC & 28 & 0.7551 $\pm$ 0.0440 & 0.8054 $\pm$ 0.0476 & 0.7619 $\pm$ 0.0478 \\
+DT & ATTD \& SN & 28 & 0.7375 $\pm$ 0.0535 & 0.7685 $\pm$ 0.0546 & 0.7397 $\pm$ 0.0527 \\
+DT & PBC \& SN & 28 & 0.7497 $\pm$ 0.0493 & 0.7954 $\pm$ 0.0565 & 0.7562 $\pm$ 0.0527 \\
+DT & ATTD & 24 & 0.7351 $\pm$ 0.0564 & 0.7700 $\pm$ 0.0588 & 0.7401 $\pm$ 0.0588 \\
+DT & PBC & 24 & 0.7619 $\pm$ 0.0515 & 0.8100 $\pm$ 0.0544 & 0.7683 $\pm$ 0.0570 \\
+DT & SN & 24 & 0.7220 $\pm$ 0.0386 & 0.7637 $\pm$ 0.0512 & 0.7206 $\pm$ 0.0475 \\
+\classifiersep
+GB & ATTD \& PBC \& SN & 32 & 0.7797 $\pm$ 0.0446 & 0.8161 $\pm$ 0.0507 & 0.7902 $\pm$ 0.0466 \\
+GB & ATTD \& PBC & 28 & 0.7669 $\pm$ 0.0489 & 0.7972 $\pm$ 0.0539 & 0.7748 $\pm$ 0.0505 \\
+GB & ATTD \& SN & 28 & 0.7653 $\pm$ 0.0383 & 0.8002 $\pm$ 0.0477 & 0.7741 $\pm$ 0.0410 \\
+GB & PBC \& SN & 28 & 0.7803 $\pm$ 0.0539 & 0.8183 $\pm$ 0.0594 & 0.7908 $\pm$ 0.0572 \\
+GB & ATTD & 24 & 0.7382 $\pm$ 0.0342 & 0.7764 $\pm$ 0.0404 & 0.7464 $\pm$ 0.0375 \\
+GB & PBC & 24 & 0.7682 $\pm$ 0.0495 & 0.8032 $\pm$ 0.0562 & 0.7781 $\pm$ 0.0523 \\
+GB & SN & 24 & 0.7563 $\pm$ 0.0520 & 0.7924 $\pm$ 0.0572 & 0.7648 $\pm$ 0.0561 \\
+\classifiersep
+KNN & ATTD \& PBC \& SN & 32 & 0.8413 $\pm$ 0.0497 & 0.8508 $\pm$ 0.0403 & 0.8432 $\pm$ 0.0415 \\
+KNN & ATTD \& PBC & 28 & 0.8379 $\pm$ 0.0478 & 0.8426 $\pm$ 0.0454 & 0.8378 $\pm$ 0.0434 \\
+KNN & ATTD \& SN & 28 & 0.8150 $\pm$ 0.0332 & 0.8099 $\pm$ 0.0416 & 0.8099 $\pm$ 0.0341 \\
+KNN & PBC \& SN & 28 & 0.8204 $\pm$ 0.0487 & 0.8337 $\pm$ 0.0472 & 0.8235 $\pm$ 0.0451 \\
+KNN & ATTD & 24 & 0.7977 $\pm$ 0.0496 & 0.7751 $\pm$ 0.0451 & 0.7818 $\pm$ 0.0430 \\
+KNN & PBC & 24 & 0.8134 $\pm$ 0.0508 & 0.8238 $\pm$ 0.0502 & 0.8148 $\pm$ 0.0477 \\
+KNN & SN & 24 & 0.7552 $\pm$ 0.0706 & 0.7501 $\pm$ 0.0724 & 0.7498 $\pm$ 0.0695 \\
+\classifiersep
+LR & ATTD \& PBC \& SN & 32 & 0.7986 $\pm$ 0.0400 & 0.8356 $\pm$ 0.0464 & 0.8091 $\pm$ 0.0413 \\
+LR & ATTD \& PBC & 28 & 0.7851 $\pm$ 0.0449 & 0.8223 $\pm$ 0.0474 & 0.7948 $\pm$ 0.0463 \\
+LR & ATTD \& SN & 28 & 0.7896 $\pm$ 0.0420 & 0.8254 $\pm$ 0.0498 & 0.7988 $\pm$ 0.0452 \\
+LR & PBC \& SN & 28 & 0.8060 $\pm$ 0.0334 & 0.8502 $\pm$ 0.0390 & 0.8181 $\pm$ 0.0362 \\
+LR & ATTD & 24 & 0.7463 $\pm$ 0.0407 & 0.7841 $\pm$ 0.0470 & 0.7548 $\pm$ 0.0440 \\
+LR & PBC & 24 & 0.7797 $\pm$ 0.0426 & 0.8184 $\pm$ 0.0447 & 0.7899 $\pm$ 0.0437 \\
+LR & SN & 24 & 0.7704 $\pm$ 0.0457 & 0.8065 $\pm$ 0.0542 & 0.7781 $\pm$ 0.0518 \\
+\classifiersep
+NB & ATTD \& PBC \& SN & 32 & 0.8446 $\pm$ 0.0332 & 0.8435 $\pm$ 0.0415 & 0.8410 $\pm$ 0.0345 \\
+NB & ATTD \& PBC & 28 & 0.8276 $\pm$ 0.0396 & 0.8275 $\pm$ 0.0457 & 0.8250 $\pm$ 0.0407 \\
+NB & ATTD \& SN & 28 & 0.8251 $\pm$ 0.0449 & 0.8142 $\pm$ 0.0491 & 0.8159 $\pm$ 0.0456 \\
+NB & PBC \& SN & 28 & 0.8247 $\pm$ 0.0389 & 0.8232 $\pm$ 0.0454 & 0.8207 $\pm$ 0.0392 \\
+NB & ATTD & 24 & 0.8026 $\pm$ 0.0484 & 0.7983 $\pm$ 0.0503 & 0.7975 $\pm$ 0.0482 \\
+NB & PBC & 24 & 0.8186 $\pm$ 0.0482 & 0.8215 $\pm$ 0.0495 & 0.8176 $\pm$ 0.0466 \\
+NB & SN & 24 & 0.7889 $\pm$ 0.0546 & 0.7802 $\pm$ 0.0508 & 0.7813 $\pm$ 0.0502 \\
+\classifiersep
+RF & ATTD \& PBC \& SN & 32 & 0.8284 $\pm$ 0.0245 & 0.8654 $\pm$ 0.0247 & 0.8407 $\pm$ 0.0238 \\
+RF & ATTD \& PBC & 28 & 0.8177 $\pm$ 0.0281 & 0.8536 $\pm$ 0.0276 & 0.8292 $\pm$ 0.0265 \\
+RF & ATTD \& SN & 28 & 0.8093 $\pm$ 0.0318 & 0.8420 $\pm$ 0.0404 & 0.8181 $\pm$ 0.0325 \\
+RF & PBC \& SN & 28 & 0.8228 $\pm$ 0.0294 & 0.8614 $\pm$ 0.0322 & 0.8350 $\pm$ 0.0299 \\
+RF & ATTD & 24 & 0.7702 $\pm$ 0.0470 & 0.8079 $\pm$ 0.0542 & 0.7794 $\pm$ 0.0499 \\
+RF & PBC & 24 & 0.8009 $\pm$ 0.0295 & 0.8366 $\pm$ 0.0330 & 0.8116 $\pm$ 0.0298 \\
+RF & SN & 24 & 0.7653 $\pm$ 0.0403 & 0.8079 $\pm$ 0.0407 & 0.7729 $\pm$ 0.0425 \\
+\classifiersep
+SVM & ATTD \& PBC \& SN & 32 & 0.8275 $\pm$ 0.0277 & 0.8617 $\pm$ 0.0265 & 0.8388 $\pm$ 0.0256 \\
+SVM & ATTD \& PBC & 28 & 0.8139 $\pm$ 0.0354 & 0.8490 $\pm$ 0.0399 & 0.8246 $\pm$ 0.0353 \\
+SVM & ATTD \& SN & 28 & 0.8140 $\pm$ 0.0285 & 0.8431 $\pm$ 0.0363 & 0.8226 $\pm$ 0.0300 \\
+SVM & PBC \& SN & 28 & 0.8261 $\pm$ 0.0236 & 0.8660 $\pm$ 0.0221 & 0.8384 $\pm$ 0.0228 \\
+SVM & ATTD & 24 & 0.8042 $\pm$ 0.0307 & 0.8224 $\pm$ 0.0413 & 0.8082 $\pm$ 0.0332 \\
+SVM & PBC & 24 & 0.7980 $\pm$ 0.0314 & 0.8367 $\pm$ 0.0342 & 0.8082 $\pm$ 0.0311 \\
+SVM & SN & 24 & 0.7642 $\pm$ 0.0297 & 0.7952 $\pm$ 0.0378 & 0.7717 $\pm$ 0.0310 \\
+\classifiersep
+\end{longtable}
+\end{landscape}
+\normalsize
+\renewcommand{\arraystretch}{1.10}
+
+\clearpage
+\begin{landscape}
+\subsection*{Random Oversampling (ROS)}
+\small
+\renewcommand{\arraystretch}{1.02}
+\begin{longtable}{@{}L{0.14\linewidth}L{0.18\linewidth}C{0.06\linewidth}C{0.18\linewidth}C{0.18\linewidth}C{0.18\linewidth}@{}}
+\caption{Repeated cross-validation performance under random oversampling (ROS).}\label{tab:S6}\\
+\toprule
+\textbf{Classifier} & \textbf{TPB configuration} & \textbf{$N_{\mathrm{pred}}$} & \textbf{Macro-precision} & \textbf{Macro-recall} & \textbf{Macro-F1} \\
+ &  &  & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{l}{\textbf{Table S6 -- continued}}\\
+\toprule
+\textbf{Classifier} & \textbf{TPB configuration} & \textbf{$N_{\mathrm{pred}}$} & \textbf{Macro-precision} & \textbf{Macro-recall} & \textbf{Macro-F1} \\
+ &  &  & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+AdaBoost & ATTD \& PBC \& SN & 32 & 0.8283 $\pm$ 0.0286 & 0.8447 $\pm$ 0.0272 & 0.8332 $\pm$ 0.0246 \\
+AdaBoost & ATTD \& PBC & 28 & 0.8094 $\pm$ 0.0442 & 0.8288 $\pm$ 0.0443 & 0.8150 $\pm$ 0.0417 \\
+AdaBoost & ATTD \& SN & 28 & 0.8023 $\pm$ 0.0436 & 0.8042 $\pm$ 0.0462 & 0.8009 $\pm$ 0.0425 \\
+AdaBoost & PBC \& SN & 28 & 0.8237 $\pm$ 0.0307 & 0.8425 $\pm$ 0.0368 & 0.8285 $\pm$ 0.0298 \\
+AdaBoost & ATTD & 24 & 0.7887 $\pm$ 0.0397 & 0.8046 $\pm$ 0.0411 & 0.7935 $\pm$ 0.0394 \\
+AdaBoost & PBC & 24 & 0.7973 $\pm$ 0.0395 & 0.8217 $\pm$ 0.0472 & 0.8049 $\pm$ 0.0422 \\
+AdaBoost & SN & 24 & 0.7670 $\pm$ 0.0504 & 0.7787 $\pm$ 0.0572 & 0.7688 $\pm$ 0.0524 \\
+\classifiersep
+DT & ATTD \& PBC \& SN & 32 & 0.7637 $\pm$ 0.0301 & 0.8116 $\pm$ 0.0457 & 0.7696 $\pm$ 0.0340 \\
+DT & ATTD \& PBC & 28 & 0.7663 $\pm$ 0.0248 & 0.8161 $\pm$ 0.0374 & 0.7719 $\pm$ 0.0297 \\
+DT & ATTD \& SN & 28 & 0.7216 $\pm$ 0.0392 & 0.7573 $\pm$ 0.0490 & 0.7251 $\pm$ 0.0422 \\
+DT & PBC \& SN & 28 & 0.7759 $\pm$ 0.0383 & 0.8106 $\pm$ 0.0527 & 0.7820 $\pm$ 0.0437 \\
+DT & ATTD & 24 & 0.7403 $\pm$ 0.0404 & 0.7782 $\pm$ 0.0425 & 0.7452 $\pm$ 0.0439 \\
+DT & PBC & 24 & 0.7839 $\pm$ 0.0317 & 0.8238 $\pm$ 0.0365 & 0.7915 $\pm$ 0.0346 \\
+DT & SN & 24 & 0.7203 $\pm$ 0.0450 & 0.7696 $\pm$ 0.0550 & 0.7178 $\pm$ 0.0522 \\
+\classifiersep
+GB & ATTD \& PBC \& SN & 32 & 0.8145 $\pm$ 0.0456 & 0.8162 $\pm$ 0.0455 & 0.8106 $\pm$ 0.0409 \\
+GB & ATTD \& PBC & 28 & 0.7978 $\pm$ 0.0435 & 0.8065 $\pm$ 0.0408 & 0.7995 $\pm$ 0.0404 \\
+GB & ATTD \& SN & 28 & 0.7994 $\pm$ 0.0496 & 0.7936 $\pm$ 0.0501 & 0.7932 $\pm$ 0.0485 \\
+GB & PBC \& SN & 28 & 0.8097 $\pm$ 0.0415 & 0.8197 $\pm$ 0.0421 & 0.8113 $\pm$ 0.0392 \\
+GB & ATTD & 24 & 0.7766 $\pm$ 0.0453 & 0.7852 $\pm$ 0.0463 & 0.7777 $\pm$ 0.0453 \\
+GB & PBC & 24 & 0.7960 $\pm$ 0.0404 & 0.8104 $\pm$ 0.0404 & 0.8000 $\pm$ 0.0397 \\
+GB & SN & 24 & 0.7817 $\pm$ 0.0591 & 0.7915 $\pm$ 0.0536 & 0.7820 $\pm$ 0.0559 \\
+\classifiersep
+KNN & ATTD \& PBC \& SN & 32 & 0.8213 $\pm$ 0.0432 & 0.8374 $\pm$ 0.0457 & 0.8232 $\pm$ 0.0393 \\
+KNN & ATTD \& PBC & 28 & 0.8133 $\pm$ 0.0400 & 0.8386 $\pm$ 0.0454 & 0.8209 $\pm$ 0.0408 \\
+KNN & ATTD \& SN & 28 & 0.7866 $\pm$ 0.0518 & 0.7970 $\pm$ 0.0638 & 0.7859 $\pm$ 0.0529 \\
+KNN & PBC \& SN & 28 & 0.8017 $\pm$ 0.0471 & 0.8194 $\pm$ 0.0475 & 0.8051 $\pm$ 0.0429 \\
+KNN & ATTD & 24 & 0.7719 $\pm$ 0.0455 & 0.7802 $\pm$ 0.0533 & 0.7714 $\pm$ 0.0471 \\
+KNN & PBC & 24 & 0.7702 $\pm$ 0.0516 & 0.7932 $\pm$ 0.0571 & 0.7766 $\pm$ 0.0533 \\
+KNN & SN & 24 & 0.7113 $\pm$ 0.0701 & 0.7280 $\pm$ 0.0786 & 0.7144 $\pm$ 0.0720 \\
+\classifiersep
+LR & ATTD \& PBC \& SN & 32 & 0.8125 $\pm$ 0.0455 & 0.8323 $\pm$ 0.0384 & 0.8164 $\pm$ 0.0385 \\
+LR & ATTD \& PBC & 28 & 0.7946 $\pm$ 0.0411 & 0.8202 $\pm$ 0.0388 & 0.8013 $\pm$ 0.0394 \\
+LR & ATTD \& SN & 28 & 0.8014 $\pm$ 0.0369 & 0.8255 $\pm$ 0.0444 & 0.8081 $\pm$ 0.0378 \\
+LR & PBC \& SN & 28 & 0.8173 $\pm$ 0.0402 & 0.8414 $\pm$ 0.0425 & 0.8230 $\pm$ 0.0401 \\
+LR & ATTD & 24 & 0.7698 $\pm$ 0.0412 & 0.8003 $\pm$ 0.0477 & 0.7775 $\pm$ 0.0439 \\
+LR & PBC & 24 & 0.7936 $\pm$ 0.0424 & 0.8215 $\pm$ 0.0424 & 0.8018 $\pm$ 0.0424 \\
+LR & SN & 24 & 0.7794 $\pm$ 0.0479 & 0.8021 $\pm$ 0.0553 & 0.7842 $\pm$ 0.0506 \\
+\classifiersep
+NB & ATTD \& PBC \& SN & 32 & 0.8585 $\pm$ 0.0382 & 0.8477 $\pm$ 0.0441 & 0.8506 $\pm$ 0.0394 \\
+NB & ATTD \& PBC & 28 & 0.8390 $\pm$ 0.0402 & 0.8286 $\pm$ 0.0417 & 0.8313 $\pm$ 0.0390 \\
+NB & ATTD \& SN & 28 & 0.8399 $\pm$ 0.0392 & 0.8200 $\pm$ 0.0465 & 0.8266 $\pm$ 0.0419 \\
+NB & PBC \& SN & 28 & 0.8367 $\pm$ 0.0363 & 0.8301 $\pm$ 0.0437 & 0.8308 $\pm$ 0.0383 \\
+NB & ATTD & 24 & 0.8155 $\pm$ 0.0499 & 0.8028 $\pm$ 0.0499 & 0.8060 $\pm$ 0.0487 \\
+NB & PBC & 24 & 0.8213 $\pm$ 0.0428 & 0.8154 $\pm$ 0.0431 & 0.8158 $\pm$ 0.0411 \\
+NB & SN & 24 & 0.8099 $\pm$ 0.0593 & 0.7907 $\pm$ 0.0535 & 0.7971 $\pm$ 0.0536 \\
+\classifiersep
+RF & ATTD \& PBC \& SN & 32 & 0.8544 $\pm$ 0.0393 & 0.8438 $\pm$ 0.0478 & 0.8453 $\pm$ 0.0387 \\
+RF & ATTD \& PBC & 28 & 0.8419 $\pm$ 0.0375 & 0.8364 $\pm$ 0.0450 & 0.8362 $\pm$ 0.0384 \\
+RF & ATTD \& SN & 28 & 0.8298 $\pm$ 0.0429 & 0.8059 $\pm$ 0.0435 & 0.8123 $\pm$ 0.0354 \\
+RF & PBC \& SN & 28 & 0.8353 $\pm$ 0.0265 & 0.8221 $\pm$ 0.0438 & 0.8249 $\pm$ 0.0323 \\
+RF & ATTD & 24 & 0.7927 $\pm$ 0.0432 & 0.7849 $\pm$ 0.0498 & 0.7856 $\pm$ 0.0449 \\
+RF & PBC & 24 & 0.8167 $\pm$ 0.0425 & 0.8110 $\pm$ 0.0450 & 0.8107 $\pm$ 0.0399 \\
+RF & SN & 24 & 0.7898 $\pm$ 0.0434 & 0.7700 $\pm$ 0.0509 & 0.7758 $\pm$ 0.0465 \\
+\classifiersep
+SVM & ATTD \& PBC \& SN & 32 & 0.8474 $\pm$ 0.0366 & 0.8573 $\pm$ 0.0394 & 0.8487 $\pm$ 0.0323 \\
+SVM & ATTD \& PBC & 28 & 0.8160 $\pm$ 0.0391 & 0.8293 $\pm$ 0.0443 & 0.8193 $\pm$ 0.0385 \\
+SVM & ATTD \& SN & 28 & 0.8291 $\pm$ 0.0382 & 0.8277 $\pm$ 0.0507 & 0.8249 $\pm$ 0.0434 \\
+SVM & PBC \& SN & 28 & 0.8322 $\pm$ 0.0395 & 0.8496 $\pm$ 0.0344 & 0.8365 $\pm$ 0.0346 \\
+SVM & ATTD & 24 & 0.8007 $\pm$ 0.0483 & 0.7980 $\pm$ 0.0593 & 0.7952 $\pm$ 0.0512 \\
+SVM & PBC & 24 & 0.7898 $\pm$ 0.0472 & 0.8104 $\pm$ 0.0493 & 0.7948 $\pm$ 0.0471 \\
+SVM & SN & 24 & 0.7914 $\pm$ 0.0415 & 0.7865 $\pm$ 0.0456 & 0.7853 $\pm$ 0.0409 \\
+\classifiersep
+\end{longtable}
+\end{landscape}
+\normalsize
+\renewcommand{\arraystretch}{1.10}
+
+\clearpage
+\begin{landscape}
+\subsection*{Synthetic Minority Over-sampling Technique (SMOTE)}
+\small
+\renewcommand{\arraystretch}{1.02}
+\begin{longtable}{@{}L{0.14\linewidth}L{0.18\linewidth}C{0.06\linewidth}C{0.18\linewidth}C{0.18\linewidth}C{0.18\linewidth}@{}}
+\caption{Repeated cross-validation performance under SMOTE.}\label{tab:S7}\\
+\toprule
+\textbf{Classifier} & \textbf{TPB configuration} & \textbf{$N_{\mathrm{pred}}$} & \textbf{Macro-precision} & \textbf{Macro-recall} & \textbf{Macro-F1} \\
+ &  &  & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{l}{\textbf{Table S7 -- continued}}\\
+\toprule
+\textbf{Classifier} & \textbf{TPB configuration} & \textbf{$N_{\mathrm{pred}}$} & \textbf{Macro-precision} & \textbf{Macro-recall} & \textbf{Macro-F1} \\
+ &  &  & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} & \textbf{mean $\pm$ SD} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+AdaBoost & ATTD \& PBC \& SN & 32 & 0.8275 $\pm$ 0.0296 & 0.8269 $\pm$ 0.0376 & 0.8235 $\pm$ 0.0291 \\
+AdaBoost & ATTD \& PBC & 28 & 0.8162 $\pm$ 0.0421 & 0.8250 $\pm$ 0.0427 & 0.8174 $\pm$ 0.0398 \\
+AdaBoost & ATTD \& SN & 28 & 0.8197 $\pm$ 0.0466 & 0.8091 $\pm$ 0.0457 & 0.8114 $\pm$ 0.0426 \\
+AdaBoost & PBC \& SN & 28 & 0.8276 $\pm$ 0.0395 & 0.8338 $\pm$ 0.0446 & 0.8254 $\pm$ 0.0369 \\
+AdaBoost & ATTD & 24 & 0.7855 $\pm$ 0.0428 & 0.7877 $\pm$ 0.0405 & 0.7841 $\pm$ 0.0395 \\
+AdaBoost & PBC & 24 & 0.8190 $\pm$ 0.0379 & 0.8351 $\pm$ 0.0441 & 0.8229 $\pm$ 0.0376 \\
+AdaBoost & SN & 24 & 0.7952 $\pm$ 0.0423 & 0.7936 $\pm$ 0.0451 & 0.7910 $\pm$ 0.0410 \\
+\classifiersep
+DT & ATTD \& PBC \& SN & 32 & 0.7708 $\pm$ 0.0552 & 0.7700 $\pm$ 0.0600 & 0.7626 $\pm$ 0.0543 \\
+DT & ATTD \& PBC & 28 & 0.7825 $\pm$ 0.0547 & 0.7868 $\pm$ 0.0612 & 0.7769 $\pm$ 0.0567 \\
+DT & ATTD \& SN & 28 & 0.7767 $\pm$ 0.0525 & 0.7565 $\pm$ 0.0486 & 0.7555 $\pm$ 0.0406 \\
+DT & PBC \& SN & 28 & 0.7705 $\pm$ 0.0475 & 0.7677 $\pm$ 0.0569 & 0.7652 $\pm$ 0.0491 \\
+DT & ATTD & 24 & 0.7552 $\pm$ 0.0426 & 0.7772 $\pm$ 0.0369 & 0.7555 $\pm$ 0.0400 \\
+DT & PBC & 24 & 0.7992 $\pm$ 0.0389 & 0.8015 $\pm$ 0.0530 & 0.7959 $\pm$ 0.0418 \\
+DT & SN & 24 & 0.7204 $\pm$ 0.0456 & 0.7522 $\pm$ 0.0546 & 0.7184 $\pm$ 0.0466 \\
+\classifiersep
+GB & ATTD \& PBC \& SN & 32 & 0.8173 $\pm$ 0.0431 & 0.8110 $\pm$ 0.0446 & 0.8100 $\pm$ 0.0419 \\
+GB & ATTD \& PBC & 28 & 0.8127 $\pm$ 0.0458 & 0.8138 $\pm$ 0.0442 & 0.8111 $\pm$ 0.0420 \\
+GB & ATTD \& SN & 28 & 0.8090 $\pm$ 0.0460 & 0.7946 $\pm$ 0.0504 & 0.7987 $\pm$ 0.0464 \\
+GB & PBC \& SN & 28 & 0.8212 $\pm$ 0.0468 & 0.8212 $\pm$ 0.0471 & 0.8186 $\pm$ 0.0440 \\
+GB & ATTD & 24 & 0.7714 $\pm$ 0.0400 & 0.7745 $\pm$ 0.0477 & 0.7697 $\pm$ 0.0420 \\
+GB & PBC & 24 & 0.8045 $\pm$ 0.0333 & 0.8148 $\pm$ 0.0320 & 0.8072 $\pm$ 0.0316 \\
+GB & SN & 24 & 0.8033 $\pm$ 0.0513 & 0.8012 $\pm$ 0.0466 & 0.7990 $\pm$ 0.0471 \\
+\classifiersep
+KNN & ATTD \& PBC \& SN & 32 & 0.8033 $\pm$ 0.0373 & 0.8375 $\pm$ 0.0406 & 0.8123 $\pm$ 0.0378 \\
+KNN & ATTD \& PBC & 28 & 0.7959 $\pm$ 0.0408 & 0.8386 $\pm$ 0.0417 & 0.8072 $\pm$ 0.0420 \\
+KNN & ATTD \& SN & 28 & 0.7807 $\pm$ 0.0463 & 0.8191 $\pm$ 0.0539 & 0.7902 $\pm$ 0.0480 \\
+KNN & PBC \& SN & 28 & 0.7797 $\pm$ 0.0440 & 0.8183 $\pm$ 0.0525 & 0.7905 $\pm$ 0.0474 \\
+KNN & ATTD & 24 & 0.7293 $\pm$ 0.0409 & 0.7630 $\pm$ 0.0443 & 0.7341 $\pm$ 0.0430 \\
+KNN & PBC & 24 & 0.7747 $\pm$ 0.0457 & 0.8130 $\pm$ 0.0448 & 0.7847 $\pm$ 0.0471 \\
+KNN & SN & 24 & 0.7100 $\pm$ 0.0545 & 0.7441 $\pm$ 0.0633 & 0.7176 $\pm$ 0.0575 \\
+\classifiersep
+LR & ATTD \& PBC \& SN & 32 & 0.8067 $\pm$ 0.0442 & 0.8260 $\pm$ 0.0431 & 0.8103 $\pm$ 0.0416 \\
+LR & ATTD \& PBC & 28 & 0.7997 $\pm$ 0.0407 & 0.8234 $\pm$ 0.0417 & 0.8059 $\pm$ 0.0389 \\
+LR & ATTD \& SN & 28 & 0.7988 $\pm$ 0.0406 & 0.8182 $\pm$ 0.0477 & 0.8029 $\pm$ 0.0427 \\
+LR & PBC \& SN & 28 & 0.8139 $\pm$ 0.0409 & 0.8364 $\pm$ 0.0462 & 0.8188 $\pm$ 0.0422 \\
+LR & ATTD & 24 & 0.7640 $\pm$ 0.0430 & 0.7945 $\pm$ 0.0421 & 0.7717 $\pm$ 0.0433 \\
+LR & PBC & 24 & 0.7894 $\pm$ 0.0426 & 0.8171 $\pm$ 0.0415 & 0.7971 $\pm$ 0.0425 \\
+LR & SN & 24 & 0.7840 $\pm$ 0.0440 & 0.8037 $\pm$ 0.0485 & 0.7883 $\pm$ 0.0457 \\
+\classifiersep
+NB & ATTD \& PBC \& SN & 32 & 0.8679 $\pm$ 0.0327 & 0.8411 $\pm$ 0.0411 & 0.8511 $\pm$ 0.0362 \\
+NB & ATTD \& PBC & 28 & 0.8531 $\pm$ 0.0438 & 0.8305 $\pm$ 0.0430 & 0.8389 $\pm$ 0.0417 \\
+NB & ATTD \& SN & 28 & 0.8382 $\pm$ 0.0386 & 0.8124 $\pm$ 0.0504 & 0.8213 $\pm$ 0.0448 \\
+NB & PBC \& SN & 28 & 0.8592 $\pm$ 0.0401 & 0.8317 $\pm$ 0.0433 & 0.8415 $\pm$ 0.0395 \\
+NB & ATTD & 24 & 0.8236 $\pm$ 0.0456 & 0.8029 $\pm$ 0.0506 & 0.8102 $\pm$ 0.0474 \\
+NB & PBC & 24 & 0.8445 $\pm$ 0.0429 & 0.8292 $\pm$ 0.0455 & 0.8339 $\pm$ 0.0425 \\
+NB & SN & 24 & 0.8052 $\pm$ 0.0569 & 0.7812 $\pm$ 0.0539 & 0.7893 $\pm$ 0.0528 \\
+\classifiersep
+RF & ATTD \& PBC \& SN & 32 & 0.8617 $\pm$ 0.0473 & 0.8433 $\pm$ 0.0421 & 0.8477 $\pm$ 0.0386 \\
+RF & ATTD \& PBC & 28 & 0.8335 $\pm$ 0.0393 & 0.8265 $\pm$ 0.0450 & 0.8265 $\pm$ 0.0375 \\
+RF & ATTD \& SN & 28 & 0.8284 $\pm$ 0.0426 & 0.8135 $\pm$ 0.0477 & 0.8164 $\pm$ 0.0385 \\
+RF & PBC \& SN & 28 & 0.8339 $\pm$ 0.0334 & 0.8226 $\pm$ 0.0521 & 0.8247 $\pm$ 0.0412 \\
+RF & ATTD & 24 & 0.7897 $\pm$ 0.0494 & 0.7876 $\pm$ 0.0518 & 0.7864 $\pm$ 0.0487 \\
+RF & PBC & 24 & 0.8130 $\pm$ 0.0338 & 0.8112 $\pm$ 0.0410 & 0.8091 $\pm$ 0.0347 \\
+RF & SN & 24 & 0.7915 $\pm$ 0.0385 & 0.7817 $\pm$ 0.0512 & 0.7831 $\pm$ 0.0442 \\
+\classifiersep
+SVM & ATTD \& PBC \& SN & 32 & 0.8391 $\pm$ 0.0350 & 0.8586 $\pm$ 0.0327 & 0.8447 $\pm$ 0.0300 \\
+SVM & ATTD \& PBC & 28 & 0.8100 $\pm$ 0.0356 & 0.8241 $\pm$ 0.0377 & 0.8133 $\pm$ 0.0332 \\
+SVM & ATTD \& SN & 28 & 0.8165 $\pm$ 0.0339 & 0.8244 $\pm$ 0.0405 & 0.8180 $\pm$ 0.0345 \\
+SVM & PBC \& SN & 28 & 0.8231 $\pm$ 0.0348 & 0.8389 $\pm$ 0.0392 & 0.8264 $\pm$ 0.0333 \\
+SVM & ATTD & 24 & 0.7786 $\pm$ 0.0473 & 0.7814 $\pm$ 0.0507 & 0.7761 $\pm$ 0.0454 \\
+SVM & PBC & 24 & 0.7918 $\pm$ 0.0435 & 0.8060 $\pm$ 0.0483 & 0.7940 $\pm$ 0.0423 \\
+SVM & SN & 24 & 0.7665 $\pm$ 0.0469 & 0.7684 $\pm$ 0.0641 & 0.7613 $\pm$ 0.0576 \\
+\classifiersep
+\end{longtable}
+\end{landscape}
+\normalsize
+\renewcommand{\arraystretch}{1.10}
+
+\section*{Permutation Importance}
+
+\noindent
+Table S8 reports permutation-importance results for all 32 candidate predictors. The 20 highest-ranked predictors were retained in the final predictor subset.
+
+\begin{landscape}
+\small
+\begin{longtable}{@{}C{0.07\linewidth}C{0.10\linewidth}L{0.25\linewidth}C{0.14\linewidth}C{0.14\linewidth}C{0.14\linewidth}C{0.09\linewidth}@{}}
+\caption{Cross-validated permutation-importance results for all 32 candidate predictors.}\label{tab:S8}\\
+\toprule
+\textbf{Rank} & \textbf{Predictor} & \textbf{Construct / dimension} & \textbf{Mean importance} & \textbf{SD} & \textbf{Positive rate} & \textbf{Retained} \\
+\midrule
+\endfirsthead
+\multicolumn{7}{l}{\textbf{Table S8 -- continued}}\\
+\toprule
+\textbf{Rank} & \textbf{Predictor} & \textbf{Construct / dimension} & \textbf{Mean importance} & \textbf{SD} & \textbf{Positive rate} & \textbf{Retained} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+1 & PBC3 & Perceived behavioural control & 0.0296 & 0.0272 & 82.0\% & Yes \\
+2 & SN4 & Subjective norm & 0.0296 & 0.0325 & 76.8\% & Yes \\
+3 & PBC4 & Perceived behavioural control & 0.0277 & 0.0304 & 76.8\% & Yes \\
+4 & ATTD4 & Attitude & 0.0183 & 0.0237 & 64.4\% & Yes \\
+5 & PBC1 & Perceived behavioural control & 0.0172 & 0.0228 & 67.2\% & Yes \\
+6 & PBC2 & Perceived behavioural control & 0.0108 & 0.0242 & 52.8\% & Yes \\
+7 & ATTD3 & Attitude & 0.0078 & 0.0248 & 43.6\% & Yes \\
+8 & A2 & Audio and music & 0.0076 & 0.0200 & 44.8\% & Yes \\
+9 & A3 & Audio and music & 0.0045 & 0.0149 & 32.0\% & Yes \\
+10 & ATTD1 & Attitude & 0.0040 & 0.0198 & 33.2\% & Yes \\
+11 & SN2 & Subjective norm & 0.0039 & 0.0110 & 26.8\% & Yes \\
+12 & SN3 & Subjective norm & 0.0038 & 0.0157 & 33.2\% & Yes \\
+13 & SN1 & Subjective norm & 0.0035 & 0.0160 & 35.2\% & Yes \\
+14 & ATTD2 & Attitude & 0.0035 & 0.0185 & 42.8\% & Yes \\
+15 & T3 & On-screen text & 0.0023 & 0.0139 & 24.0\% & Yes \\
+16 & EM3 & Emotional appeal & 0.0018 & 0.0134 & 24.8\% & Yes \\
+17 & EM1 & Emotional appeal & 0.0017 & 0.0162 & 30.0\% & Yes \\
+18 & V1 & Visual presentation & 0.0013 & 0.0108 & 22.8\% & Yes \\
+19 & V3 & Visual presentation & 0.0012 & 0.0105 & 18.4\% & Yes \\
+20 & H1 & Opening hook & 0.0008 & 0.0075 & 14.0\% & Yes \\
+21 & P2 & Product presentation & 0.0003 & 0.0109 & 12.8\% & No \\
+22 & EM2 & Emotional appeal & 0.0002 & 0.0122 & 16.4\% & No \\
+23 & V2 & Visual presentation & -0.0000 & 0.0076 & 9.2\% & No \\
+24 & H2 & Opening hook & -0.0005 & 0.0102 & 12.8\% & No \\
+25 & P3 & Product presentation & -0.0005 & 0.0091 & 7.6\% & No \\
+26 & E3 & Editing and pace & -0.0009 & 0.0069 & 6.0\% & No \\
+27 & E2 & Editing and pace & -0.0015 & 0.0103 & 11.2\% & No \\
+28 & E1 & Editing and pace & -0.0015 & 0.0081 & 6.4\% & No \\
+29 & T2 & On-screen text & -0.0016 & 0.0097 & 7.2\% & No \\
+30 & A1 & Audio and music & -0.0019 & 0.0087 & 6.4\% & No \\
+31 & T1 & On-screen text & -0.0022 & 0.0142 & 19.2\% & No \\
+32 & P1 & Product presentation & -0.0036 & 0.0139 & 14.0\% & No \\
+\end{longtable}
+\noindent\textit{Note:} Permutation importance was estimated for the selected LR pipeline using repeated stratified five-fold cross-validation on the training data. The positive rate is the proportion of individual permutation evaluations with an importance value greater than zero. The 20 highest-ranked predictors were retained in the final subset.\par
+\end{landscape}
+
+\end{document}

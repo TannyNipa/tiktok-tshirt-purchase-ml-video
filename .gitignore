@@ -1,0 +1,20 @@
+# Raw research data and Excel workbooks are retained locally and excluded from the public repository.
+/data/private/
+/DATA.xlsx
+*.xls
+*.xlsx
+*.xlsm
+
+# Jupyter and Python local state
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv

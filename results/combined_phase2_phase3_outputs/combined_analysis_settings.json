@@ -1,0 +1,65 @@
+{
+  "data_path": "DATA.xlsx",
+  "split_seed": 20,
+  "cv_seed": 0,
+  "smote_seed": 20,
+  "selection_seed": 0,
+  "test_size": 0.2,
+  "selected_model": "Logistic Regression",
+  "tuned_parameter_grid_result": {
+    "C": 0.01,
+    "solver": "liblinear"
+  },
+  "fixed_logistic_regression_settings": {
+    "max_iter": 5000,
+    "random_state": 0
+  },
+  "selected_number_of_predictors": 20,
+  "selected_features": [
+    "SN4",
+    "PBC3",
+    "PBC4",
+    "ATTD4",
+    "PBC1",
+    "PBC2",
+    "A2",
+    "ATTD3",
+    "SN1",
+    "A3",
+    "ATTD1",
+    "SN2",
+    "SN3",
+    "ATTD2",
+    "T3",
+    "V1",
+    "V3",
+    "EM1",
+    "EM3",
+    "H1"
+  ],
+  "selected_tpb_features": [
+    "SN4",
+    "PBC3",
+    "PBC4",
+    "ATTD4",
+    "PBC1",
+    "PBC2",
+    "ATTD3",
+    "SN1",
+    "ATTD1",
+    "SN2",
+    "SN3",
+    "ATTD2"
+  ],
+  "selected_video_features": [
+    "A2",
+    "A3",
+    "T3",
+    "V1",
+    "V3",
+    "EM1",
+    "EM3",
+    "H1"
+  ],
+  "selection_metric": "Highest mean outer-validation macro-F1"
+}
