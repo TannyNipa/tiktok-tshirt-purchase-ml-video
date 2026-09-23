@@ -1,8 +1,6 @@
 # Machine Learning-Guided Short-Form Video Development and Evaluation for T-Shirt Purchase Behaviour on TikTok
 
-This repository contains reviewer-facing analysis notebooks and the final short-form promotional video associated with a two-phase study of self-reported T-shirt purchase behaviour on TikTok.
-
-Manuscript files, supplementary materials, raw data, and standalone result tables are intentionally excluded while the work remains unpublished.
+This repository contains the analysis notebooks and the final short-form promotional video associated with a two-phase study of self-reported T-shirt purchase behaviour on TikTok.
 
 ## Study overview
 
