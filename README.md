@@ -1,8 +1,8 @@
 # Machine Learning-Guided Short-Form Video Development and Evaluation for T-Shirt Purchase Behaviour on TikTok
 
-This repository contains the executed source code, aggregate analytical outputs, and manuscript sources associated with a two-phase study of self-reported T-shirt purchase behaviour on TikTok.
+This repository contains reviewer-facing analysis notebooks and the final short-form promotional video associated with a two-phase study of self-reported T-shirt purchase behaviour on TikTok.
 
-The associated manuscript is prepared for submission to the *Journal of Theoretical and Applied Electronic Commerce Research* (JTAER), published by MDPI.
+Manuscript files, supplementary materials, raw data, and standalone result tables are intentionally excluded while the work remains unpublished.
 
 ## Study overview
 
@@ -19,20 +19,13 @@ The retained video-content predictors informed the development of a short-form T
 ## Repository contents
 
 - `analysis/`: executed notebooks for Phase 1 modelling.
-- `results/`: generated aggregate tables, figures, configuration, and fitted models.
-- `manuscript/`: latest main and supplementary LaTeX sources and figure assets.
-- `data/private/`: local raw data only, excluded from Git and public release.
+- `video/`: final short-form promotional video, stored with Git LFS.
 
 ## Primary notebooks
 
-- `analysis/PB_Phase1_ML.ipynb` produces the repeated cross-validation tables in `results/table1_outputs/`.
-- `analysis/PB_Phase1_HyperTune.ipynb` produces hyperparameter-tuning and feature-selection results in `results/combined_phase2_phase3_outputs/`, including the source image for manuscript Figure 2.
+- `analysis/PB_Phase1_ML.ipynb` contains the repeated cross-validation workflow.
+- `analysis/PB_Phase1_HyperTune.ipynb` contains the hyperparameter-tuning and feature-selection workflow.
 
 ## Data availability
 
 Raw data are deliberately excluded from this public repository. The notebooks expect `DATA.xlsx` in the repository root when run locally. A data file must be anonymised and approved for public sharing before it is committed; otherwise, an approved controlled-access statement should be used.
-
-## Manuscript sources
-
-- `manuscript/template_revised_editT.tex` is the latest main manuscript source.
-- `manuscript/Supplementary_Material_clean_grouped_v2.tex` is the latest supplementary-material source.
